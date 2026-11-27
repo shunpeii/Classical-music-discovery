@@ -2,62 +2,74 @@
   {
     "id": "bach-1",
     "composerId": "bach",
-    "title": "G線上のアリア"
+    "title": "G線上のアリア",
+    "guide": "穏やかに進む低音と、長く歌う上声の対比。"
   },
   {
     "id": "vivaldi-1",
     "composerId": "vivaldi",
-    "title": "四季"
+    "title": "四季",
+    "guide": "季節ごとの鳥の声や嵐を模した弦楽器の表現。"
   },
   {
     "id": "handel-1",
     "composerId": "handel",
-    "title": "メサイア"
+    "title": "メサイア",
+    "guide": "独唱と合唱の対比、特にハレルヤの力強い響き。"
   },
   {
     "id": "mozart-1",
     "composerId": "mozart",
-    "title": "ピアノ協奏曲第23番"
+    "title": "ピアノ協奏曲第23番",
+    "guide": "明るい外側の楽章と、短調の第2楽章の対比。"
   },
   {
     "id": "beethoven-1",
     "composerId": "beethoven",
-    "title": "交響曲第9番"
+    "title": "交響曲第9番",
+    "guide": "終楽章で器楽から合唱へ広がる構成。"
   },
   {
     "id": "haydn-1",
     "composerId": "haydn",
-    "title": "交響曲第94番"
+    "title": "交響曲第94番",
+    "guide": "第2楽章の突然の強音に注目。"
   },
   {
     "id": "chopin-1",
     "composerId": "chopin",
-    "title": "ノクターン第2番"
+    "title": "ノクターン第2番",
+    "guide": "装飾音を伴う歌のような旋律。"
   },
   {
     "id": "tchaikovsky-1",
     "composerId": "tchaikovsky",
-    "title": "交響曲第5番"
+    "title": "交響曲第5番",
+    "guide": "繰り返し現れる運命の主題とその変化。"
   },
   {
     "id": "brahms-1",
     "composerId": "brahms",
-    "title": "交響曲第1番"
+    "title": "交響曲第1番",
+    "guide": "重厚な導入と終楽章の広がり。"
   },
   {
     "id": "debussy-1",
     "composerId": "debussy",
-    "title": "月の光"
+    "title": "月の光",
+    "guide": "柔らかな和音と揺れるようなリズム。"
   },
   {
     "id": "ravel-1",
     "composerId": "ravel",
-    "title": "ボレロ"
+    "title": "ボレロ",
+    "guide": "同じリズムの上で楽器と音量が変化する。"
   },
   {
     "id": "stravinsky-1",
     "composerId": "stravinsky",
-    "title": "春の祭典"
+    "title": "春の祭典",
+    "guide": "不規則なアクセントと強烈な管弦楽の響き。"
   },
   {
     "id": "schubert-1",
