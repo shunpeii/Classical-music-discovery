@@ -1,5 +1,7 @@
 {
-  "file": "2026-11-27.json",
-  "sample": true,
-  "concertCount": 3
+  "file": "2026-11-27-verified.json",
+  "sample": false,
+  "concertCount": 6,
+  "updatedAt": "2026-11-27",
+  "method": "manual official-source verification"
 }
