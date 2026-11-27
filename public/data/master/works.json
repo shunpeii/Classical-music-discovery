@@ -3,132 +3,248 @@
     "id": "bach-1",
     "composerId": "bach",
     "title": "G線上のアリア",
-    "guide": "穏やかに進む低音と、長く歌う上声の対比。"
+    "guide": "穏やかに進む低音と、長く歌う上声の対比。",
+    "compositionPeriod": "原曲：1730年代頃",
+    "featured": true
   },
   {
     "id": "vivaldi-1",
     "composerId": "vivaldi",
     "title": "四季",
-    "guide": "季節ごとの鳥の声や嵐を模した弦楽器の表現。"
+    "guide": "季節ごとの鳥の声や嵐を模した弦楽器の表現。",
+    "compositionPeriod": "1725年出版・作曲年不詳",
+    "featured": true
   },
   {
     "id": "handel-1",
     "composerId": "handel",
     "title": "メサイア",
-    "guide": "独唱と合唱の対比、特にハレルヤの力強い響き。"
+    "guide": "独唱と合唱の対比、特にハレルヤの力強い響き。",
+    "compositionYear": 1741,
+    "featured": true
   },
   {
     "id": "mozart-1",
     "composerId": "mozart",
     "title": "ピアノ協奏曲第23番",
-    "guide": "明るい外側の楽章と、短調の第2楽章の対比。"
+    "guide": "明るい外側の楽章と、短調の第2楽章の対比。",
+    "compositionYear": 1786,
+    "featured": true
   },
   {
     "id": "beethoven-1",
     "composerId": "beethoven",
     "title": "交響曲第9番",
-    "guide": "終楽章で器楽から合唱へ広がる構成。"
+    "guide": "終楽章で器楽から合唱へ広がる構成。",
+    "compositionYear": 1824,
+    "compositionPeriod": "1822–1824",
+    "featured": true
   },
   {
     "id": "haydn-1",
     "composerId": "haydn",
     "title": "交響曲第94番",
-    "guide": "第2楽章の突然の強音に注目。"
+    "guide": "第2楽章の突然の強音に注目。",
+    "compositionYear": 1791,
+    "featured": true
   },
   {
     "id": "chopin-1",
     "composerId": "chopin",
     "title": "ノクターン第2番",
-    "guide": "装飾音を伴う歌のような旋律。"
+    "guide": "装飾音を伴う歌のような旋律。",
+    "compositionYear": 1830,
+    "compositionPeriod": "1830–1832頃",
+    "featured": true
   },
   {
     "id": "tchaikovsky-1",
     "composerId": "tchaikovsky",
     "title": "交響曲第5番",
-    "guide": "繰り返し現れる運命の主題とその変化。"
+    "guide": "繰り返し現れる運命の主題とその変化。",
+    "compositionYear": 1888,
+    "featured": true
   },
   {
     "id": "brahms-1",
     "composerId": "brahms",
     "title": "交響曲第1番",
-    "guide": "重厚な導入と終楽章の広がり。"
+    "guide": "重厚な導入と終楽章の広がり。",
+    "compositionYear": 1876,
+    "compositionPeriod": "1855頃–1876",
+    "featured": true
   },
   {
     "id": "debussy-1",
     "composerId": "debussy",
     "title": "月の光",
-    "guide": "柔らかな和音と揺れるようなリズム。"
+    "guide": "柔らかな和音と揺れるようなリズム。",
+    "compositionYear": 1905,
+    "compositionPeriod": "1890年頃–1905年改訂",
+    "featured": true
   },
   {
     "id": "ravel-1",
     "composerId": "ravel",
     "title": "ボレロ",
-    "guide": "同じリズムの上で楽器と音量が変化する。"
+    "guide": "同じリズムの上で楽器と音量が変化する。",
+    "compositionYear": 1928,
+    "featured": true
   },
   {
     "id": "stravinsky-1",
     "composerId": "stravinsky",
     "title": "春の祭典",
-    "guide": "不規則なアクセントと強烈な管弦楽の響き。"
+    "guide": "不規則なアクセントと強烈な管弦楽の響き。",
+    "compositionYear": 1913,
+    "compositionPeriod": "1911–1913",
+    "featured": true
   },
   {
     "id": "schubert-1",
     "composerId": "schubert",
     "title": "交響曲第8番 未完成",
-    "guide": "低弦の静かな導入から歌うような旋律へ。"
+    "guide": "低弦の静かな導入から歌うような旋律へ。",
+    "compositionYear": 1822,
+    "featured": true
   },
   {
     "id": "schumann-1",
     "composerId": "schumann",
     "title": "ピアノ協奏曲",
-    "guide": "ピアノと管弦楽の対話に注目。"
+    "guide": "ピアノと管弦楽の対話に注目。",
+    "compositionYear": 1845,
+    "featured": true
   },
   {
     "id": "liszt-1",
     "composerId": "liszt",
     "title": "愛の夢 第3番",
-    "guide": "歌う旋律と華麗な装飾が交錯する。"
+    "guide": "歌う旋律と華麗な装飾が交錯する。",
+    "compositionYear": 1850,
+    "featured": true
   },
   {
     "id": "mahler-1",
     "composerId": "mahler",
     "title": "交響曲第5番",
-    "guide": "葬送行進曲から明るい終楽章への変化。"
+    "guide": "葬送行進曲から明るい終楽章への変化。",
+    "compositionYear": 1902,
+    "compositionPeriod": "1901–1902",
+    "featured": true
   },
   {
     "id": "dvorak-1",
     "composerId": "dvorak",
     "title": "交響曲第9番 新世界より",
-    "guide": "郷愁を感じさせる第2楽章の旋律。"
+    "guide": "郷愁を感じさせる第2楽章の旋律。",
+    "compositionYear": 1893,
+    "featured": true
   },
   {
     "id": "mendelssohn-1",
     "composerId": "mendelssohn",
     "title": "ヴァイオリン協奏曲",
-    "guide": "冒頭から独奏が旋律を奏でる。"
+    "guide": "冒頭から独奏が旋律を奏でる。",
+    "compositionYear": 1844,
+    "featured": true
   },
   {
     "id": "shostakovich-1",
     "composerId": "shostakovich",
     "title": "交響曲第5番",
-    "guide": "緊張感と皮肉を感じさせる響き。"
+    "guide": "緊張感と皮肉を感じさせる響き。",
+    "compositionYear": 1937,
+    "featured": true
   },
   {
     "id": "prokofiev-1",
     "composerId": "prokofiev",
     "title": "ロメオとジュリエット",
-    "guide": "重厚なリズムと叙情的な旋律。"
+    "guide": "重厚なリズムと叙情的な旋律。",
+    "compositionYear": 1935,
+    "compositionPeriod": "1935–1936頃",
+    "featured": true
   },
   {
     "id": "beethoven-2",
     "composerId": "beethoven",
     "title": "交響曲第5番",
-    "guide": "短い動機が全曲を通じて変化する。"
+    "guide": "短い動機が全曲を通じて変化する。",
+    "compositionYear": 1808,
+    "compositionPeriod": "1804–1808",
+    "featured": true
   },
   {
     "id": "mozart-2",
     "composerId": "mozart",
     "title": "レクイエム",
-    "guide": "合唱と管弦楽が織りなす祈りの響き。"
+    "guide": "合唱と管弦楽が織りなす祈りの響き。",
+    "compositionYear": 1791,
+    "featured": true
+  },
+  {
+    "id": "beethoven-3",
+    "composerId": "beethoven",
+    "title": "ピアノ・ソナタ第14番「月光」",
+    "compositionYear": 1801,
+    "featured": true
+  },
+  {
+    "id": "beethoven-4",
+    "composerId": "beethoven",
+    "title": "交響曲第3番「英雄」",
+    "compositionYear": 1804,
+    "compositionPeriod": "1803–1804",
+    "featured": true
+  },
+  {
+    "id": "beethoven-5",
+    "composerId": "beethoven",
+    "title": "交響曲第6番「田園」",
+    "compositionYear": 1808,
+    "featured": true
+  },
+  {
+    "id": "beethoven-6",
+    "composerId": "beethoven",
+    "title": "ピアノ協奏曲第5番「皇帝」",
+    "compositionYear": 1809,
+    "featured": true
+  },
+  {
+    "id": "beethoven-7",
+    "composerId": "beethoven",
+    "title": "交響曲第7番",
+    "compositionYear": 1812,
+    "featured": true
+  },
+  {
+    "id": "beethoven-8",
+    "composerId": "beethoven",
+    "title": "ピアノ・ソナタ第32番",
+    "compositionYear": 1822,
+    "featured": false
+  },
+  {
+    "id": "mozart-3",
+    "composerId": "mozart",
+    "title": "交響曲第40番",
+    "compositionYear": 1788,
+    "featured": true
+  },
+  {
+    "id": "mozart-4",
+    "composerId": "mozart",
+    "title": "交響曲第41番「ジュピター」",
+    "compositionYear": 1788,
+    "featured": false
+  },
+  {
+    "id": "mozart-5",
+    "composerId": "mozart",
+    "title": "歌劇「魔笛」",
+    "compositionYear": 1791,
+    "featured": true
   }
 ]
