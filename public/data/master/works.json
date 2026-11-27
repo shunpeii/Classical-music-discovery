@@ -58,5 +58,65 @@
     "id": "stravinsky-1",
     "composerId": "stravinsky",
     "title": "春の祭典"
+  },
+  {
+    "id": "schubert-1",
+    "composerId": "schubert",
+    "title": "交響曲第8番 未完成",
+    "guide": "低弦の静かな導入から歌うような旋律へ。"
+  },
+  {
+    "id": "schumann-1",
+    "composerId": "schumann",
+    "title": "ピアノ協奏曲",
+    "guide": "ピアノと管弦楽の対話に注目。"
+  },
+  {
+    "id": "liszt-1",
+    "composerId": "liszt",
+    "title": "愛の夢 第3番",
+    "guide": "歌う旋律と華麗な装飾が交錯する。"
+  },
+  {
+    "id": "mahler-1",
+    "composerId": "mahler",
+    "title": "交響曲第5番",
+    "guide": "葬送行進曲から明るい終楽章への変化。"
+  },
+  {
+    "id": "dvorak-1",
+    "composerId": "dvorak",
+    "title": "交響曲第9番 新世界より",
+    "guide": "郷愁を感じさせる第2楽章の旋律。"
+  },
+  {
+    "id": "mendelssohn-1",
+    "composerId": "mendelssohn",
+    "title": "ヴァイオリン協奏曲",
+    "guide": "冒頭から独奏が旋律を奏でる。"
+  },
+  {
+    "id": "shostakovich-1",
+    "composerId": "shostakovich",
+    "title": "交響曲第5番",
+    "guide": "緊張感と皮肉を感じさせる響き。"
+  },
+  {
+    "id": "prokofiev-1",
+    "composerId": "prokofiev",
+    "title": "ロメオとジュリエット",
+    "guide": "重厚なリズムと叙情的な旋律。"
+  },
+  {
+    "id": "beethoven-2",
+    "composerId": "beethoven",
+    "title": "交響曲第5番",
+    "guide": "短い動機が全曲を通じて変化する。"
+  },
+  {
+    "id": "mozart-2",
+    "composerId": "mozart",
+    "title": "レクイエム",
+    "guide": "合唱と管弦楽が織りなす祈りの響き。"
   }
 ]
