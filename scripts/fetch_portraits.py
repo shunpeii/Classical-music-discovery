@@ -34,7 +34,8 @@ for c in composers:
             m=info['extmetadata']
             val=lambda k:plain(m.get(k,{}).get('value',''))
             license=val('LicenseShortName')
-            if not (license.startswith(('CC BY ','CC BY-SA ','CC0','Public domain','PDM')) or val('Copyrighted')=='False'): continue
+            if not (license.startswith(('CC BY ','CC BY-SA ','CC0','Public domain','PDM')) ): continue
+            if license.startswith(('CC BY ','CC BY-SA ')) and not (val('Artist') and val('LicenseUrl')): continue
             data=get(info.get('thumburl',info['url']))
             if data.startswith(b'\xff\xd8'): ext='jpg'
             elif data.startswith(b'\x89PNG'): ext='png'
@@ -52,5 +53,11 @@ for c in composers:
     time.sleep(1)
 master.write_text(json.dumps(composers,ensure_ascii=False,indent=2)+'\n')
 credits.write_text(json.dumps(old,ensure_ascii=False,indent=2)+'\n')
+from html import escape
+items=[]
+for key,credit in old.items():
+    name=next((c['name'] for c in composers if c['id']==key),key)
+    items.append('<li id="'+escape(key)+'"><strong>'+escape(name)+'</strong> — '+escape(credit['artist'])+' — <a href="'+escape(credit['source'],quote=True)+'">Original</a> — <a href="'+escape(credit['licenseUrl'] or credit['source'],quote=True)+'">'+escape(credit['license'])+'</a> (resized for display)</li>')
+(OUT/'credits.html').write_text('<!doctype html><html lang="ja"><meta charset="utf-8"><title>肖像画の出典</title><h1>肖像画の出典・ライセンス</h1><ul>'+''.join(items)+'</ul></html>')
 print('Missing:',failed)
 if failed: raise SystemExit(1)
