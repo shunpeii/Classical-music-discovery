@@ -1,0 +1,78 @@
+[
+  {
+    "id": "jphil-2026-12-04",
+    "date": "2026-12-04",
+    "title": "第786回東京定期演奏会［金］",
+    "venue": "サントリーホール",
+    "price": null,
+    "workIds": [],
+    "sourceUrl": "https://japanphil.or.jp/concert/?p_genre=tokyo-subscription-concert",
+    "sourceId": "jphil",
+    "area": "東京",
+    "mood": ""
+  },
+  {
+    "id": "jphil-2026-12-05",
+    "date": "2026-12-05",
+    "title": "第786回東京定期演奏会［土］",
+    "venue": "サントリーホール",
+    "price": null,
+    "workIds": [],
+    "sourceUrl": "https://japanphil.or.jp/concert/?p_genre=tokyo-subscription-concert",
+    "sourceId": "jphil",
+    "area": "東京",
+    "mood": ""
+  },
+  {
+    "id": "tpo-2027-01-16",
+    "date": "2027-01-16",
+    "title": "響きの森クラシック・シリーズ Vol.90",
+    "venue": "文京シビックホール",
+    "price": null,
+    "workIds": [
+      "dvorak-1"
+    ],
+    "sourceUrl": "https://www.tpo.or.jp/concert/",
+    "sourceId": "tpo",
+    "area": "東京",
+    "mood": ""
+  },
+  {
+    "id": "tpo-2027-01-21",
+    "date": "2027-01-21",
+    "title": "第1040回サントリー定期シリーズ",
+    "venue": "サントリーホール",
+    "price": 5500,
+    "workIds": [
+      "brahms-1"
+    ],
+    "sourceUrl": "https://www.tpo.or.jp/concert/20270121-01.php",
+    "sourceId": "tpo",
+    "area": "東京",
+    "mood": ""
+  },
+  {
+    "id": "jphil-2027-01-29",
+    "date": "2027-01-29",
+    "title": "第787回東京定期演奏会［金］",
+    "venue": "東京芸術劇場",
+    "price": null,
+    "workIds": [],
+    "sourceUrl": "https://japanphil.or.jp/concert/?p_genre=tokyo-subscription-concert",
+    "sourceId": "jphil",
+    "area": "東京",
+    "mood": ""
+  },
+  {
+    "id": "jphil-2027-01-30",
+    "date": "2027-01-30",
+    "title": "第787回東京定期演奏会［土］",
+    "venue": "東京芸術劇場",
+    "price": null,
+    "workIds": [],
+    "sourceUrl": "https://japanphil.or.jp/concert/?p_genre=tokyo-subscription-concert",
+    "sourceId": "jphil",
+    "area": "東京",
+    "mood": ""
+  }
+]
