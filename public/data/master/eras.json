@@ -1,0 +1,26 @@
+[
+  {
+    "id": "baroque",
+    "name": "バロック",
+    "years": "1600–1750",
+    "description": "宮廷と教会を中心に、華麗な装飾と緻密な旋律が発展。"
+  },
+  {
+    "id": "classical",
+    "name": "古典派",
+    "years": "1750–1820",
+    "description": "啓蒙思想の時代。明快な形式と均衡が重視された。"
+  },
+  {
+    "id": "romantic",
+    "name": "ロマン派",
+    "years": "1820–1900",
+    "description": "個人の感情や物語、民族性が音楽に表れた。"
+  },
+  {
+    "id": "modern",
+    "name": "近代・現代",
+    "years": "1900–",
+    "description": "新しい響きと自由な表現。"
+  }
+]
