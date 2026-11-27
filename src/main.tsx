@@ -1,0 +1,37 @@
+/// <reference types="vite/client" />
+import {useEffect,useState} from 'react';
+import {createRoot} from 'react-dom/client';
+import './style.css';
+type Era={id:string;name:string;years:string;description:string};
+type Composer={id:string;name:string;eraId:string;birth:number;death:number};
+type Work={id:string;composerId:string;title:string};
+type Concert={id:string;title:string;date:string;venue:string;area:string;price:number|null;workIds:string[];mood:string};
+type Data={eras:Era[];composers:Composer[];works:Work[];concerts:Concert[];sample:boolean};
+async function load<T>(path:string):Promise<T>{const r=await fetch(import.meta.env.BASE_URL+'data/'+path);if(!r.ok)throw Error(path);return r.json()}
+function App(){
+ const [data,setData]=useState<Data>();const [error,setError]=useState(false);
+ const [route,setRoute]=useState(location.hash.slice(1)||'home');
+ const [era,setEra]=useState('classical');const [query,setQuery]=useState('');const [area,setArea]=useState('');const [mood,setMood]=useState('');const [date,setDate]=useState('');
+ const [saved,setSaved]=useState<string[]>(()=>{try{const v=JSON.parse(localStorage.getItem('opus-saved')||'[]');return Array.isArray(v)?v:[]}catch{return[]}});
+ useEffect(()=>{const h=()=>{setRoute(location.hash.slice(1)||'home');window.scrollTo(0,0)};window.addEventListener('hashchange',h);return()=>window.removeEventListener('hashchange',h)},[]);
+ useEffect(()=>{Promise.all([load<Era[]>('master/eras.json'),load<Composer[]>('master/composers.json'),load<Work[]>('master/works.json'),load<{file:string;sample:boolean}>('concerts/latest.json').then(async x=>({concerts:await load<Concert[]>('concerts/'+x.file),sample:x.sample}))]).then(([eras,composers,works,snapshot])=>setData({eras,composers,works,...snapshot})).catch(()=>setError(true))},[]);
+ useEffect(()=>{try{localStorage.setItem('opus-saved',JSON.stringify(saved))}catch{}},[saved]);
+ const go=(r:string)=>{location.hash=r};const toggle=(id:string)=>setSaved(s=>s.includes(id)?s.filter(x=>x!==id):[...s,id]);
+ if(!data)return <main>{error?'データを読み込めませんでした。':'読み込み中…'}{error&&<button onClick={()=>location.reload()}>再試行</button>}</main>;
+ const {eras,composers,works,concerts}=data;const [page,id]=route.split('/');
+ const selected=eras.find(e=>e.id===era)||eras[0];const composer=composers.find(c=>c.id===id);const work=works.find(w=>w.id===id);const concert=concerts.find(c=>c.id===id);
+ const spotify=(w:Work)=>'https://open.spotify.com/search/'+encodeURIComponent((composers.find(c=>c.id===w.composerId)?.name||'')+' '+w.title);
+ const price=(c:Concert)=>c.price===null?'料金未定':'¥'+c.price.toLocaleString()+'〜';
+ const cards=(items:Concert[])=>items.length?<div className="cards">{[...items].sort((a,b)=>a.date.localeCompare(b.date)).map(c=><article key={c.id}><div className="date">{c.date} · {c.area}</div><button className="link heading" onClick={()=>go('concert/'+c.id)}>{c.title}</button><p>{c.venue}</p><div className="line"><strong>{price(c)}</strong><button aria-label="お気に入り" aria-pressed={saved.includes(c.id)} onClick={()=>toggle(c.id)}>{saved.includes(c.id)?'♥':'♡'}</button></div>{works.filter(w=>c.workIds.includes(w.id)).map(w=><a key={w.id} href={spotify(w)} target="_blank" rel="noreferrer">▷ 曲を聴く ↗</a>)}</article>)}</div>:<p>該当する公演はありません。</p>;
+ const workRows=(items:Work[])=>items.map(w=><article className="line" key={w.id}><button className="link" onClick={()=>go('work/'+w.id)}>{w.title} →</button><a href={spotify(w)} target="_blank" rel="noreferrer">▷ 試聴</a></article>);
+ return <><header><button className="logo link" onClick={()=>go('home')}>opus.</button><span>関東 / CLASSICAL MUSIC</span></header><main>{data.sample&&<div className="sample">DEMO · 公演情報は架空のサンプルです</div>}
+ {page==='home'?<><section className="hero"><small>DISCOVER CLASSICAL MUSIC</small><h1>次の休日、<br/>音楽を聴きに行こう。</h1><p>知らなかった音楽に、出会う。</p><button onClick={()=>go('concerts')}>公演を探す →</button></section><h2>今の気分から探す</h2><div className="eras">{['壮大','癒し'].map(m=><button key={m} onClick={()=>{setMood(m);go('concerts')}}>{m}</button>)}</div><div className="line"><h2>音楽の歴史を旅する</h2><button onClick={()=>go('history')}>時代から探す →</button></div><div className="eras">{eras.map(e=><button key={e.id} onClick={()=>{setEra(e.id);go('history')}}>{e.name}<small>{e.years}</small></button>)}</div><h2>これからの公演</h2>{cards(concerts)}</>:
+ page==='history'?<><small>EXPLORE THE WORLD OF MUSIC</small><h1>400年の音楽を、旅する。</h1><div className="eras">{eras.map(e=><button className={era===e.id?'active':''} key={e.id} onClick={()=>setEra(e.id)}>{e.name}<small>{e.years}</small></button>)}</div><section className="eraHero"><small>{selected.years}</small><h2>{selected.name}</h2><p>{selected.description}</p></section><h2>この時代の音楽家</h2><div className="people">{composers.filter(c=>c.eraId===era).map(c=><button key={c.id} onClick={()=>go('composer/'+c.id)}><div className="portrait">{c.name.slice(0,1)}</div><strong>{c.name}</strong><small>{c.birth}–{c.death}</small></button>)}</div></>:
+ page==='composer'&&composer?<><button onClick={()=>{setEra(composer.eraId);go('history')}}>← 音楽史</button><h1>{composer.name}</h1><p>{composer.birth}–{composer.death}</p><h2>代表曲</h2>{workRows(works.filter(w=>w.composerId===id))}<h2>関連公演</h2>{cards(concerts.filter(c=>c.workIds.some(w=>works.some(x=>x.id===w&&x.composerId===id))))}</>:
+ page==='work'&&work?<><button onClick={()=>go('composer/'+work.composerId)}>← 作曲家</button><h1>{work.title}</h1><a href={spotify(work)} target="_blank" rel="noreferrer">▷ Spotifyで聴く</a><h2>この曲を生で聴く</h2>{cards(concerts.filter(c=>c.workIds.includes(id)))}</>:
+ page==='concert'&&concert?<><button onClick={()=>go('concerts')}>← 公演一覧</button><h1>{concert.title}</h1><p>{concert.date} · {concert.venue}</p><p>{price(concert)}</p><button onClick={()=>toggle(id)}>{saved.includes(id)?'♥ 保存済み':'♡ 保存する'}</button><h2>演奏曲</h2>{workRows(works.filter(w=>concert.workIds.includes(w.id)))}</>:
+ page==='saved'?<><h1>お気に入り</h1>{cards(concerts.filter(c=>saved.includes(c.id)))}</>:
+ page==='concerts'?<><h1>公演を探す</h1><div className="filters"><input aria-label="キーワード" placeholder="公演・作曲家・楽曲" value={query} onChange={e=>setQuery(e.target.value)}/><select aria-label="エリア" value={area} onChange={e=>setArea(e.target.value)}><option value="">全エリア</option>{[...new Set(concerts.map(c=>c.area))].map(a=><option key={a}>{a}</option>)}</select><select aria-label="気分" value={mood} onChange={e=>setMood(e.target.value)}><option value="">すべての気分</option>{[...new Set(concerts.map(c=>c.mood))].map(m=><option key={m}>{m}</option>)}</select><input aria-label="開催日以降" type="date" value={date} onChange={e=>setDate(e.target.value)}/><button onClick={()=>{setQuery('');setArea('');setMood('');setDate('')}}>クリア</button></div>{cards(concerts.filter(c=>(!area||c.area===area)&&(!mood||c.mood===mood)&&(!date||c.date>=date)&&[c.title,c.venue,...works.filter(w=>c.workIds.includes(w.id)).flatMap(w=>[w.title,composers.find(x=>x.id===w.composerId)?.name||''])].join(' ').toLowerCase().includes(query.trim().toLowerCase())))}</>:<><h1>ページが見つかりません</h1><button onClick={()=>go('home')}>ホームへ</button></>}
+ </main><nav>{[['home','⌂','ホーム'],['history','♫','音楽を知る'],['concerts','⌕','公演検索'],['saved','♡','保存']].map(([r,i,n])=><button className={page===r?'active':''} key={r} onClick={()=>go(r)}><span>{i}</span>{n}</button>)}</nav></>
+}
+createRoot(document.getElementById('root')!).render(<App/>);
