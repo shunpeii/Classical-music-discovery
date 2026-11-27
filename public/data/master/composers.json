@@ -82,5 +82,61 @@
     "eraId": "modern",
     "birth": 1882,
     "death": 1971
+  },
+  {
+    "id": "schubert",
+    "name": "シューベルト",
+    "eraId": "romantic",
+    "birth": 1797,
+    "death": 1828
+  },
+  {
+    "id": "schumann",
+    "name": "シューマン",
+    "eraId": "romantic",
+    "birth": 1810,
+    "death": 1856
+  },
+  {
+    "id": "liszt",
+    "name": "リスト",
+    "eraId": "romantic",
+    "birth": 1811,
+    "death": 1886
+  },
+  {
+    "id": "mahler",
+    "name": "マーラー",
+    "eraId": "romantic",
+    "birth": 1860,
+    "death": 1911
+  },
+  {
+    "id": "dvorak",
+    "name": "ドヴォルザーク",
+    "eraId": "romantic",
+    "birth": 1841,
+    "death": 1904
+  },
+  {
+    "id": "mendelssohn",
+    "name": "メンデルスゾーン",
+    "eraId": "romantic",
+    "birth": 1809,
+    "death": 1847
+  },
+  {
+    "id": "shostakovich",
+    "name": "ショスタコーヴィチ",
+    "eraId": "modern",
+    "birth": 1906,
+    "death": 1975
+  },
+  {
+    "id": "prokofiev",
+    "name": "プロコフィエフ",
+    "eraId": "modern",
+    "birth": 1891,
+    "death": 1953
   }
 ]
