@@ -1,4 +1,6 @@
 import json, pathlib, urllib.request, urllib.parse, time, re, html
+from PIL import Image, ImageOps
+from io import BytesIO
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 OUT=ROOT/'public/images/composers'
 OUT.mkdir(parents=True,exist_ok=True)
@@ -23,7 +25,15 @@ def plain(value):
 failed=[]
 for c in composers:
     key=c['id']
-    if key in old and c.get('portrait') and (ROOT/'public'/c['portrait']).exists(): continue
+    if key in old and c.get('portrait') and (ROOT/'public'/c['portrait']).exists():
+        existing=ROOT/'public'/c['portrait']
+        thumb=existing.with_suffix('.thumb.webp')
+        if not thumb.exists():
+            with Image.open(existing) as im:
+                im=ImageOps.exif_transpose(im).convert('RGB')
+                im.thumbnail((180,240))
+                im.save(thumb,'WEBP',quality=76)
+        continue
     try:
         page=api('en.wikipedia.org',titles=sources[key],redirects=1,prop='pageprops')
         qid=page['pageprops']['wikibase_item']
@@ -40,8 +50,13 @@ for c in composers:
             if data.startswith(b'\xff\xd8'): ext='jpg'
             elif data.startswith(b'\x89PNG'): ext='png'
             else: continue
-            rel='images/composers/'+key+'.'+ext
-            (ROOT/'public'/rel).write_bytes(data)
+            rel='images/composers/'+key+'.webp'
+            with Image.open(BytesIO(data)) as im:
+                im=ImageOps.exif_transpose(im).convert('RGB')
+                im.thumbnail((400,540))
+                im.save(ROOT/'public'/rel,'WEBP',quality=82)
+                im.thumbnail((180,240))
+                im.save(OUT/(key+'.thumb.webp'),'WEBP',quality=76)
             c['portrait']=rel
             old[key]={'file':file,'source':info['descriptionurl'],'artist':val('Attribution') or val('Artist'),'license':license,'licenseUrl':val('LicenseUrl')}
             print(key,license,flush=True)
