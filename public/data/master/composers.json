@@ -138,5 +138,292 @@
     "eraId": "modern",
     "birth": 1891,
     "death": 1953
+  },
+  {
+    "id": "monteverdi",
+    "name": "モンテヴェルディ",
+    "eraId": "baroque",
+    "birth": 1567,
+    "death": 1643
+  },
+  {
+    "id": "corelli",
+    "name": "コレッリ",
+    "eraId": "baroque",
+    "birth": 1653,
+    "death": 1713
+  },
+  {
+    "id": "purcell",
+    "name": "パーセル",
+    "eraId": "baroque",
+    "birth": 1659,
+    "death": 1695
+  },
+  {
+    "id": "pachelbel",
+    "name": "パッヘルベル",
+    "eraId": "baroque",
+    "birth": 1653,
+    "death": 1706
+  },
+  {
+    "id": "telemann",
+    "name": "テレマン",
+    "eraId": "baroque",
+    "birth": 1681,
+    "death": 1767
+  },
+  {
+    "id": "rameau",
+    "name": "ラモー",
+    "eraId": "baroque",
+    "birth": 1683,
+    "death": 1764
+  },
+  {
+    "id": "scarlatti",
+    "name": "D. スカルラッティ",
+    "eraId": "baroque",
+    "birth": 1685,
+    "death": 1757
+  },
+  {
+    "id": "couperin",
+    "name": "クープラン",
+    "eraId": "baroque",
+    "birth": 1668,
+    "death": 1733
+  },
+  {
+    "id": "gluck",
+    "name": "グルック",
+    "eraId": "classical",
+    "birth": 1714,
+    "death": 1787
+  },
+  {
+    "id": "cpebach",
+    "name": "C.P.E. バッハ",
+    "eraId": "classical",
+    "birth": 1714,
+    "death": 1788
+  },
+  {
+    "id": "boccherini",
+    "name": "ボッケリーニ",
+    "eraId": "classical",
+    "birth": 1743,
+    "death": 1805
+  },
+  {
+    "id": "clementi",
+    "name": "クレメンティ",
+    "eraId": "classical",
+    "birth": 1752,
+    "death": 1832
+  },
+  {
+    "id": "hummel",
+    "name": "フンメル",
+    "eraId": "classical",
+    "birth": 1778,
+    "death": 1837
+  },
+  {
+    "id": "rossini",
+    "name": "ロッシーニ",
+    "eraId": "romantic",
+    "birth": 1792,
+    "death": 1868
+  },
+  {
+    "id": "berlioz",
+    "name": "ベルリオーズ",
+    "eraId": "romantic",
+    "birth": 1803,
+    "death": 1869
+  },
+  {
+    "id": "wagner",
+    "name": "ワーグナー",
+    "eraId": "romantic",
+    "birth": 1813,
+    "death": 1883
+  },
+  {
+    "id": "verdi",
+    "name": "ヴェルディ",
+    "eraId": "romantic",
+    "birth": 1813,
+    "death": 1901
+  },
+  {
+    "id": "bizet",
+    "name": "ビゼー",
+    "eraId": "romantic",
+    "birth": 1838,
+    "death": 1875
+  },
+  {
+    "id": "saintsaens",
+    "name": "サン＝サーンス",
+    "eraId": "romantic",
+    "birth": 1835,
+    "death": 1921
+  },
+  {
+    "id": "grieg",
+    "name": "グリーグ",
+    "eraId": "romantic",
+    "birth": 1843,
+    "death": 1907
+  },
+  {
+    "id": "smetana",
+    "name": "スメタナ",
+    "eraId": "romantic",
+    "birth": 1824,
+    "death": 1884
+  },
+  {
+    "id": "mussorgsky",
+    "name": "ムソルグスキー",
+    "eraId": "romantic",
+    "birth": 1839,
+    "death": 1881
+  },
+  {
+    "id": "rimsky",
+    "name": "リムスキー＝コルサコフ",
+    "eraId": "romantic",
+    "birth": 1844,
+    "death": 1908
+  },
+  {
+    "id": "faure",
+    "name": "フォーレ",
+    "eraId": "romantic",
+    "birth": 1845,
+    "death": 1924
+  },
+  {
+    "id": "bruckner",
+    "name": "ブルックナー",
+    "eraId": "romantic",
+    "birth": 1824,
+    "death": 1896
+  },
+  {
+    "id": "franck",
+    "name": "フランク",
+    "eraId": "romantic",
+    "birth": 1822,
+    "death": 1890
+  },
+  {
+    "id": "puccini",
+    "name": "プッチーニ",
+    "eraId": "romantic",
+    "birth": 1858,
+    "death": 1924
+  },
+  {
+    "id": "jstrauss",
+    "name": "ヨハン・シュトラウス2世",
+    "eraId": "romantic",
+    "birth": 1825,
+    "death": 1899
+  },
+  {
+    "id": "rachmaninoff",
+    "name": "ラフマニノフ",
+    "eraId": "modern",
+    "birth": 1873,
+    "death": 1943
+  },
+  {
+    "id": "sibelius",
+    "name": "シベリウス",
+    "eraId": "modern",
+    "birth": 1865,
+    "death": 1957
+  },
+  {
+    "id": "rstrauss",
+    "name": "リヒャルト・シュトラウス",
+    "eraId": "modern",
+    "birth": 1864,
+    "death": 1949
+  },
+  {
+    "id": "satie",
+    "name": "サティ",
+    "eraId": "modern",
+    "birth": 1866,
+    "death": 1925
+  },
+  {
+    "id": "holst",
+    "name": "ホルスト",
+    "eraId": "modern",
+    "birth": 1874,
+    "death": 1934
+  },
+  {
+    "id": "elgar",
+    "name": "エルガー",
+    "eraId": "modern",
+    "birth": 1857,
+    "death": 1934
+  },
+  {
+    "id": "bartok",
+    "name": "バルトーク",
+    "eraId": "modern",
+    "birth": 1881,
+    "death": 1945
+  },
+  {
+    "id": "schoenberg",
+    "name": "シェーンベルク",
+    "eraId": "modern",
+    "birth": 1874,
+    "death": 1951
+  },
+  {
+    "id": "gershwin",
+    "name": "ガーシュウィン",
+    "eraId": "modern",
+    "birth": 1898,
+    "death": 1937
+  },
+  {
+    "id": "copland",
+    "name": "コープランド",
+    "eraId": "modern",
+    "birth": 1900,
+    "death": 1990
+  },
+  {
+    "id": "britten",
+    "name": "ブリテン",
+    "eraId": "modern",
+    "birth": 1913,
+    "death": 1976
+  },
+  {
+    "id": "messiaen",
+    "name": "メシアン",
+    "eraId": "modern",
+    "birth": 1908,
+    "death": 1992
+  },
+  {
+    "id": "takemitsu",
+    "name": "武満徹",
+    "eraId": "modern",
+    "birth": 1930,
+    "death": 1996
   }
 ]
