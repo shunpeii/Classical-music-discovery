@@ -1,0 +1,86 @@
+[
+  {
+    "id": "bach",
+    "name": "バッハ",
+    "eraId": "baroque",
+    "birth": 1685,
+    "death": 1750
+  },
+  {
+    "id": "vivaldi",
+    "name": "ヴィヴァルディ",
+    "eraId": "baroque",
+    "birth": 1678,
+    "death": 1741
+  },
+  {
+    "id": "handel",
+    "name": "ヘンデル",
+    "eraId": "baroque",
+    "birth": 1685,
+    "death": 1759
+  },
+  {
+    "id": "mozart",
+    "name": "モーツァルト",
+    "eraId": "classical",
+    "birth": 1756,
+    "death": 1791
+  },
+  {
+    "id": "beethoven",
+    "name": "ベートーヴェン",
+    "eraId": "classical",
+    "birth": 1770,
+    "death": 1827
+  },
+  {
+    "id": "haydn",
+    "name": "ハイドン",
+    "eraId": "classical",
+    "birth": 1732,
+    "death": 1809
+  },
+  {
+    "id": "chopin",
+    "name": "ショパン",
+    "eraId": "romantic",
+    "birth": 1810,
+    "death": 1849
+  },
+  {
+    "id": "tchaikovsky",
+    "name": "チャイコフスキー",
+    "eraId": "romantic",
+    "birth": 1840,
+    "death": 1893
+  },
+  {
+    "id": "brahms",
+    "name": "ブラームス",
+    "eraId": "romantic",
+    "birth": 1833,
+    "death": 1897
+  },
+  {
+    "id": "debussy",
+    "name": "ドビュッシー",
+    "eraId": "modern",
+    "birth": 1862,
+    "death": 1918
+  },
+  {
+    "id": "ravel",
+    "name": "ラヴェル",
+    "eraId": "modern",
+    "birth": 1875,
+    "death": 1937
+  },
+  {
+    "id": "stravinsky",
+    "name": "ストラヴィンスキー",
+    "eraId": "modern",
+    "birth": 1882,
+    "death": 1971
+  }
+]
