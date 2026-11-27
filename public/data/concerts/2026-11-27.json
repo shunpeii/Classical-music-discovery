@@ -1,0 +1,38 @@
+[
+  {
+    "id": "demo-1",
+    "title": "チャイコフスキーの夜",
+    "date": "2026-12-12",
+    "venue": "サントリーホール",
+    "area": "東京",
+    "price": 3500,
+    "workIds": [
+      "tchaikovsky-1"
+    ],
+    "mood": "壮大"
+  },
+  {
+    "id": "demo-2",
+    "title": "冬のモーツァルト",
+    "date": "2026-12-19",
+    "venue": "東京オペラシティ",
+    "area": "東京",
+    "price": 3000,
+    "workIds": [
+      "mozart-1"
+    ],
+    "mood": "癒し"
+  },
+  {
+    "id": "demo-3",
+    "title": "ベートーヴェン 第九",
+    "date": "2026-12-20",
+    "venue": "横浜みなとみらいホール",
+    "area": "神奈川",
+    "price": 4500,
+    "workIds": [
+      "beethoven-1"
+    ],
+    "mood": "壮大"
+  }
+]
