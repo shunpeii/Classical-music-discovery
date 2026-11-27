@@ -1,8 +1,6 @@
-import type {ReactNode} from 'react';
-import type {Era,Concert} from '../types';
-type Props={eras:Era[];go:(r:string)=>void;setMood:(s:string)=>void;setEra:(s:string)=>void;cards:(items:Concert[])=>ReactNode;concerts:Concert[]};
-export function HomePage({eras,go,setMood,setEra,cards,concerts}:Props){return <>
-<section className="hero editorial"><div className="hero-copy"><small>THE ART OF LISTENING / 01</small><h1>音楽のある、<br/>休日を。</h1><p>名曲との出会いから、コンサートホールへ。</p><button onClick={()=>{setMood('');go('concerts')}}>公演を探す <span>↗</span></button></div><div className="record" aria-hidden="true"><div className="record-label">opus.<small>33⅓ RPM</small></div></div></section>
-<section className="home-section"><div className="section-kicker">01 / LIVE MUSIC</div><div className="line"><h2>これからの公演</h2><button className="link" onClick={()=>{setMood('');go('concerts')}}>すべて見る →</button></div>{cards([...concerts].sort((a,b)=>a.date.localeCompare(b.date)).slice(0,3))}</section>
-<section className="home-section"><div className="section-kicker">02 / EXPLORE</div><h2>今の気分から探す</h2><div className="mood-grid">{[...new Set(concerts.map(c=>c.mood))].filter(Boolean).map((m,i)=><button key={m} onClick={()=>{setMood(m);go('concerts')}}><small>0{i+1} / MOOD</small><strong>{m}</strong><span>↗</span></button>)}</div></section>
-<section className="home-section"><div className="section-kicker">03 / MUSIC HISTORY</div><div className="line"><h2>400年の音楽を旅する</h2><button className="link" onClick={()=>go('history')}>音楽史 →</button></div><div className="era-grid">{eras.map(e=><button key={e.id} onClick={()=>{setEra(e.id);go('history')}}><img src={import.meta.env.BASE_URL+'images/eras/'+e.id+'.svg'} alt=""/><strong>{e.name}</strong><small>{e.years}</small></button>)}</div></section></>;}
+import type {Era,Composer} from '../types';
+import {Portrait} from '../components/Portrait';
+type Props={eras:Era[];composers:Composer[];era:string;setEra:(s:string)=>void;go:(r:string)=>void;query:string;setQuery:(s:string)=>void};
+export function HomePage({eras,composers,era,setEra,go,query,setQuery}:Props){return <>
+<section className="welcome"><h1>はじめての<br/>クラシックコンサート</h1><p>有名な作曲家から、<br/>今聴けるコンサートを見つけよう</p><form onSubmit={e=>{e.preventDefault();go('concerts')}}><input aria-label="公演検索" placeholder="⌕ 作曲家・曲・会場で探す" value={query} onChange={e=>setQuery(e.target.value)}/></form></section>
+<section className="browse"><h2>時代から探す</h2><div className="eras">{eras.map(e=><button className={era===e.id?'active':''} key={e.id} onClick={()=>setEra(e.id)}>{e.name}<small>{e.years}</small></button>)}</div><h2>この時代の有名な作曲家</h2><div className="composer-grid">{composers.filter(c=>c.eraId===era).map(c=><button key={c.id} onClick={()=>go('composer/'+c.id)}><Portrait composer={c}/><strong>{c.name}</strong></button>)}</div><button className="link history-link" onClick={()=>go('history')}>この時代の歴史を知る ›</button></section></>;}
