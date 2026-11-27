@@ -246,5 +246,1478 @@
     "title": "歌劇「魔笛」",
     "compositionYear": 1791,
     "featured": true
+  },
+  {
+    "id": "bach-2",
+    "composerId": "bach",
+    "title": "ブランデンブルク協奏曲",
+    "guide": "独奏楽器の組み合わせが曲ごとに変わる",
+    "compositionYear": 1721,
+    "featured": true
+  },
+  {
+    "id": "bach-3",
+    "composerId": "bach",
+    "title": "平均律クラヴィーア曲集 第1巻",
+    "guide": "前奏曲とフーガの対比",
+    "compositionYear": 1722,
+    "featured": true
+  },
+  {
+    "id": "bach-4",
+    "composerId": "bach",
+    "title": "マタイ受難曲",
+    "guide": "独唱と二重合唱による劇的な展開",
+    "compositionYear": 1727,
+    "featured": true
+  },
+  {
+    "id": "bach-5",
+    "composerId": "bach",
+    "title": "ゴルトベルク変奏曲",
+    "guide": "低音の骨格を共有する多彩な変奏",
+    "compositionYear": 1741,
+    "featured": true
+  },
+  {
+    "id": "bach-6",
+    "composerId": "bach",
+    "title": "ミサ曲 ロ短調",
+    "guide": "多声的な合唱と独唱の対照",
+    "compositionYear": 1749,
+    "featured": false
+  },
+  {
+    "id": "vivaldi-2",
+    "composerId": "vivaldi",
+    "title": "調和の霊感",
+    "guide": "複数の独奏ヴァイオリンの掛け合い",
+    "compositionYear": 1711,
+    "featured": true
+  },
+  {
+    "id": "vivaldi-3",
+    "composerId": "vivaldi",
+    "title": "グローリア RV589",
+    "guide": "華やかな合唱と静かな独唱",
+    "featured": true
+  },
+  {
+    "id": "vivaldi-4",
+    "composerId": "vivaldi",
+    "title": "フルート協奏曲「夜」",
+    "guide": "暗い響きと急速な音型",
+    "featured": true
+  },
+  {
+    "id": "handel-2",
+    "composerId": "handel",
+    "title": "水上の音楽",
+    "guide": "管楽器の華やかな舞曲",
+    "compositionYear": 1717,
+    "featured": true
+  },
+  {
+    "id": "handel-3",
+    "composerId": "handel",
+    "title": "王宮の花火の音楽",
+    "guide": "祝祭的な金管と打楽器",
+    "compositionYear": 1749,
+    "featured": true
+  },
+  {
+    "id": "handel-4",
+    "composerId": "handel",
+    "title": "歌劇「ジュリアス・シーザー」",
+    "guide": "装飾豊かなアリア",
+    "compositionYear": 1724,
+    "featured": true
+  },
+  {
+    "id": "mozart-6",
+    "composerId": "mozart",
+    "title": "交響曲第25番",
+    "guide": "短調の切迫したリズム",
+    "compositionYear": 1773,
+    "featured": true
+  },
+  {
+    "id": "mozart-7",
+    "composerId": "mozart",
+    "title": "ピアノ協奏曲第20番",
+    "guide": "劇的な短調と独奏の対話",
+    "compositionYear": 1785,
+    "featured": false
+  },
+  {
+    "id": "mozart-8",
+    "composerId": "mozart",
+    "title": "ピアノ協奏曲第21番",
+    "guide": "第2楽章の穏やかな旋律",
+    "compositionYear": 1785,
+    "featured": false
+  },
+  {
+    "id": "mozart-9",
+    "composerId": "mozart",
+    "title": "アイネ・クライネ・ナハトムジーク",
+    "guide": "明快な弦楽の主題",
+    "compositionYear": 1787,
+    "featured": false
+  },
+  {
+    "id": "mozart-10",
+    "composerId": "mozart",
+    "title": "歌劇「ドン・ジョヴァンニ」",
+    "guide": "喜劇と悲劇が交錯する",
+    "compositionYear": 1787,
+    "featured": false
+  },
+  {
+    "id": "mozart-11",
+    "composerId": "mozart",
+    "title": "歌劇「フィガロの結婚」",
+    "guide": "重唱で人物の思惑が重なる",
+    "compositionYear": 1786,
+    "featured": false
+  },
+  {
+    "id": "mozart-12",
+    "composerId": "mozart",
+    "title": "クラリネット協奏曲",
+    "guide": "柔らかな低音域と歌う旋律",
+    "compositionYear": 1791,
+    "featured": false
+  },
+  {
+    "id": "beethoven-9",
+    "composerId": "beethoven",
+    "title": "ピアノ・ソナタ第8番「悲愴」",
+    "guide": "重い序奏と疾走する主部",
+    "compositionYear": 1798,
+    "featured": false
+  },
+  {
+    "id": "beethoven-10",
+    "composerId": "beethoven",
+    "title": "交響曲第1番",
+    "guide": "古典的形式と意外性",
+    "compositionYear": 1800,
+    "featured": false
+  },
+  {
+    "id": "beethoven-11",
+    "composerId": "beethoven",
+    "title": "交響曲第2番",
+    "guide": "活発な終楽章",
+    "compositionYear": 1802,
+    "featured": false
+  },
+  {
+    "id": "beethoven-12",
+    "composerId": "beethoven",
+    "title": "交響曲第4番",
+    "guide": "暗い序奏から明るい主部へ",
+    "compositionYear": 1806,
+    "featured": false
+  },
+  {
+    "id": "beethoven-13",
+    "composerId": "beethoven",
+    "title": "ヴァイオリン協奏曲",
+    "guide": "ティンパニの静かな連打から始まる",
+    "compositionYear": 1806,
+    "featured": false
+  },
+  {
+    "id": "beethoven-14",
+    "composerId": "beethoven",
+    "title": "交響曲第8番",
+    "guide": "短い動機とユーモア",
+    "compositionYear": 1812,
+    "featured": false
+  },
+  {
+    "id": "beethoven-15",
+    "composerId": "beethoven",
+    "title": "ミサ・ソレムニス",
+    "guide": "合唱の壮大な響き",
+    "compositionYear": 1823,
+    "featured": false
+  },
+  {
+    "id": "beethoven-16",
+    "composerId": "beethoven",
+    "title": "弦楽四重奏曲第14番",
+    "guide": "切れ目なく続く七つの楽章",
+    "compositionYear": 1826,
+    "featured": false
+  },
+  {
+    "id": "haydn-2",
+    "composerId": "haydn",
+    "title": "交響曲第104番「ロンドン」",
+    "guide": "民謡風の終楽章",
+    "compositionYear": 1795,
+    "featured": true
+  },
+  {
+    "id": "haydn-3",
+    "composerId": "haydn",
+    "title": "オラトリオ「天地創造」",
+    "guide": "混沌から光へ向かう描写",
+    "compositionYear": 1798,
+    "featured": true
+  },
+  {
+    "id": "haydn-4",
+    "composerId": "haydn",
+    "title": "弦楽四重奏曲「皇帝」",
+    "guide": "第2楽章の変奏",
+    "compositionYear": 1797,
+    "featured": true
+  },
+  {
+    "id": "haydn-5",
+    "composerId": "haydn",
+    "title": "交響曲第101番「時計」",
+    "guide": "時計を思わせる伴奏",
+    "compositionYear": 1794,
+    "featured": true
+  },
+  {
+    "id": "chopin-2",
+    "composerId": "chopin",
+    "title": "ピアノ協奏曲第2番",
+    "guide": "歌うような緩徐楽章",
+    "compositionYear": 1829,
+    "featured": true
+  },
+  {
+    "id": "chopin-3",
+    "composerId": "chopin",
+    "title": "ピアノ協奏曲第1番",
+    "guide": "華麗な独奏と抒情的旋律",
+    "compositionYear": 1830,
+    "featured": true
+  },
+  {
+    "id": "chopin-4",
+    "composerId": "chopin",
+    "title": "バラード第1番",
+    "guide": "物語のような主題の変容",
+    "compositionYear": 1835,
+    "featured": true
+  },
+  {
+    "id": "chopin-5",
+    "composerId": "chopin",
+    "title": "24の前奏曲 Op.28",
+    "guide": "短い曲に凝縮された多様な情景",
+    "compositionYear": 1839,
+    "featured": true
+  },
+  {
+    "id": "chopin-6",
+    "composerId": "chopin",
+    "title": "ピアノ・ソナタ第2番「葬送」",
+    "guide": "行進曲と不穏な終楽章",
+    "compositionYear": 1839,
+    "featured": false
+  },
+  {
+    "id": "chopin-7",
+    "composerId": "chopin",
+    "title": "ポロネーズ第6番「英雄」",
+    "guide": "力強い舞曲のリズム",
+    "compositionYear": 1842,
+    "featured": false
+  },
+  {
+    "id": "chopin-8",
+    "composerId": "chopin",
+    "title": "バラード第4番",
+    "guide": "旋律が複雑な対位法へ発展",
+    "compositionYear": 1842,
+    "featured": false
+  },
+  {
+    "id": "chopin-9",
+    "composerId": "chopin",
+    "title": "ピアノ・ソナタ第3番",
+    "guide": "歌う緩徐楽章と華麗な終曲",
+    "compositionYear": 1844,
+    "featured": false
+  },
+  {
+    "id": "tchaikovsky-2",
+    "composerId": "tchaikovsky",
+    "title": "ピアノ協奏曲第1番",
+    "guide": "冒頭の雄大な和音",
+    "compositionYear": 1875,
+    "featured": true
+  },
+  {
+    "id": "tchaikovsky-3",
+    "composerId": "tchaikovsky",
+    "title": "白鳥の湖",
+    "guide": "悲劇的な旋律と舞曲",
+    "compositionYear": 1876,
+    "featured": true
+  },
+  {
+    "id": "tchaikovsky-4",
+    "composerId": "tchaikovsky",
+    "title": "ヴァイオリン協奏曲",
+    "guide": "独奏の技巧と民俗舞曲風の終楽章",
+    "compositionYear": 1878,
+    "featured": true
+  },
+  {
+    "id": "tchaikovsky-5",
+    "composerId": "tchaikovsky",
+    "title": "交響曲第4番",
+    "guide": "金管の運命の動機",
+    "compositionYear": 1878,
+    "featured": true
+  },
+  {
+    "id": "tchaikovsky-6",
+    "composerId": "tchaikovsky",
+    "title": "序曲「1812年」",
+    "guide": "対照的な主題による劇的な展開",
+    "compositionYear": 1880,
+    "featured": false
+  },
+  {
+    "id": "tchaikovsky-7",
+    "composerId": "tchaikovsky",
+    "title": "眠れる森の美女",
+    "guide": "優雅なワルツ",
+    "compositionYear": 1889,
+    "featured": false
+  },
+  {
+    "id": "tchaikovsky-8",
+    "composerId": "tchaikovsky",
+    "title": "くるみ割り人形",
+    "guide": "チェレスタの独特な音色",
+    "compositionYear": 1892,
+    "featured": false
+  },
+  {
+    "id": "tchaikovsky-9",
+    "composerId": "tchaikovsky",
+    "title": "交響曲第6番「悲愴」",
+    "guide": "静かに消える終楽章",
+    "compositionYear": 1893,
+    "featured": false
+  },
+  {
+    "id": "brahms-2",
+    "composerId": "brahms",
+    "title": "交響曲第2番",
+    "guide": "牧歌的な旋律",
+    "compositionYear": 1877,
+    "featured": true
+  },
+  {
+    "id": "brahms-3",
+    "composerId": "brahms",
+    "title": "ヴァイオリン協奏曲",
+    "guide": "独奏とオーボエの対話",
+    "compositionYear": 1878,
+    "featured": true
+  },
+  {
+    "id": "brahms-4",
+    "composerId": "brahms",
+    "title": "ピアノ協奏曲第2番",
+    "guide": "ホルンとピアノの冒頭",
+    "compositionYear": 1881,
+    "featured": true
+  },
+  {
+    "id": "brahms-5",
+    "composerId": "brahms",
+    "title": "交響曲第3番",
+    "guide": "第3楽章の憂いある旋律",
+    "compositionYear": 1883,
+    "featured": true
+  },
+  {
+    "id": "brahms-6",
+    "composerId": "brahms",
+    "title": "交響曲第4番",
+    "guide": "終楽章の変奏形式",
+    "compositionYear": 1885,
+    "featured": false
+  },
+  {
+    "id": "brahms-7",
+    "composerId": "brahms",
+    "title": "ドイツ・レクイエム",
+    "guide": "慰めを中心とした合唱",
+    "compositionYear": 1868,
+    "featured": false
+  },
+  {
+    "id": "debussy-2",
+    "composerId": "debussy",
+    "title": "牧神の午後への前奏曲",
+    "guide": "フルートの自由な旋律",
+    "compositionYear": 1894,
+    "featured": true
+  },
+  {
+    "id": "debussy-3",
+    "composerId": "debussy",
+    "title": "海",
+    "guide": "波を思わせる管弦楽の色彩",
+    "compositionYear": 1905,
+    "featured": true
+  },
+  {
+    "id": "debussy-4",
+    "composerId": "debussy",
+    "title": "歌劇「ペレアスとメリザンド」",
+    "guide": "言葉に寄り添う歌唱",
+    "compositionYear": 1902,
+    "featured": true
+  },
+  {
+    "id": "debussy-5",
+    "composerId": "debussy",
+    "title": "前奏曲集 第1巻",
+    "guide": "多彩な音色と情景",
+    "compositionYear": 1910,
+    "featured": true
+  },
+  {
+    "id": "ravel-2",
+    "composerId": "ravel",
+    "title": "ダフニスとクロエ",
+    "guide": "夜明けの管弦楽の広がり",
+    "compositionYear": 1912,
+    "featured": true
+  },
+  {
+    "id": "ravel-3",
+    "composerId": "ravel",
+    "title": "夜のガスパール",
+    "guide": "水や幻想を描くピアノの技巧",
+    "compositionYear": 1908,
+    "featured": true
+  },
+  {
+    "id": "ravel-4",
+    "composerId": "ravel",
+    "title": "マ・メール・ロワ（管弦楽版）",
+    "guide": "童話を思わせる繊細な音色",
+    "compositionYear": 1911,
+    "featured": true
+  },
+  {
+    "id": "ravel-5",
+    "composerId": "ravel",
+    "title": "ピアノ協奏曲 ト長調",
+    "guide": "ジャズ風のリズムと静かな旋律",
+    "compositionYear": 1931,
+    "featured": true
+  },
+  {
+    "id": "stravinsky-2",
+    "composerId": "stravinsky",
+    "title": "火の鳥",
+    "guide": "幻想的な管弦楽と終曲",
+    "compositionYear": 1910,
+    "featured": true
+  },
+  {
+    "id": "stravinsky-3",
+    "composerId": "stravinsky",
+    "title": "ペトルーシュカ",
+    "guide": "重なる調性と舞曲",
+    "compositionYear": 1911,
+    "featured": true
+  },
+  {
+    "id": "stravinsky-4",
+    "composerId": "stravinsky",
+    "title": "詩篇交響曲",
+    "guide": "合唱と独特の楽器編成",
+    "compositionYear": 1930,
+    "featured": true
+  },
+  {
+    "id": "schubert-2",
+    "composerId": "schubert",
+    "title": "魔王",
+    "guide": "ピアノの連打と四役の歌唱",
+    "compositionYear": 1815,
+    "featured": true
+  },
+  {
+    "id": "schubert-3",
+    "composerId": "schubert",
+    "title": "ピアノ五重奏曲「ます」",
+    "guide": "歌曲の旋律による変奏",
+    "compositionYear": 1819,
+    "featured": true
+  },
+  {
+    "id": "schubert-4",
+    "composerId": "schubert",
+    "title": "冬の旅",
+    "guide": "旅人の孤独を描く歌曲",
+    "compositionYear": 1827,
+    "featured": true
+  },
+  {
+    "id": "schubert-5",
+    "composerId": "schubert",
+    "title": "弦楽五重奏曲",
+    "guide": "二本のチェロによる厚い響き",
+    "compositionYear": 1828,
+    "featured": true
+  },
+  {
+    "id": "schubert-6",
+    "composerId": "schubert",
+    "title": "交響曲第9番「グレート」",
+    "guide": "長い旋律と推進力",
+    "compositionYear": 1826,
+    "featured": false
+  },
+  {
+    "id": "schumann-2",
+    "composerId": "schumann",
+    "title": "子供の情景",
+    "guide": "短い曲が描く記憶",
+    "compositionYear": 1838,
+    "featured": true
+  },
+  {
+    "id": "schumann-3",
+    "composerId": "schumann",
+    "title": "詩人の恋",
+    "guide": "歌とピアノの後奏",
+    "compositionYear": 1840,
+    "featured": true
+  },
+  {
+    "id": "schumann-4",
+    "composerId": "schumann",
+    "title": "交響曲第1番「春」",
+    "guide": "祝祭的な金管",
+    "compositionYear": 1841,
+    "featured": true
+  },
+  {
+    "id": "schumann-5",
+    "composerId": "schumann",
+    "title": "交響曲第3番「ライン」",
+    "guide": "雄大な主題と荘厳な楽章",
+    "compositionYear": 1850,
+    "featured": true
+  },
+  {
+    "id": "liszt-2",
+    "composerId": "liszt",
+    "title": "交響詩「前奏曲」",
+    "guide": "主題が異なる情景へ変化",
+    "compositionYear": 1854,
+    "featured": true
+  },
+  {
+    "id": "liszt-3",
+    "composerId": "liszt",
+    "title": "ピアノ・ソナタ ロ短調",
+    "guide": "一つの楽章に統合された構成",
+    "compositionYear": 1853,
+    "featured": true
+  },
+  {
+    "id": "liszt-4",
+    "composerId": "liszt",
+    "title": "ハンガリー狂詩曲第2番",
+    "guide": "緩やかな導入と速い舞曲",
+    "compositionYear": 1851,
+    "featured": true
+  },
+  {
+    "id": "mahler-2",
+    "composerId": "mahler",
+    "title": "交響曲第1番「巨人」",
+    "guide": "自然の響きと葬送行進曲",
+    "compositionYear": 1888,
+    "featured": true
+  },
+  {
+    "id": "mahler-3",
+    "composerId": "mahler",
+    "title": "交響曲第2番「復活」",
+    "guide": "終楽章の合唱",
+    "compositionYear": 1894,
+    "featured": true
+  },
+  {
+    "id": "mahler-4",
+    "composerId": "mahler",
+    "title": "交響曲第4番",
+    "guide": "素朴な歌による終楽章",
+    "compositionYear": 1900,
+    "featured": true
+  },
+  {
+    "id": "mahler-5",
+    "composerId": "mahler",
+    "title": "交響曲第8番",
+    "guide": "大規模な合唱と管弦楽",
+    "compositionYear": 1906,
+    "featured": true
+  },
+  {
+    "id": "mahler-6",
+    "composerId": "mahler",
+    "title": "交響曲第9番",
+    "guide": "静かにほどける終楽章",
+    "compositionYear": 1909,
+    "featured": false
+  },
+  {
+    "id": "dvorak-2",
+    "composerId": "dvorak",
+    "title": "スラヴ舞曲 第1集（管弦楽版）",
+    "guide": "民俗舞曲風のリズム",
+    "compositionYear": 1878,
+    "featured": true
+  },
+  {
+    "id": "dvorak-3",
+    "composerId": "dvorak",
+    "title": "交響曲第8番",
+    "guide": "鳥の声を思わせるフルート",
+    "compositionYear": 1889,
+    "featured": true
+  },
+  {
+    "id": "dvorak-4",
+    "composerId": "dvorak",
+    "title": "弦楽四重奏曲第12番「アメリカ」",
+    "guide": "五音音階風の旋律",
+    "compositionYear": 1893,
+    "featured": true
+  },
+  {
+    "id": "dvorak-5",
+    "composerId": "dvorak",
+    "title": "チェロ協奏曲",
+    "guide": "独奏と管弦楽の豊かな対話",
+    "compositionYear": 1895,
+    "featured": true
+  },
+  {
+    "id": "mendelssohn-2",
+    "composerId": "mendelssohn",
+    "title": "交響曲第4番「イタリア」",
+    "guide": "明快なリズムと舞曲",
+    "compositionYear": 1833,
+    "featured": true
+  },
+  {
+    "id": "mendelssohn-3",
+    "composerId": "mendelssohn",
+    "title": "交響曲第3番「スコットランド」",
+    "guide": "霧を思わせる序奏",
+    "compositionYear": 1842,
+    "featured": true
+  },
+  {
+    "id": "mendelssohn-4",
+    "composerId": "mendelssohn",
+    "title": "劇音楽「真夏の夜の夢」",
+    "guide": "妖精の軽やかな音型",
+    "compositionYear": 1843,
+    "featured": true
+  },
+  {
+    "id": "shostakovich-2",
+    "composerId": "shostakovich",
+    "title": "交響曲第1番",
+    "guide": "皮肉と機知に富む響き",
+    "compositionYear": 1925,
+    "featured": true
+  },
+  {
+    "id": "shostakovich-3",
+    "composerId": "shostakovich",
+    "title": "交響曲第7番「レニングラード」",
+    "guide": "反復による緊張の増大",
+    "compositionYear": 1941,
+    "featured": true
+  },
+  {
+    "id": "shostakovich-4",
+    "composerId": "shostakovich",
+    "title": "交響曲第10番",
+    "guide": "作曲家の音名動機",
+    "compositionYear": 1953,
+    "featured": true
+  },
+  {
+    "id": "shostakovich-5",
+    "composerId": "shostakovich",
+    "title": "弦楽四重奏曲第8番",
+    "guide": "DSCH動機の反復",
+    "compositionYear": 1960,
+    "featured": true
+  },
+  {
+    "id": "prokofiev-2",
+    "composerId": "prokofiev",
+    "title": "交響曲第1番「古典」",
+    "guide": "古典形式と現代的な和声",
+    "compositionYear": 1917,
+    "featured": true
+  },
+  {
+    "id": "prokofiev-3",
+    "composerId": "prokofiev",
+    "title": "ピアノ協奏曲第3番",
+    "guide": "鋭いリズムと技巧",
+    "compositionYear": 1921,
+    "featured": true
+  },
+  {
+    "id": "prokofiev-4",
+    "composerId": "prokofiev",
+    "title": "ピーターと狼",
+    "guide": "楽器が登場人物を表す",
+    "compositionYear": 1936,
+    "featured": true
+  },
+  {
+    "id": "prokofiev-5",
+    "composerId": "prokofiev",
+    "title": "交響曲第5番",
+    "guide": "大きな旋律と機械的リズム",
+    "compositionYear": 1944,
+    "featured": true
+  },
+  {
+    "id": "monteverdi-1",
+    "composerId": "monteverdi",
+    "title": "歌劇「オルフェオ」",
+    "guide": "歌と器楽による物語",
+    "compositionYear": 1607,
+    "featured": true
+  },
+  {
+    "id": "monteverdi-2",
+    "composerId": "monteverdi",
+    "title": "聖母マリアの夕べの祈り",
+    "guide": "独唱と合唱の多彩な響き",
+    "compositionYear": 1610,
+    "featured": true
+  },
+  {
+    "id": "monteverdi-3",
+    "composerId": "monteverdi",
+    "title": "歌劇「ポッペアの戴冠」",
+    "guide": "人物の感情を描く歌",
+    "compositionYear": 1643,
+    "featured": true
+  },
+  {
+    "id": "corelli-1",
+    "composerId": "corelli",
+    "title": "合奏協奏曲第8番「クリスマス協奏曲」",
+    "guide": "独奏群と合奏の対比",
+    "featured": true
+  },
+  {
+    "id": "corelli-2",
+    "composerId": "corelli",
+    "title": "ヴァイオリン・ソナタ第12番「ラ・フォリア」",
+    "guide": "反復低音と変奏",
+    "featured": true
+  },
+  {
+    "id": "purcell-1",
+    "composerId": "purcell",
+    "title": "劇音楽「妖精の女王」",
+    "guide": "舞曲と歌の交替",
+    "compositionYear": 1692,
+    "featured": true
+  },
+  {
+    "id": "purcell-2",
+    "composerId": "purcell",
+    "title": "歌劇「ディドとエネアス」",
+    "guide": "反復低音による嘆き",
+    "featured": true
+  },
+  {
+    "id": "pachelbel-1",
+    "composerId": "pachelbel",
+    "title": "カノン ニ長調",
+    "guide": "三つの声部が追いかけ合う",
+    "featured": true
+  },
+  {
+    "id": "pachelbel-2",
+    "composerId": "pachelbel",
+    "title": "シャコンヌ ヘ短調",
+    "guide": "反復低音と変奏",
+    "featured": true
+  },
+  {
+    "id": "telemann-1",
+    "composerId": "telemann",
+    "title": "ヴィオラ協奏曲 ト長調",
+    "guide": "柔らかな独奏の響き",
+    "featured": true
+  },
+  {
+    "id": "telemann-2",
+    "composerId": "telemann",
+    "title": "ターフェルムジーク",
+    "guide": "多彩な器楽編成",
+    "featured": true
+  },
+  {
+    "id": "rameau-1",
+    "composerId": "rameau",
+    "title": "歌劇「イポリートとアリシー」",
+    "guide": "舞曲と劇的な合唱",
+    "compositionYear": 1733,
+    "featured": true
+  },
+  {
+    "id": "rameau-2",
+    "composerId": "rameau",
+    "title": "優雅なインドの国々",
+    "guide": "華やかな舞曲",
+    "compositionYear": 1735,
+    "featured": true
+  },
+  {
+    "id": "scarlatti-1",
+    "composerId": "scarlatti",
+    "title": "ソナタ K.141",
+    "guide": "反復音の鮮やかな技巧",
+    "featured": true
+  },
+  {
+    "id": "scarlatti-2",
+    "composerId": "scarlatti",
+    "title": "ソナタ K.380",
+    "guide": "行進曲風のリズム",
+    "featured": true
+  },
+  {
+    "id": "couperin-1",
+    "composerId": "couperin",
+    "title": "神秘的な障壁",
+    "guide": "重なり合う鍵盤の音型",
+    "featured": true
+  },
+  {
+    "id": "couperin-2",
+    "composerId": "couperin",
+    "title": "ティク・トク・ショク",
+    "guide": "軽快な反復音",
+    "featured": true
+  },
+  {
+    "id": "gluck-1",
+    "composerId": "gluck",
+    "title": "歌劇「オルフェオとエウリディーチェ」",
+    "guide": "素直な歌と劇的な合唱",
+    "compositionYear": 1762,
+    "featured": true
+  },
+  {
+    "id": "gluck-2",
+    "composerId": "gluck",
+    "title": "歌劇「トーリードのイフィジェニー」",
+    "guide": "音楽による緊迫したドラマ",
+    "compositionYear": 1779,
+    "featured": true
+  },
+  {
+    "id": "cpebach-1",
+    "composerId": "cpebach",
+    "title": "交響曲 Wq.182",
+    "guide": "急な強弱と感情の変化",
+    "compositionYear": 1773,
+    "featured": true
+  },
+  {
+    "id": "cpebach-2",
+    "composerId": "cpebach",
+    "title": "フルート協奏曲 ニ短調 Wq.22",
+    "guide": "独奏の表情豊かな旋律",
+    "compositionYear": 1747,
+    "featured": true
+  },
+  {
+    "id": "boccherini-1",
+    "composerId": "boccherini",
+    "title": "弦楽五重奏曲 Op.11-5",
+    "guide": "優雅なメヌエット",
+    "compositionYear": 1771,
+    "featured": true
+  },
+  {
+    "id": "boccherini-2",
+    "composerId": "boccherini",
+    "title": "マドリードの夜の音楽",
+    "guide": "街の音を模した弦楽",
+    "compositionYear": 1780,
+    "featured": true
+  },
+  {
+    "id": "clementi-1",
+    "composerId": "clementi",
+    "title": "ピアノ・ソナタ Op.40-2",
+    "guide": "劇的な鍵盤の響き",
+    "featured": true
+  },
+  {
+    "id": "clementi-2",
+    "composerId": "clementi",
+    "title": "ソナチネ Op.36",
+    "guide": "明快な形式と軽快な音型",
+    "featured": true
+  },
+  {
+    "id": "hummel-1",
+    "composerId": "hummel",
+    "title": "トランペット協奏曲",
+    "guide": "独奏の歌と技巧",
+    "compositionYear": 1803,
+    "featured": true
+  },
+  {
+    "id": "hummel-2",
+    "composerId": "hummel",
+    "title": "ピアノ協奏曲第2番 イ短調",
+    "guide": "華麗な独奏",
+    "compositionYear": 1816,
+    "featured": true
+  },
+  {
+    "id": "rossini-1",
+    "composerId": "rossini",
+    "title": "セビリアの理髪師",
+    "guide": "軽快な歌とクレッシェンド",
+    "compositionYear": 1816,
+    "featured": true
+  },
+  {
+    "id": "rossini-2",
+    "composerId": "rossini",
+    "title": "ウィリアム・テル",
+    "guide": "序曲の躍動する終結",
+    "compositionYear": 1829,
+    "featured": true
+  },
+  {
+    "id": "berlioz-1",
+    "composerId": "berlioz",
+    "title": "幻想交響曲",
+    "guide": "固定楽想が各楽章で変化",
+    "compositionYear": 1830,
+    "featured": true
+  },
+  {
+    "id": "berlioz-2",
+    "composerId": "berlioz",
+    "title": "イタリアのハロルド",
+    "guide": "独奏ヴィオラと管弦楽",
+    "compositionYear": 1834,
+    "featured": true
+  },
+  {
+    "id": "wagner-1",
+    "composerId": "wagner",
+    "title": "タンホイザー",
+    "guide": "序曲の巡礼の合唱",
+    "compositionYear": 1845,
+    "featured": true
+  },
+  {
+    "id": "wagner-2",
+    "composerId": "wagner",
+    "title": "トリスタンとイゾルデ",
+    "guide": "解決を引き延ばす和声",
+    "compositionYear": 1859,
+    "featured": true
+  },
+  {
+    "id": "wagner-3",
+    "composerId": "wagner",
+    "title": "ニーベルングの指環",
+    "guide": "人物や観念を表す動機",
+    "compositionYear": 1874,
+    "featured": true
+  },
+  {
+    "id": "verdi-1",
+    "composerId": "verdi",
+    "title": "椿姫",
+    "guide": "歌が伝える人物の感情",
+    "compositionYear": 1853,
+    "featured": true
+  },
+  {
+    "id": "verdi-2",
+    "composerId": "verdi",
+    "title": "アイーダ",
+    "guide": "行進曲と劇的な重唱",
+    "compositionYear": 1871,
+    "featured": true
+  },
+  {
+    "id": "verdi-3",
+    "composerId": "verdi",
+    "title": "レクイエム",
+    "guide": "怒りの日の強烈な響き",
+    "compositionYear": 1874,
+    "featured": true
+  },
+  {
+    "id": "bizet-1",
+    "composerId": "bizet",
+    "title": "交響曲 ハ長調",
+    "guide": "明快な旋律とオーボエ独奏",
+    "compositionYear": 1855,
+    "featured": true
+  },
+  {
+    "id": "bizet-2",
+    "composerId": "bizet",
+    "title": "カルメン",
+    "guide": "舞曲のリズムと歌",
+    "compositionYear": 1874,
+    "featured": true
+  },
+  {
+    "id": "saintsaens-1",
+    "composerId": "saintsaens",
+    "title": "死の舞踏",
+    "guide": "木琴による骸骨の描写",
+    "compositionYear": 1874,
+    "featured": true
+  },
+  {
+    "id": "saintsaens-2",
+    "composerId": "saintsaens",
+    "title": "動物の謝肉祭",
+    "guide": "楽器による動物の描写",
+    "compositionYear": 1886,
+    "featured": true
+  },
+  {
+    "id": "saintsaens-3",
+    "composerId": "saintsaens",
+    "title": "交響曲第3番「オルガン付き」",
+    "guide": "オルガンが加わる壮大な終結",
+    "compositionYear": 1886,
+    "featured": true
+  },
+  {
+    "id": "grieg-1",
+    "composerId": "grieg",
+    "title": "ピアノ協奏曲",
+    "guide": "独奏の印象的な冒頭",
+    "compositionYear": 1868,
+    "featured": true
+  },
+  {
+    "id": "grieg-2",
+    "composerId": "grieg",
+    "title": "劇音楽「ペール・ギュント」",
+    "guide": "情景を描く旋律",
+    "compositionYear": 1875,
+    "featured": true
+  },
+  {
+    "id": "smetana-1",
+    "composerId": "smetana",
+    "title": "連作交響詩「わが祖国」",
+    "guide": "川や歴史を描く主題",
+    "compositionYear": 1879,
+    "featured": true
+  },
+  {
+    "id": "smetana-2",
+    "composerId": "smetana",
+    "title": "弦楽四重奏曲第1番「わが生涯より」",
+    "guide": "自伝的な音楽表現",
+    "compositionYear": 1876,
+    "featured": true
+  },
+  {
+    "id": "mussorgsky-1",
+    "composerId": "mussorgsky",
+    "title": "展覧会の絵",
+    "guide": "絵の間を歩く主題",
+    "compositionYear": 1874,
+    "featured": true
+  },
+  {
+    "id": "mussorgsky-2",
+    "composerId": "mussorgsky",
+    "title": "禿山の一夜（原典版）",
+    "guide": "激しい管弦楽の響き",
+    "compositionYear": 1867,
+    "featured": true
+  },
+  {
+    "id": "rimsky-1",
+    "composerId": "rimsky",
+    "title": "シェヘラザード",
+    "guide": "独奏ヴァイオリンと物語",
+    "compositionYear": 1888,
+    "featured": true
+  },
+  {
+    "id": "rimsky-2",
+    "composerId": "rimsky",
+    "title": "スペイン奇想曲",
+    "guide": "鮮やかな管弦楽の技巧",
+    "compositionYear": 1887,
+    "featured": true
+  },
+  {
+    "id": "faure-1",
+    "composerId": "faure",
+    "title": "ピアノ四重奏曲第2番",
+    "guide": "流れる旋律と和声",
+    "compositionYear": 1887,
+    "featured": true
+  },
+  {
+    "id": "faure-2",
+    "composerId": "faure",
+    "title": "レクイエム（1893年版）",
+    "guide": "静かな祈りの響き",
+    "compositionYear": 1893,
+    "featured": true
+  },
+  {
+    "id": "bruckner-1",
+    "composerId": "bruckner",
+    "title": "交響曲第7番",
+    "guide": "長い旋律と金管の響き",
+    "compositionYear": 1883,
+    "featured": true
+  },
+  {
+    "id": "bruckner-2",
+    "composerId": "bruckner",
+    "title": "交響曲第8番（改訂版）",
+    "guide": "巨大な構成と静寂",
+    "compositionYear": 1890,
+    "featured": true
+  },
+  {
+    "id": "franck-1",
+    "composerId": "franck",
+    "title": "ヴァイオリン・ソナタ イ長調",
+    "guide": "主題が楽章を越えて回帰",
+    "compositionYear": 1886,
+    "featured": true
+  },
+  {
+    "id": "franck-2",
+    "composerId": "franck",
+    "title": "交響曲 ニ短調",
+    "guide": "循環主題による統一",
+    "compositionYear": 1888,
+    "featured": true
+  },
+  {
+    "id": "puccini-1",
+    "composerId": "puccini",
+    "title": "ラ・ボエーム",
+    "guide": "日常と抒情的な歌",
+    "compositionYear": 1895,
+    "featured": true
+  },
+  {
+    "id": "puccini-2",
+    "composerId": "puccini",
+    "title": "トスカ",
+    "guide": "劇的な動機とアリア",
+    "compositionYear": 1900,
+    "featured": true
+  },
+  {
+    "id": "puccini-3",
+    "composerId": "puccini",
+    "title": "蝶々夫人",
+    "guide": "異なる音楽文化を表す旋律",
+    "compositionYear": 1904,
+    "featured": true
+  },
+  {
+    "id": "jstrauss-1",
+    "composerId": "jstrauss",
+    "title": "美しく青きドナウ",
+    "guide": "優雅なワルツの流れ",
+    "compositionYear": 1867,
+    "featured": true
+  },
+  {
+    "id": "jstrauss-2",
+    "composerId": "jstrauss",
+    "title": "こうもり",
+    "guide": "軽快な序曲と歌",
+    "compositionYear": 1874,
+    "featured": true
+  },
+  {
+    "id": "rachmaninoff-1",
+    "composerId": "rachmaninoff",
+    "title": "ピアノ協奏曲第2番",
+    "guide": "鐘のような和音と長い旋律",
+    "compositionYear": 1901,
+    "featured": true
+  },
+  {
+    "id": "rachmaninoff-2",
+    "composerId": "rachmaninoff",
+    "title": "ピアノ協奏曲第3番",
+    "guide": "独奏の技巧と歌う主題",
+    "compositionYear": 1909,
+    "featured": true
+  },
+  {
+    "id": "rachmaninoff-3",
+    "composerId": "rachmaninoff",
+    "title": "交響曲第2番",
+    "guide": "緩徐楽章の豊かな旋律",
+    "compositionYear": 1907,
+    "featured": true
+  },
+  {
+    "id": "rachmaninoff-4",
+    "composerId": "rachmaninoff",
+    "title": "パガニーニの主題による狂詩曲",
+    "guide": "主題の反転による第18変奏",
+    "compositionYear": 1934,
+    "featured": true
+  },
+  {
+    "id": "sibelius-1",
+    "composerId": "sibelius",
+    "title": "フィンランディア",
+    "guide": "金管と賛歌風の旋律",
+    "compositionYear": 1899,
+    "featured": true
+  },
+  {
+    "id": "sibelius-2",
+    "composerId": "sibelius",
+    "title": "ヴァイオリン協奏曲（改訂版）",
+    "guide": "冷たい響きと独奏の技巧",
+    "compositionYear": 1905,
+    "featured": true
+  },
+  {
+    "id": "sibelius-3",
+    "composerId": "sibelius",
+    "title": "交響曲第2番",
+    "guide": "断片から大きな主題へ",
+    "compositionYear": 1902,
+    "featured": true
+  },
+  {
+    "id": "rstrauss-1",
+    "composerId": "rstrauss",
+    "title": "ツァラトゥストラはかく語りき",
+    "guide": "冒頭の壮麗な金管",
+    "compositionYear": 1896,
+    "featured": true
+  },
+  {
+    "id": "rstrauss-2",
+    "composerId": "rstrauss",
+    "title": "ドン・ファン",
+    "guide": "勢いのある管弦楽",
+    "compositionYear": 1889,
+    "featured": true
+  },
+  {
+    "id": "rstrauss-3",
+    "composerId": "rstrauss",
+    "title": "アルプス交響曲",
+    "guide": "山の一日を描く音色",
+    "compositionYear": 1915,
+    "featured": true
+  },
+  {
+    "id": "satie-1",
+    "composerId": "satie",
+    "title": "ジムノペディ",
+    "guide": "簡素な伴奏と静かな旋律",
+    "compositionYear": 1888,
+    "featured": true
+  },
+  {
+    "id": "satie-2",
+    "composerId": "satie",
+    "title": "グノシエンヌ第1番",
+    "guide": "自由な拍節と反復",
+    "compositionYear": 1890,
+    "featured": true
+  },
+  {
+    "id": "holst-1",
+    "composerId": "holst",
+    "title": "組曲「惑星」",
+    "guide": "楽章ごとに異なるリズムと音色",
+    "compositionYear": 1916,
+    "featured": true
+  },
+  {
+    "id": "holst-2",
+    "composerId": "holst",
+    "title": "吹奏楽のための第1組曲",
+    "guide": "主題の変奏と舞曲",
+    "compositionYear": 1909,
+    "featured": true
+  },
+  {
+    "id": "elgar-1",
+    "composerId": "elgar",
+    "title": "エニグマ変奏曲",
+    "guide": "人物を描き分ける変奏",
+    "compositionYear": 1899,
+    "featured": true
+  },
+  {
+    "id": "elgar-2",
+    "composerId": "elgar",
+    "title": "チェロ協奏曲",
+    "guide": "独奏の内省的な旋律",
+    "compositionYear": 1919,
+    "featured": true
+  },
+  {
+    "id": "bartok-1",
+    "composerId": "bartok",
+    "title": "管弦楽のための協奏曲",
+    "guide": "各楽器群の技巧",
+    "compositionYear": 1943,
+    "featured": true
+  },
+  {
+    "id": "bartok-2",
+    "composerId": "bartok",
+    "title": "弦楽器、打楽器とチェレスタのための音楽",
+    "guide": "対称的な構成と夜の響き",
+    "compositionYear": 1936,
+    "featured": true
+  },
+  {
+    "id": "schoenberg-1",
+    "composerId": "schoenberg",
+    "title": "浄められた夜",
+    "guide": "濃密な弦楽の和声",
+    "compositionYear": 1899,
+    "featured": true
+  },
+  {
+    "id": "schoenberg-2",
+    "composerId": "schoenberg",
+    "title": "月に憑かれたピエロ",
+    "guide": "語るような歌唱と室内楽",
+    "compositionYear": 1912,
+    "featured": true
+  },
+  {
+    "id": "gershwin-1",
+    "composerId": "gershwin",
+    "title": "ラプソディ・イン・ブルー",
+    "guide": "ジャズと管弦楽の融合",
+    "compositionYear": 1924,
+    "featured": true
+  },
+  {
+    "id": "gershwin-2",
+    "composerId": "gershwin",
+    "title": "パリのアメリカ人",
+    "guide": "街の雑踏を描く音色",
+    "compositionYear": 1928,
+    "featured": true
+  },
+  {
+    "id": "copland-1",
+    "composerId": "copland",
+    "title": "アパラチアの春",
+    "guide": "透明な響きと民謡の変奏",
+    "compositionYear": 1944,
+    "featured": true
+  },
+  {
+    "id": "copland-2",
+    "composerId": "copland",
+    "title": "市民のためのファンファーレ",
+    "guide": "金管と打楽器の力強さ",
+    "compositionYear": 1942,
+    "featured": true
+  },
+  {
+    "id": "britten-1",
+    "composerId": "britten",
+    "title": "青少年のための管弦楽入門",
+    "guide": "各楽器の音色とフーガ",
+    "compositionYear": 1946,
+    "featured": true
+  },
+  {
+    "id": "britten-2",
+    "composerId": "britten",
+    "title": "戦争レクイエム",
+    "guide": "異なる合唱・楽器群の対比",
+    "compositionYear": 1962,
+    "featured": true
+  },
+  {
+    "id": "messiaen-1",
+    "composerId": "messiaen",
+    "title": "世の終わりのための四重奏曲",
+    "guide": "時間感覚を変えるリズム",
+    "compositionYear": 1941,
+    "featured": true
+  },
+  {
+    "id": "messiaen-2",
+    "composerId": "messiaen",
+    "title": "トゥーランガリラ交響曲",
+    "guide": "オンド・マルトノと豊かな和音",
+    "compositionYear": 1948,
+    "featured": true
+  },
+  {
+    "id": "takemitsu-1",
+    "composerId": "takemitsu",
+    "title": "弦楽のためのレクイエム",
+    "guide": "静寂と弦の重なり",
+    "compositionYear": 1957,
+    "featured": true
+  },
+  {
+    "id": "takemitsu-2",
+    "composerId": "takemitsu",
+    "title": "ノヴェンバー・ステップス",
+    "guide": "琵琶・尺八と管弦楽の対話",
+    "compositionYear": 1967,
+    "featured": true
   }
 ]
