@@ -1,0 +1,4 @@
+import type {ReactNode} from 'react';
+import type {Era,Composer,Work,Concert} from '../types';
+type Props={eras:Era[];go:(r:string)=>void;setMood:(s:string)=>void;setEra:(s:string)=>void;cards:(items:Concert[])=>ReactNode;concerts:Concert[]};
+export function HomePage({eras,go,setMood,setEra,cards,concerts}:Props){return <><section className="hero"><small>DISCOVER CLASSICAL MUSIC</small><h1>次の休日、<br/>音楽を聴きに行こう。</h1><p>知らなかった音楽に、出会う。</p><button onClick={()=>go('concerts')}>公演を探す →</button></section><h2>今の気分から探す</h2><div className="eras">{['壮大','癒し'].map(m=><button key={m} onClick={()=>{setMood(m);go('concerts')}}>{m}</button>)}</div><div className="line"><h2>音楽の歴史を旅する</h2><button onClick={()=>go('history')}>時代から探す →</button></div><div className="eras">{eras.map(e=><button key={e.id} onClick={()=>{setEra(e.id);go('history')}}>{e.name}<small>{e.years}</small></button>)}</div><h2>これからの公演</h2>{cards(concerts)}</>;}
