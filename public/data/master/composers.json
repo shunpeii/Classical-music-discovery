@@ -4,161 +4,184 @@
     "name": "バッハ",
     "eraId": "baroque",
     "birth": 1685,
-    "death": 1750
+    "death": 1750,
+    "portrait": "images/composers/bach.png"
   },
   {
     "id": "vivaldi",
     "name": "ヴィヴァルディ",
     "eraId": "baroque",
     "birth": 1678,
-    "death": 1741
+    "death": 1741,
+    "portrait": "images/composers/vivaldi.jpg"
   },
   {
     "id": "handel",
     "name": "ヘンデル",
     "eraId": "baroque",
     "birth": 1685,
-    "death": 1759
+    "death": 1759,
+    "portrait": "images/composers/handel.jpg"
   },
   {
     "id": "mozart",
     "name": "モーツァルト",
     "eraId": "classical",
     "birth": 1756,
-    "death": 1791
+    "death": 1791,
+    "portrait": "images/composers/mozart.jpg"
   },
   {
     "id": "beethoven",
     "name": "ベートーヴェン",
     "eraId": "classical",
     "birth": 1770,
-    "death": 1827
+    "death": 1827,
+    "portrait": "images/composers/beethoven.jpg"
   },
   {
     "id": "haydn",
     "name": "ハイドン",
     "eraId": "classical",
     "birth": 1732,
-    "death": 1809
+    "death": 1809,
+    "portrait": "images/composers/haydn.jpg"
   },
   {
     "id": "chopin",
     "name": "ショパン",
     "eraId": "romantic",
     "birth": 1810,
-    "death": 1849
+    "death": 1849,
+    "portrait": "images/composers/chopin.jpg"
   },
   {
     "id": "tchaikovsky",
     "name": "チャイコフスキー",
     "eraId": "romantic",
     "birth": 1840,
-    "death": 1893
+    "death": 1893,
+    "portrait": "images/composers/tchaikovsky.jpg"
   },
   {
     "id": "brahms",
     "name": "ブラームス",
     "eraId": "romantic",
     "birth": 1833,
-    "death": 1897
+    "death": 1897,
+    "portrait": "images/composers/brahms.jpg"
   },
   {
     "id": "debussy",
     "name": "ドビュッシー",
     "eraId": "modern",
     "birth": 1862,
-    "death": 1918
+    "death": 1918,
+    "portrait": "images/composers/debussy.jpg"
   },
   {
     "id": "ravel",
     "name": "ラヴェル",
     "eraId": "modern",
     "birth": 1875,
-    "death": 1937
+    "death": 1937,
+    "portrait": "images/composers/ravel.jpg"
   },
   {
     "id": "stravinsky",
     "name": "ストラヴィンスキー",
     "eraId": "modern",
     "birth": 1882,
-    "death": 1971
+    "death": 1971,
+    "portrait": "images/composers/stravinsky.jpg"
   },
   {
     "id": "schubert",
     "name": "シューベルト",
     "eraId": "romantic",
     "birth": 1797,
-    "death": 1828
+    "death": 1828,
+    "portrait": "images/composers/schubert.png"
   },
   {
     "id": "schumann",
     "name": "シューマン",
     "eraId": "romantic",
     "birth": 1810,
-    "death": 1856
+    "death": 1856,
+    "portrait": "images/composers/schumann.jpg"
   },
   {
     "id": "liszt",
     "name": "リスト",
     "eraId": "romantic",
     "birth": 1811,
-    "death": 1886
+    "death": 1886,
+    "portrait": "images/composers/liszt.jpg"
   },
   {
     "id": "mahler",
     "name": "マーラー",
     "eraId": "romantic",
     "birth": 1860,
-    "death": 1911
+    "death": 1911,
+    "portrait": "images/composers/mahler.jpg"
   },
   {
     "id": "dvorak",
     "name": "ドヴォルザーク",
     "eraId": "romantic",
     "birth": 1841,
-    "death": 1904
+    "death": 1904,
+    "portrait": "images/composers/dvorak.jpg"
   },
   {
     "id": "mendelssohn",
     "name": "メンデルスゾーン",
     "eraId": "romantic",
     "birth": 1809,
-    "death": 1847
+    "death": 1847,
+    "portrait": "images/composers/mendelssohn.jpg"
   },
   {
     "id": "shostakovich",
     "name": "ショスタコーヴィチ",
     "eraId": "modern",
     "birth": 1906,
-    "death": 1975
+    "death": 1975,
+    "portrait": "images/composers/shostakovich.jpg"
   },
   {
     "id": "prokofiev",
     "name": "プロコフィエフ",
     "eraId": "modern",
     "birth": 1891,
-    "death": 1953
+    "death": 1953,
+    "portrait": "images/composers/prokofiev.jpg"
   },
   {
     "id": "monteverdi",
     "name": "モンテヴェルディ",
     "eraId": "baroque",
     "birth": 1567,
-    "death": 1643
+    "death": 1643,
+    "portrait": "images/composers/monteverdi.jpg"
   },
   {
     "id": "corelli",
     "name": "コレッリ",
     "eraId": "baroque",
     "birth": 1653,
-    "death": 1713
+    "death": 1713,
+    "portrait": "images/composers/corelli.jpg"
   },
   {
     "id": "purcell",
     "name": "パーセル",
     "eraId": "baroque",
     "birth": 1659,
-    "death": 1695
+    "death": 1695,
+    "portrait": "images/composers/purcell.jpg"
   },
   {
     "id": "pachelbel",
@@ -172,105 +195,120 @@
     "name": "テレマン",
     "eraId": "baroque",
     "birth": 1681,
-    "death": 1767
+    "death": 1767,
+    "portrait": "images/composers/telemann.jpg"
   },
   {
     "id": "rameau",
     "name": "ラモー",
     "eraId": "baroque",
     "birth": 1683,
-    "death": 1764
+    "death": 1764,
+    "portrait": "images/composers/rameau.jpg"
   },
   {
     "id": "scarlatti",
     "name": "D. スカルラッティ",
     "eraId": "baroque",
     "birth": 1685,
-    "death": 1757
+    "death": 1757,
+    "portrait": "images/composers/scarlatti.jpg"
   },
   {
     "id": "couperin",
     "name": "クープラン",
     "eraId": "baroque",
     "birth": 1668,
-    "death": 1733
+    "death": 1733,
+    "portrait": "images/composers/couperin.jpg"
   },
   {
     "id": "gluck",
     "name": "グルック",
     "eraId": "classical",
     "birth": 1714,
-    "death": 1787
+    "death": 1787,
+    "portrait": "images/composers/gluck.jpg"
   },
   {
     "id": "cpebach",
     "name": "C.P.E. バッハ",
     "eraId": "classical",
     "birth": 1714,
-    "death": 1788
+    "death": 1788,
+    "portrait": "images/composers/cpebach.jpg"
   },
   {
     "id": "boccherini",
     "name": "ボッケリーニ",
     "eraId": "classical",
     "birth": 1743,
-    "death": 1805
+    "death": 1805,
+    "portrait": "images/composers/boccherini.jpg"
   },
   {
     "id": "clementi",
     "name": "クレメンティ",
     "eraId": "classical",
     "birth": 1752,
-    "death": 1832
+    "death": 1832,
+    "portrait": "images/composers/clementi.jpg"
   },
   {
     "id": "hummel",
     "name": "フンメル",
     "eraId": "classical",
     "birth": 1778,
-    "death": 1837
+    "death": 1837,
+    "portrait": "images/composers/hummel.jpg"
   },
   {
     "id": "rossini",
     "name": "ロッシーニ",
     "eraId": "romantic",
     "birth": 1792,
-    "death": 1868
+    "death": 1868,
+    "portrait": "images/composers/rossini.jpg"
   },
   {
     "id": "berlioz",
     "name": "ベルリオーズ",
     "eraId": "romantic",
     "birth": 1803,
-    "death": 1869
+    "death": 1869,
+    "portrait": "images/composers/berlioz.jpg"
   },
   {
     "id": "wagner",
     "name": "ワーグナー",
     "eraId": "romantic",
     "birth": 1813,
-    "death": 1883
+    "death": 1883,
+    "portrait": "images/composers/wagner.jpg"
   },
   {
     "id": "verdi",
     "name": "ヴェルディ",
     "eraId": "romantic",
     "birth": 1813,
-    "death": 1901
+    "death": 1901,
+    "portrait": "images/composers/verdi.jpg"
   },
   {
     "id": "bizet",
     "name": "ビゼー",
     "eraId": "romantic",
     "birth": 1838,
-    "death": 1875
+    "death": 1875,
+    "portrait": "images/composers/bizet.jpg"
   },
   {
     "id": "saintsaens",
     "name": "サン＝サーンス",
     "eraId": "romantic",
     "birth": 1835,
-    "death": 1921
+    "death": 1921,
+    "portrait": "images/composers/saintsaens.jpg"
   },
   {
     "id": "grieg",
@@ -284,146 +322,167 @@
     "name": "スメタナ",
     "eraId": "romantic",
     "birth": 1824,
-    "death": 1884
+    "death": 1884,
+    "portrait": "images/composers/smetana.jpg"
   },
   {
     "id": "mussorgsky",
     "name": "ムソルグスキー",
     "eraId": "romantic",
     "birth": 1839,
-    "death": 1881
+    "death": 1881,
+    "portrait": "images/composers/mussorgsky.jpg"
   },
   {
     "id": "rimsky",
     "name": "リムスキー＝コルサコフ",
     "eraId": "romantic",
     "birth": 1844,
-    "death": 1908
+    "death": 1908,
+    "portrait": "images/composers/rimsky.jpg"
   },
   {
     "id": "faure",
     "name": "フォーレ",
     "eraId": "romantic",
     "birth": 1845,
-    "death": 1924
+    "death": 1924,
+    "portrait": "images/composers/faure.jpg"
   },
   {
     "id": "bruckner",
     "name": "ブルックナー",
     "eraId": "romantic",
     "birth": 1824,
-    "death": 1896
+    "death": 1896,
+    "portrait": "images/composers/bruckner.jpg"
   },
   {
     "id": "franck",
     "name": "フランク",
     "eraId": "romantic",
     "birth": 1822,
-    "death": 1890
+    "death": 1890,
+    "portrait": "images/composers/franck.jpg"
   },
   {
     "id": "puccini",
     "name": "プッチーニ",
     "eraId": "romantic",
     "birth": 1858,
-    "death": 1924
+    "death": 1924,
+    "portrait": "images/composers/puccini.jpg"
   },
   {
     "id": "jstrauss",
     "name": "ヨハン・シュトラウス2世",
     "eraId": "romantic",
     "birth": 1825,
-    "death": 1899
+    "death": 1899,
+    "portrait": "images/composers/jstrauss.jpg"
   },
   {
     "id": "rachmaninoff",
     "name": "ラフマニノフ",
     "eraId": "modern",
     "birth": 1873,
-    "death": 1943
+    "death": 1943,
+    "portrait": "images/composers/rachmaninoff.jpg"
   },
   {
     "id": "sibelius",
     "name": "シベリウス",
     "eraId": "modern",
     "birth": 1865,
-    "death": 1957
+    "death": 1957,
+    "portrait": "images/composers/sibelius.jpg"
   },
   {
     "id": "rstrauss",
     "name": "リヒャルト・シュトラウス",
     "eraId": "modern",
     "birth": 1864,
-    "death": 1949
+    "death": 1949,
+    "portrait": "images/composers/rstrauss.jpg"
   },
   {
     "id": "satie",
     "name": "サティ",
     "eraId": "modern",
     "birth": 1866,
-    "death": 1925
+    "death": 1925,
+    "portrait": "images/composers/satie.jpg"
   },
   {
     "id": "holst",
     "name": "ホルスト",
     "eraId": "modern",
     "birth": 1874,
-    "death": 1934
+    "death": 1934,
+    "portrait": "images/composers/holst.jpg"
   },
   {
     "id": "elgar",
     "name": "エルガー",
     "eraId": "modern",
     "birth": 1857,
-    "death": 1934
+    "death": 1934,
+    "portrait": "images/composers/elgar.jpg"
   },
   {
     "id": "bartok",
     "name": "バルトーク",
     "eraId": "modern",
     "birth": 1881,
-    "death": 1945
+    "death": 1945,
+    "portrait": "images/composers/bartok.jpg"
   },
   {
     "id": "schoenberg",
     "name": "シェーンベルク",
     "eraId": "modern",
     "birth": 1874,
-    "death": 1951
+    "death": 1951,
+    "portrait": "images/composers/schoenberg.jpg"
   },
   {
     "id": "gershwin",
     "name": "ガーシュウィン",
     "eraId": "modern",
     "birth": 1898,
-    "death": 1937
+    "death": 1937,
+    "portrait": "images/composers/gershwin.jpg"
   },
   {
     "id": "copland",
     "name": "コープランド",
     "eraId": "modern",
     "birth": 1900,
-    "death": 1990
+    "death": 1990,
+    "portrait": "images/composers/copland.jpg"
   },
   {
     "id": "britten",
     "name": "ブリテン",
     "eraId": "modern",
     "birth": 1913,
-    "death": 1976
+    "death": 1976,
+    "portrait": "images/composers/britten.jpg"
   },
   {
     "id": "messiaen",
     "name": "メシアン",
     "eraId": "modern",
     "birth": 1908,
-    "death": 1992
+    "death": 1992,
+    "portrait": "images/composers/messiaen.jpg"
   },
   {
     "id": "takemitsu",
     "name": "武満徹",
     "eraId": "modern",
     "birth": 1930,
-    "death": 1996
+    "death": 1996,
+    "portrait": "images/composers/takemitsu.jpg"
   }
 ]
