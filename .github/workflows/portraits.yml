@@ -1,6 +1,12 @@
 name: Fetch composer portraits
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/fetch_portraits.py
+      - scripts/portrait_sources.json
+      - .github/workflows/portraits.yml
 permissions:
   contents: write
 jobs:
