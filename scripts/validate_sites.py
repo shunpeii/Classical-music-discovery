@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
-from validate_nhk import AGENT, AREAS, ROOT, match
+from validate_nhk import AGENT, AREAS, ROOT, expand_program, match
 
 
 def fetch(url):
@@ -236,6 +236,7 @@ def main():
                     incomplete += 1
                     continue
                 row["area"] = area
+                row["program"] = expand_program(row["program"], composers)
                 row["workIds"] = sorted({w for song in row["program"] if (w := match(song, composers, works))})
                 rows[(row["date"], row["time"], row["title"], venue)] = row
             reports[source] = {"normalizedCount": len(rows), "incompleteCount": incomplete,
