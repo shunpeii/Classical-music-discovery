@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
-from validate_nhk import AGENT, AREAS, ROOT, expand_program, match
+from validate_nhk import AGENT, AREAS, ROOT, composer_ids, expand_program, match
 
 
 def fetch(url):
@@ -238,11 +238,13 @@ def main():
                 row["area"] = area
                 row["program"] = expand_program(row["program"], composers)
                 row["workIds"] = sorted({w for song in row["program"] if (w := match(song, composers, works))})
+                row["composerIds"] = composer_ids(row["program"], composers, works, row["workIds"])
                 rows[(row["date"], row["time"], row["title"], venue)] = row
             reports[source] = {"normalizedCount": len(rows), "incompleteCount": incomplete,
                                "missingProgramCount": sum(not row["program"] for row in rows.values()),
                                "unmatchedSongs": sorted({song for row in rows.values() for song in row["program"] if not match(song, composers, works)}),
                                "matchedConcertCount": sum(bool(row["workIds"]) for row in rows.values()),
+                               "composerMatchedConcertCount": sum(bool(row["composerIds"]) for row in rows.values()),
                                "rows": list(rows.values())}
         except (requests.RequestException, ValueError, KeyError, TypeError) as exc:
             reports[source] = {"error": str(exc), "normalizedCount": 0}
