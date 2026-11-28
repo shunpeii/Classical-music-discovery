@@ -122,5 +122,25 @@
   {
     "id": "geigeki-detail",
     "url": "https://www.geigeki.jp/performance/concert367-c367-2/"
+  },
+  {
+    "id": "tokyosymphony-list",
+    "url": "https://tokyosymphony.jp/concert/"
+  },
+  {
+    "id": "tokyosymphony-detail",
+    "url": "https://tokyosymphony.jp/concert/57622/"
+  },
+  {
+    "id": "cityphil-list",
+    "url": "https://www.cityphil.jp/concert/"
+  },
+  {
+    "id": "cityphil-detail",
+    "url": "https://www.cityphil.jp/concert/detail.php?id=745"
+  },
+  {
+    "id": "yomikyo-season",
+    "url": "https://yomikyo.or.jp/info/membership.php"
   }
 ]
