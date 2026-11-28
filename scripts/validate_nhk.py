@@ -71,15 +71,28 @@ def match(song, composers, works):
     parts = re.split(r"[／/：:]", song, maxsplit=1)
     if len(parts) != 2:
         return None
-    author, title = map(key, parts)
+    raw_author = re.sub(r"[（(][^）)]*(?:編曲|編)[）)]", "", parts[0])
+    raw_title = re.sub(r"[（(][^）)]*(?:編曲|編|版)[）)]", "", parts[1])
+    raw_title = re.sub(r"(?:ほか|他|全曲)\s*[★☆♦◆*\s]*$", "", raw_title)
+    author, title = key(raw_author), key(raw_title)
+    title = re.sub(r"第一番", "第1番", title)
     author_aliases = {"jsバッハ": "bach", "ヨハンセバスティアンバッハ": "bach",
                       "fメンデルスゾーン": "mendelssohn", "ドヴォルジャーク": "dvorak",
                       "ベルリオーズ": "berlioz", "jシュトラウスii世": "jstrauss",
-                      "jシュトラウス2世": "jstrauss", "rシュトラウス": "rstrauss"}
+                      "jシュトラウス2世": "jstrauss", "jシュトラウスii": "jstrauss", "fリスト": "liszt", "rシュトラウス": "rstrauss"}
     ids = {c["id"] for c in composers if key(c["name"]) == author}
     if author in author_aliases:
         ids.add(author_aliases[author])
     pool = [w for w in works if w["composerId"] in ids]
+    if not pool:
+        return None
+    specific = {("schubert", "近衛秀麿大交響曲ハ長調"): "schubert-6",
+                ("elgar", "行進曲威風堂々第1番"): "elgar-7",
+                ("bach", "ブランデンブルク協奏曲第4番ト長調bwv1049"): "bach-2"}
+    for composer in ids:
+        target = specific.get((composer, title))
+        if target and any(w["id"] == target for w in pool):
+            return target
     exact = [w["id"] for w in pool if key(w["title"]) == title]
     if len(exact) == 1:
         return exact[0]
@@ -93,13 +106,13 @@ def match(song, composers, works):
     numbered = re.match(r"(交響曲|ピアノ協奏曲|ヴァイオリン協奏曲|チェロ協奏曲|弦楽四重奏曲|ピアノソナタ)第(\d+)番", title)
     if numbered:
         prefix = numbered.group()
-        candidates = [w["id"] for w in pool if key(w["title"]).startswith(prefix)]
+        candidates = [w["id"] for w in pool if re.match(re.escape(prefix) + r"(?!\d)", key(w["title"]))]
         if len(candidates) == 1:
             return candidates[0]
     # Quoted distinctive titles can identify a parent work, but never guess
     # between multiple catalog entries.
-    quoted = [key(q) for q in re.findall(r"[「『《](.*?)[」』》]", parts[1]) if len(key(q)) >= 3]
-    candidates = [w["id"] for w in pool if any(q == key(w["title"]) or q in re.findall(r"[「『《](.*?)[」』》]", w["title"]) for q in quoted)]
+    quoted = [key(q) for q in re.findall(r"[「『《](.*?)[」』》]", raw_title) if len(key(q)) >= 3]
+    candidates = [w["id"] for w in pool if any(q == key(w["title"]) or q in [key(v) for v in re.findall(r"[「『《](.*?)[」』》]", w["title"])] for q in quoted)]
     if len(candidates) == 1:
         return candidates[0]
     return None
