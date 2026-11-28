@@ -4,6 +4,7 @@ import datetime as dt
 import hashlib
 import json
 import re
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from urllib.robotparser import RobotFileParser
@@ -44,7 +45,7 @@ def scrape(source):
         if not title or not match:
             continue
         day = dt.date(*map(int, match.groups())).isoformat()
-        if day < dt.date.today().isoformat():
+        if day < dt.datetime.now(ZoneInfo('Asia/Tokyo')).date().isoformat():
             continue
         link = node.select_one(source["link"])
         href = urljoin(url, link.get("href", "")) if link else url
@@ -61,7 +62,9 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", type=Path, default=ROOT/"scripts/sources.json")
     args = parser.parse_args()
-    sources = read(args.config)
+    sources = [s for s in read(args.config) if s.get('approved')]
+    if not sources:
+        raise SystemExit('No approved sources configured; snapshot preserved')
     pointer = read(OUT/"latest.json")
     previous = [] if pointer.get("sample") else read(OUT/pointer["file"])
     combined = []
@@ -72,12 +75,12 @@ def main():
             successes += 1
         except Exception as exc:
             print(f"{source['id']}: {exc}")
-            combined.extend(row for row in previous if row.get("sourceId")==source["id"] and row["date"]>=dt.date.today().isoformat())
+            combined.extend(row for row in previous if row.get("sourceId")==source["id"] and row["date"]>=dt.datetime.now(ZoneInfo('Asia/Tokyo')).date().isoformat())
     if not successes:
         raise SystemExit("No successful sources; existing snapshot preserved")
     unique = {row["id"]: row for row in combined}
     rows = sorted(unique.values(), key=lambda r:(r["date"],r["title"]))
-    filename = dt.date.today().isoformat()+".json"
+    filename = dt.datetime.now(ZoneInfo('Asia/Tokyo')).date().isoformat()+".json"
     write(OUT/filename, rows)
     write(OUT/"latest.json", dict(file=filename,sample=False,concertCount=len(rows),updatedAt=dt.datetime.now(dt.timezone.utc).isoformat()))
 if __name__ == "__main__":
