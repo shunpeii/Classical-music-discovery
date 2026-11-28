@@ -12,7 +12,7 @@
   {
     "id": "tpo",
     "url": "https://www.tpo.or.jp/calendar/",
-    "diagnostics": "Probe failed: HTTPSConnectionPool(host='www.tpo.or.jp', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.tpo.or.jp', port=443) at 0x74c2c6f37890>, 'Connection to www.tpo.or.jp timed out. (connect timeout=20)'))\n"
+    "diagnostics": "Probe failed: HTTPSConnectionPool(host='www.tpo.or.jp', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.tpo.or.jp', port=443) at 0x76f89f76eed0>, 'Connection to www.tpo.or.jp timed out. (connect timeout=20)'))\n"
   },
   {
     "id": "nhkso-subscription",
@@ -43,5 +43,10 @@
     "id": "nhkso-archive-index",
     "url": "https://www.nhkso.or.jp/concert/json/list_archive_concert.json",
     "diagnostics": "HTTP 200\nJSON root type: dict\nJSON keys: ['year_list']\nField: year_list list ['/concert/json/archive_concert_2022.json', '/concert/json/archive_concert_2023.json', '/concert/json/archive_concert_2024.json', '/concert/json/archive_concert_2025.json', '/concert/json/archive_concert_2026.json']\n"
+  },
+  {
+    "id": "nhkso-2026",
+    "url": "https://www.nhkso.or.jp/concert/json/archive_concert_2026.json",
+    "diagnostics": "HTTP 200\nJSON root type: dict\nJSON keys: ['concerts', 'total_count']\nField: concerts list [{'details_url': '/concert/20270404.html', 'kv_image': '', 'category': 'other', 'season': '', 'program': '', 'status': True, 'title': '東京･春･音楽祭2027 <br>東京春祭ワーグナー･シリーズ vol.18 <br>《タンホイザー》（演奏会形式） ', 'catchcopy': '', 'hall_id': '1658', 'details': [{'date': '2027-04-04', 'holiday_flg': False, 'start_time': '3:00pm', 'ticket_url': 'https://nhkso.pia.jp/', 'ticket_status': '0'}], 'change_information': '', 'chamber_music_title': '', 'chamber_music_text': '', 'main_performers': [{'text': '指揮 : ローター・ケーニヒス '}, {'text': 'タンホイザー（テノール） : サミュエル・サッカー '}, {'text': 'ヴォルフラム（バリトン） : レオン・コーシャヴィッチ '}, {'text': 'ヴァルター（テノール） : 大槻孝志'}, {'text': 'ビーテロルフ（バス・バリトン） : 水島正樹'}, {'text': 'ハインリヒ（テノール） : 高橋 淳'}, {'text': 'ラインマール（バス・バリトン） : 山下浩司'}, {'text': 'エリーザベト／ヴェーヌス（ソプラノ） : エリーザベト・タイゲ'}, {'text': '合唱 : 東京オペラシンガーズ'}, {'text': '\\u3000 : ほか'}], 'songs': [{'name': 'ワーグナー／歌劇《タンホイザー》（全3幕／ドイツ語上演･日本語字幕付）'}]}, {'details_url': '/concert/20270228.html', 'kv_image': '/concert/202602.png', 'category': 'other', 'season': '', 'program': '', 'status': True, 'title': '白河文化交流館コミネス開館10周年記念事業「N響大河ドラマ名曲コンサート」', 'catchcopy': '', 'hall_id': '5727', 'details': [{'date': '2027-02-28', 'holiday_flg': False, 'start_time': '3:00pm', 'ticket_url': '', 'ticket_status': '0'}], 'change_information': '', 'chamber_music_title': '', 'chamber_music_text': '', 'main_performers': [{'text': '指揮 : 下野竜也'}, {'text': 'ソプラノ : 川越未晴'}, {'text': '司会 : 田添菜穂子'}], 'songs': [{'name': '<b>［第1部\\u3000大河ドラマ編］</b>'}, {'name': '武田信玄（1988／山本直純）'}, {'name': '西郷どん（2018／富貴晴美）'}, {'name': '篤姫（2008／吉俣 良）'}, {'name': '八重の桜（2013／坂本龍一）'}, {'name': '花燃ゆ（2015／川井憲次）'}, {'name': 'どうする家康（2023／稲本 響）'}, {'name': '江 〜姫たちの戦国〜（2011／吉俣 良）'}, {'name': '赤穂浪士（1964／芥川也寸志）'}, {'name': 'べらぼう ～蔦重栄華乃夢噺～（2025／ジョン・グラム）'}, {'name': '逆賊の幕臣（2027／大間々 昂）'}, {'name': '<b>［第2部\\u3000「河」「川」にちなんだクラシック名曲選］</b>'}, {'name': 'ムソルグスキー（ショスタコーヴィチ編）／ 歌劇「ホヴァンシチナ」―前奏曲「モスクワ川の夜明け」'}, {'name': 'J. シュトラウス II世／ポルカ・フランセーズ「ネヴァ川」作品288'}, {'name': 'シベリウス／交響詩「4つの伝説」作品22―「トゥオネラの白鳥」'}, {'name': 'J. シュトラウス I世／ワルツ「ローレライ・ラインの調べ」作品154'}, {'name': 'ビゼー／「アルルの女」組曲 第2番―「ファランドール」'}]}, {'details_url': '/concert/20270227.html', 'kv_image': '/concert/202602.png', 'category': 'other', 'season': '', 'program': '', 'status': True, 'title': 'N響大河ドラマ＆名曲コンサート 静岡公演', 'catchcopy': '', 'hall_id': '1544', 'details': [{'date': '2027-02-27', 'holiday_flg': False, 'start_time': '4:00pm', 'ticket_url': '', 'ticket_status': '0'}], 'change_information': '', 'chamber_music_title': '', 'chamber_music_text': '', 'main_performers': [\nField: total_count str 78\n"
   }
 ]
