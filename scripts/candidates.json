@@ -105,5 +105,10 @@
   {
     "id": "yokohama",
     "url": "https://yokohama-minatomiraihall.jp/"
+  },
+  {
+    "id": "yokohama-calendar-json",
+    "url": "https://yokohama-minatomiraihall.jp/cal.json",
+    "format": "json"
   }
 ]
