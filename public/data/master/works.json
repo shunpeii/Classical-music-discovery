@@ -4954,5 +4954,47 @@
     "title": "幻想曲 ヘ短調 D940",
     "featured": false,
     "guide": ""
+  },
+  {
+    "id": "bruckner-11",
+    "composerId": "bruckner",
+    "title": "交響曲第0番",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "schoenberg-11",
+    "composerId": "schoenberg",
+    "title": "浄夜",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "mozart-23",
+    "composerId": "mozart",
+    "title": "ディヴェルティメント ニ長調 K.136",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "mozart-24",
+    "composerId": "mozart",
+    "title": "モテット「踊れ、喜べ、幸いなる魂よ」 K.165",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "mozart-25",
+    "composerId": "mozart",
+    "title": "ヴァイオリンとヴィオラのための協奏交響曲",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "rstrauss-15",
+    "composerId": "rstrauss",
+    "title": "歌劇「カプリッチョ」前奏曲",
+    "featured": false,
+    "guide": ""
   }
 ]
