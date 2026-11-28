@@ -1,4 +1,4 @@
 import type {ReactNode} from 'react';
-import type {Era,Composer,Work,Concert} from '../types';
+import type {Work,Concert} from '../types';
 type Props={concert:Concert;go:(r:string)=>void;price:(c:Concert)=>string;toggle:(id:string)=>void;id:string;saved:string[];workRows:(items:Work[])=>ReactNode;works:Work[]};
 export function ConcertPage({concert,go,price,toggle,id,saved,workRows,works}:Props){return <><section className="concert-hero"><button className="back" onClick={()=>go('concerts')}>←</button><button className="save-top" aria-label="お気に入り" onClick={()=>toggle(id)}>{saved.includes(id)?'♥':'♡'}</button><span>♪ LIVE CLASSICAL</span></section><div className="detail-body"><small className="tag">コンサート</small><h1>{concert.title}</h1><div className="metadata"><p>▣　{concert.date}</p><p>⌖　{concert.venue}</p><p>◇　{price(concert)}</p></div><h2>プログラム</h2>{workRows(works.filter(w=>concert.workIds.includes(w.id)))}{concert.sourceUrl&&<a className="ticket-button" href={concert.sourceUrl} target="_blank" rel="noreferrer">公式公演情報・チケット ↗</a>}</div></>;}
