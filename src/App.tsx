@@ -12,7 +12,7 @@ export function App(){
  if(!data)return <main>{error?'データを読み込めませんでした。':'読み込み中…'}{error&&<button onClick={()=>location.reload()}>再試行</button>}</main>;
  const {eras,composers,works,concerts}=data;const [page,id]=route.split('/');
  const selected=eras.find(e=>e.id===era)||eras[0];const composer=composers.find(c=>c.id===id);const work=works.find(w=>w.id===id);const concert=concerts.find(c=>c.id===id);
- const {spotify,price,cards,workRows}=catalog({composers,works,saved,go,toggle});
+ const {spotify,price,cards,workRows}=catalog({composers,saved,go,toggle});
  return <><header><button className="logo link" onClick={()=>go('home')}>opus.</button><span>関東 / CLASSICAL MUSIC</span></header><main>{data.sample&&<div className="sample">DEMO · 公演情報は架空のサンプルです</div>}
  {page==='home'?<HomePage eras={eras} composers={composers} era={era} setEra={setEra} go={go} query={query} setQuery={setQuery}/>:
  page==='history'?<HistoryPage eras={eras} era={era} setEra={setEra} selected={selected} composers={composers} go={go}/>:
