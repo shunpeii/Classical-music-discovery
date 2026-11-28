@@ -1,8 +1,9 @@
 """Inspect candidate sources without publishing data."""
 import json
+from pathlib import Path
 from urllib.parse import urljoin
 from urllib.robotparser import RobotFileParser
-from pathlib import Path
+
 import requests
 from bs4 import BeautifulSoup
 from extractors import jsonld
