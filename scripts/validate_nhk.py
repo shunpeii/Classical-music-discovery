@@ -16,7 +16,8 @@ BASE = "https://www.nhkso.or.jp/"
 AGENT = "OpusConcertDiscovery/0.1"
 AREAS = {"NHKホール": "東京", "サントリーホール": "東京", "東京芸術劇場": "東京",
          "すみだトリフォニーホール": "東京", "東京文化会館": "東京",
-         "ミューザ川崎シンフォニーホール": "神奈川", "横浜みなとみらいホール": "神奈川"}
+         "ミューザ川崎シンフォニーホール": "神奈川", "横浜みなとみらいホール": "神奈川", "パルテノン多摩": "東京",
+         "市川市文化会館": "千葉", "所沢市民文化センター": "埼玉"}
 
 
 def fetch(path):
@@ -42,14 +43,46 @@ def key(value):
     return re.sub(r"[^\w]|_", "", unicodedata.normalize("NFKC", value).casefold())
 
 
+ALIASES = {
+    "グリーグ／ピアノ協奏曲 イ短調 作品16": "grieg-1",
+    "シューベルト／交響曲 第7番 ロ短調 D. 759「未完成」": "schubert-1",
+    "ストラヴィンスキー／バレエ音楽「春の祭典」": "stravinsky-1",
+    "ストラヴィンスキー／組曲「プルチネッラ」": "stravinsky-6",
+    "バッハ／マタイ受難曲 BWV 244": "bach-4",
+    "ブラームス／ハイドンの主題による変奏曲 作品56a": "brahms-14",
+    "ブラームス／大学祝典序曲 作品80": "brahms-12",
+    "プロコフィエフ／古典交響曲 作品25": "prokofiev-2",
+    "ベルリオーズ／幻想交響曲 作品14": "berlioz-1",
+    "マーラー／リュッケルトによる5つの歌": "mahler-14",
+    "メンデルスゾーン／ヴァイオリン協奏曲 ホ短調 作品64": "mendelssohn-1",
+    "モーツァルト／歌劇「魔笛」序曲": "mozart-5",
+    "ラヴェル／バレエ組曲「ダフニスとクロエ」第1番、第2番": "ravel-2",
+    "ワーグナー／歌劇《タンホイザー》（全3幕／ドイツ語上演･日本語字幕付）": "wagner-1",
+    "ワーグナー／歌劇「タンホイザー」─「おごそかなこの広間よ」◇": "wagner-1",
+    "ワーグナー／楽劇「トリスタンとイゾルデ」─「愛の夜よ、とばりを降ろせ」◇◆": "wagner-2",
+    "ワーグナー／歌劇「ローエングリン」─聖杯の物語「はるかな国に」◆": "wagner-5"
+}
+
+
 def match(song, composers, works):
+    alias = ALIASES.get(song)
+    if alias and any(w["id"] == alias for w in works):
+        return alias
     parts = re.split(r"[／/：:]", song, maxsplit=1)
     if len(parts) != 2:
         return None
     author, title = map(key, parts)
     ids = {c["id"] for c in composers if key(c["name"]) == author}
     candidates = [w["id"] for w in works if w["composerId"] in ids and key(w["title"]) == title]
-    return candidates[0] if len(candidates) == 1 else None
+    if len(candidates) == 1:
+        return candidates[0]
+    numbered = re.match(r"(交響曲|ピアノ協奏曲|ヴァイオリン協奏曲|チェロ協奏曲)第(\d+)番", title)
+    if numbered:
+        prefix = numbered.group()
+        candidates = [w["id"] for w in works if w["composerId"] in ids and key(w["title"]).startswith(prefix)]
+        if len(candidates) == 1:
+            return candidates[0]
+    return None
 
 
 def normalize(concerts, halls, composers, works, today):
@@ -60,7 +93,7 @@ def normalize(concerts, halls, composers, works, today):
         if event.get("status") is not True:
             continue
         venue = clean(halls.get(str(event.get("hall_id")), {}).get("name"))
-        area = AREAS.get(venue)
+        area = next((area for name, area in AREAS.items() if venue == name or venue.startswith(name + " ")), None)
         songs = [clean(s.get("name")) for s in event.get("songs", [])]
         for detail in event.get("details", []):
             try:
