@@ -8,7 +8,6 @@ from zoneinfo import ZoneInfo
 
 import requests
 from bs4 import BeautifulSoup
-
 from validate_nhk import AGENT, AREAS, ROOT, match
 
 
