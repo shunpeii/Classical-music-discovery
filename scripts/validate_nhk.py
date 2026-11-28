@@ -72,16 +72,36 @@ def match(song, composers, works):
     if len(parts) != 2:
         return None
     author, title = map(key, parts)
+    author_aliases = {"jsバッハ": "bach", "ヨハンセバスティアンバッハ": "bach",
+                      "fメンデルスゾーン": "mendelssohn", "ドヴォルジャーク": "dvorak",
+                      "ベルリオーズ": "berlioz", "jシュトラウスii世": "jstrauss",
+                      "jシュトラウス2世": "jstrauss", "rシュトラウス": "rstrauss"}
     ids = {c["id"] for c in composers if key(c["name"]) == author}
-    candidates = [w["id"] for w in works if w["composerId"] in ids and key(w["title"]) == title]
-    if len(candidates) == 1:
-        return candidates[0]
-    numbered = re.match(r"(交響曲|ピアノ協奏曲|ヴァイオリン協奏曲|チェロ協奏曲)第(\d+)番", title)
+    if author in author_aliases:
+        ids.add(author_aliases[author])
+    pool = [w for w in works if w["composerId"] in ids]
+    exact = [w["id"] for w in pool if key(w["title"]) == title]
+    if len(exact) == 1:
+        return exact[0]
+    # Remove only explicit trailing catalogue numbers and key signatures.
+    simplified = re.sub(r"(?:作品|op|bwv|kv|k|wab|d)\d+[a-z]?$", "", title)
+    simplified = re.sub(r"[イロハニホヘト](?:変|嬰)?[長短]調$", "", simplified)
+    simplified = re.sub(r"(?:変|嬰)?[イロハニホヘト][長短]調$", "", simplified)
+    exact = [w["id"] for w in pool if key(w["title"]) == simplified]
+    if len(exact) == 1:
+        return exact[0]
+    numbered = re.match(r"(交響曲|ピアノ協奏曲|ヴァイオリン協奏曲|チェロ協奏曲|弦楽四重奏曲|ピアノソナタ)第(\d+)番", title)
     if numbered:
         prefix = numbered.group()
-        candidates = [w["id"] for w in works if w["composerId"] in ids and key(w["title"]).startswith(prefix)]
+        candidates = [w["id"] for w in pool if key(w["title"]).startswith(prefix)]
         if len(candidates) == 1:
             return candidates[0]
+    # Quoted distinctive titles can identify a parent work, but never guess
+    # between multiple catalog entries.
+    quoted = [key(q) for q in re.findall(r"[「『《](.*?)[」』》]", parts[1]) if len(key(q)) >= 3]
+    candidates = [w["id"] for w in pool if any(q == key(w["title"]) or q in re.findall(r"[「『《](.*?)[」』》]", w["title"]) for q in quoted)]
+    if len(candidates) == 1:
+        return candidates[0]
     return None
 
 
