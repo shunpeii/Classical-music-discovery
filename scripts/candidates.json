@@ -30,5 +30,10 @@
   {
     "id": "nhkso-program-c",
     "url": "https://www.nhkso.or.jp/concert/subscription/program_c/index.html"
+  },
+  {
+    "id": "nhkso-archive-index",
+    "url": "https://www.nhkso.or.jp/concert/json/list_archive_concert.json",
+    "format": "json"
   }
 ]
