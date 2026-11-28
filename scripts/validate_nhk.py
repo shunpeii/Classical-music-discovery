@@ -88,7 +88,9 @@ def match(song, composers, works):
         return None
     specific = {("schubert", "近衛秀麿大交響曲ハ長調"): "schubert-6",
                 ("elgar", "行進曲威風堂々第1番"): "elgar-7",
-                ("bach", "ブランデンブルク協奏曲第4番ト長調bwv1049"): "bach-2"}
+                ("bach", "ブランデンブルク協奏曲第4番ト長調bwv1049"): "bach-2",
+                ("mendelssohn", "オラトリオelias"): "mendelssohn-13",
+                ("brahms", "弦楽六重奏第2番ト長調"): "brahms-24"}
     for composer in ids:
         target = specific.get((composer, title))
         if target and any(w["id"] == target for w in pool):
@@ -116,6 +118,27 @@ def match(song, composers, works):
     if len(candidates) == 1:
         return candidates[0]
     return None
+
+
+def expand_program(songs, composers):
+    """Carry a standalone, recognized composer heading into following lines."""
+    names = {key(c["name"]) for c in composers}
+    active = ""
+    result = []
+    for song in songs:
+        if not song.strip() or song.strip().lower() == "program":
+            continue
+        if re.fullmatch(r"[^：:/／]+[：:]\s*", song) and key(song) in names:
+            active = song.rstrip().rstrip("：:")
+            continue
+        if re.search(r"[：:/／]", song):
+            active = ""
+            result.append(song)
+        elif active:
+            result.append(active + "：" + song)
+        else:
+            result.append(song)
+    return result
 
 
 def normalize(concerts, halls, composers, works, today):
