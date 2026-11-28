@@ -1,0 +1,1500 @@
+{
+  "tmso": {
+    "normalizedCount": 6,
+    "incompleteCount": 4,
+    "matchedConcertCount": 6,
+    "rows": [
+      {
+        "title": "都響スペシャル（11/29）",
+        "date": "2026-11-29",
+        "time": "14:00",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://www.tmso.or.jp/j/concert/detail/detail.php?id=4102",
+        "program": [
+          "マーラー：交響曲第2番 ハ短調《復活》"
+        ],
+        "area": "東京",
+        "workIds": [
+          "mahler-3"
+        ]
+      },
+      {
+        "title": "プロムナードコンサートNo.421 【前売販売終了】",
+        "date": "2026-12-13",
+        "time": "14:00",
+        "venue": "サントリーホール",
+        "sourceUrl": "https://www.tmso.or.jp/j/concert/detail/detail.php?id=4103",
+        "program": [
+          "ボロディン：歌劇『イーゴリ公』序曲",
+          "チャイコフスキー：ピアノ協奏曲第1番 変ロ短調 op.23",
+          "チャイコフスキー：交響曲第4番 ヘ短調 op.36"
+        ],
+        "area": "東京",
+        "workIds": [
+          "tchaikovsky-2",
+          "tchaikovsky-5"
+        ]
+      },
+      {
+        "title": "第1059回定期演奏会Bシリーズ",
+        "date": "2026-12-18",
+        "time": "19:00",
+        "venue": "サントリーホール",
+        "sourceUrl": "https://www.tmso.or.jp/j/concert/detail/detail.php?id=4104",
+        "program": [
+          "ハイドン：交響曲第92番 ト長調 Hob.I:92 《オックスフォード》",
+          "リスト：ダンテ交響曲 S.109*"
+        ],
+        "area": "東京",
+        "workIds": [
+          "haydn-12"
+        ]
+      },
+      {
+        "title": "都響スペシャル「第九」（12/25）",
+        "date": "2026-12-25",
+        "time": "19:00",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://www.tmso.or.jp/j/concert/detail/detail.php?id=4105",
+        "program": [
+          "ベートーヴェン：交響曲第9番 ニ短調 op.125《合唱付》"
+        ],
+        "area": "東京",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "都響スペシャル「第九」（12/26） 【前売予定枚数終了】",
+        "date": "2026-12-26",
+        "time": "14:00",
+        "venue": "サントリーホール",
+        "sourceUrl": "https://www.tmso.or.jp/j/concert/detail/detail.php?id=4106",
+        "program": [
+          "ベートーヴェン：交響曲第9番 ニ短調 op.125《合唱付》"
+        ],
+        "area": "東京",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "都響スペシャル「第九」（12/27） 【前売予定枚数終了】",
+        "date": "2026-12-27",
+        "time": "14:00",
+        "venue": "東京芸術劇場コンサートホール",
+        "sourceUrl": "https://www.tmso.or.jp/j/concert/detail/detail.php?id=4107",
+        "program": [
+          "ベートーヴェン：交響曲第9番 ニ短調 op.125《合唱付》"
+        ],
+        "area": "東京",
+        "workIds": [
+          "beethoven-1"
+        ]
+      }
+    ]
+  },
+  "triphony": {
+    "normalizedCount": 10,
+    "incompleteCount": 0,
+    "matchedConcertCount": 0,
+    "rows": [
+      {
+        "title": "ディズニー・オン・クラシック ～まほうの夜の音楽会 2026",
+        "date": "2026-12-06",
+        "time": "17:30",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://www.harmonyjapan.com/doc2026/",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "トリフォニーホール パイプオルガン・クリスマス・コンサート2026 〈0歳からのオルガン・コンサート〉",
+        "date": "2026-12-12",
+        "time": "11:00",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://www.triphony.com/concert/detail/2026-04-008858.html",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "トリフォニーホール パイプオルガン・クリスマス・コンサート2026〈しっかりじっくりオルガン・コンサート〉",
+        "date": "2026-12-12",
+        "time": "15:00",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://www.triphony.com/concert/detail/2026-04-008859.html",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "新日本フィル ニューイヤー・コンサート2027 in すみだ曳舟《落語＆オーケストラ》",
+        "date": "2027-01-09",
+        "time": "15:00",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://www.triphony.com/concert/detail/2026-04-008866.html",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "ハリウッド・フェスティバル・オーケストラ ニューイヤーコンサート！",
+        "date": "2027-01-09",
+        "time": "14:30",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://sunrisetokyo.com/detail/35900/",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "ウィーン・ヨハン・シュトラウス管弦楽団　ニューイヤーコンサート2027",
+        "date": "2027-01-16",
+        "time": "14:00",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://tempoprimo.co.jp/stage/y2026/wjso2027",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "パイプオルガンを弾いてみよう！　J.S.バッハ／インヴェンション＆シンフォニア コース",
+        "date": "2027-02-07",
+        "time": "13:00",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://www.triphony.com/concert/202702list.html#009017",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "パイプオルガンを弾いてみよう！　J.S.バッハ／インヴェンション＆シンフォニア コース",
+        "date": "2027-02-07",
+        "time": "16:00",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://www.triphony.com/concert/202702list.html#009025",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "トリフォニーホール・ジュニア・オーケストラ　第41回演奏会",
+        "date": "2027-03-21",
+        "time": "15:00",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://www.triphony.com/concert/detail/2026-04-008870.html",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "T-SQUARE meets 新日本フィルハーモニー交響楽団 \"CLASSICS＆HARMONY\"",
+        "date": "2027-03-27",
+        "time": "17:00",
+        "venue": "すみだトリフォニーホール",
+        "sourceUrl": "https://www.triphony.com/concert/detail/2026-11-008958.html",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      }
+    ]
+  },
+  "yokohama": {
+    "normalizedCount": 79,
+    "incompleteCount": 32,
+    "matchedConcertCount": 30,
+    "rows": [
+      {
+        "title": "森麻季　ソプラノ・リサイタル",
+        "date": "2027-03-20",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9648/",
+        "program": [
+          "ヘンデル／歌劇「リナルド」より“涙の流れるままに”",
+          "プッチーニ／歌劇「ラ・ボエーム」より“私が街を歩くと”（ムゼッタのワルツ）",
+          "プッチーニ／歌劇「蝶々夫人」より “ある晴れた日に” ほか"
+        ],
+        "sourceEventId": 4834,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "名曲コンサート　オーケストラによる華麗なるヨーロッパ名旋律の旅",
+        "date": "2027-02-13",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9491/",
+        "program": [
+          "J.シュトラウスⅡ世／美しく青きドナウ",
+          "ブラームス／ハンガリー舞曲第5番",
+          "スメタナ／モルダウ～「我が祖国」より　ほか"
+        ],
+        "sourceEventId": 4788,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "第119回 横浜バロック室内合奏団定期演奏会",
+        "date": "2026-12-12",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://www.yokohamabarock.com",
+        "program": [
+          "ヴィヴァルディ／合奏協奏曲 Op.3「調和の霊感」第1番～第6番",
+          "J.S.バッハ／ブランデンブルク協奏曲 第4番 ト長調 BWV1049",
+          "J.S.バッハ／G線上のアリア"
+        ],
+        "sourceEventId": 4700,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "ハイルマン合唱団＆オーケストラ  「Elias」全曲 メンデルスゾーン作曲",
+        "date": "2026-12-12",
+        "time": "18:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://heilmannclassics.com/",
+        "program": [
+          "F.メンデルスゾーン／オラトリオ「Elias」全曲 "
+        ],
+        "sourceEventId": 4595,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "第119回 横浜バロック室内合奏団定期演奏会",
+        "date": "2026-12-12",
+        "time": "19:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://www.yokohamabarock.com",
+        "program": [
+          "ヴィヴァルディ／合奏協奏曲 作品3「調和の霊感」第7番～第12番",
+          "バッハ／ブランデンブルク協奏曲 第4番 ト長調 BWV1049",
+          "バッハ／G線上のアリア"
+        ],
+        "sourceEventId": 4701,
+        "area": "神奈川",
+        "workIds": [
+          "bach-1"
+        ]
+      },
+      {
+        "title": "読売日本交響楽団　第154回横浜マチネーシリーズ",
+        "date": "2026-11-29",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://yomikyo.or.jp/concert/2026/01/154-2.php#concert",
+        "program": [
+          "マヌリ／サッカード 〜フルートとオーケストラのための",
+          "マーラー／交響曲第4番 ト長調「大いなる喜びへの賛歌」"
+        ],
+        "sourceEventId": 4605,
+        "area": "神奈川",
+        "workIds": [
+          "mahler-4"
+        ]
+      },
+      {
+        "title": "神奈川フィルハーモニー管弦楽団　みなとみらいシリーズ定期演奏会第418回",
+        "date": "2026-11-28",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://www.kanaphil.or.jp/concert/3966/",
+        "program": [
+          "ベルリオーズ／交響曲「イタリアのハロルド」Op.16",
+          "ラヴェル／高雅で感傷的なワルツ",
+          "ラヴェル／ボレロ"
+        ],
+        "sourceEventId": 4742,
+        "area": "神奈川",
+        "workIds": [
+          "ravel-1"
+        ]
+      },
+      {
+        "title": " クラリネット・アンサンブルGrow第11回定期演奏会",
+        "date": "2027-03-13",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://grow2005.hatenablog.com/",
+        "program": [
+          "ムソルグスキー／展覧会の絵",
+          "ヤン・ファン・デル・ロースト／カンタベリーコラール",
+          "久石 譲／人生のメリーゴーランド"
+        ],
+        "sourceEventId": 4744,
+        "area": "神奈川",
+        "workIds": [
+          "mussorgsky-1"
+        ]
+      },
+      {
+        "title": "神奈川フィルハーモニー管弦楽団　みなとみらいシリーズ定期演奏会第421回",
+        "date": "2027-03-13",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://www.kanaphil.or.jp/concert/3970/",
+        "program": [
+          "マーラー／交響曲第3番ニ短調"
+        ],
+        "sourceEventId": 4814,
+        "area": "神奈川",
+        "workIds": [
+          "mahler-7"
+        ]
+      },
+      {
+        "title": "企画演奏会 更にオーケストラで闘う者達 REMAKE",
+        "date": "2027-02-20",
+        "time": "15:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://sites.google.com/view/saraocher",
+        "program": [
+          "植松伸夫／《ファイナルファンタジーⅦ》シリーズより"
+        ],
+        "sourceEventId": 4710,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "ケヴィン・チェン（ピアノ）＆アレクサンダー・リー・プライヒ指揮　バレンシア管弦楽団",
+        "date": "2027-05-08",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9673/",
+        "program": [
+          "ショパン／ピアノ協奏曲第2番　ヘ短調 Op.21",
+          "ファリャ／バレエ音楽「三角帽子」 第1組曲＆第2組曲より",
+          "ラヴェル／ボレロ"
+        ],
+        "sourceEventId": 4836,
+        "area": "神奈川",
+        "workIds": [
+          "chopin-2",
+          "ravel-1"
+        ]
+      },
+      {
+        "title": "第120回横浜バロック室内合奏団定期演奏会",
+        "date": "2027-02-26",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://www.yokohamabarock.com",
+        "program": [
+          "ヴィヴァルディ／ヴァイオリン協奏曲集 Op.8より「四季」",
+          "モーツァルト／ディヴェルティメント ニ長調 K136",
+          "モーツァルト／モテット K165 「踊れ、喜べ、幸いなる魂よ」"
+        ],
+        "sourceEventId": 4810,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "第120回横浜バロック室内合奏団定期演奏会",
+        "date": "2027-02-26",
+        "time": "19:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://www.yokohamabarock.com",
+        "program": [
+          "ヴィヴァルディ／ヴァイオリン協奏曲集 Op.8より「四季」",
+          "モーツァルト／ディヴェルティメント ニ長調 K.136",
+          "モーツァルト／モテット K.165 「踊れ、喜べ、幸いなる魂よ」"
+        ],
+        "sourceEventId": 4811,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "日本フィルハーモニー交響楽団<br>コバケン・ワールドVol.45",
+        "date": "2027-03-06",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://japanphil.or.jp/concert/20270306/",
+        "program": [
+          "モーツァルト／フルートとハープのための協奏曲 ハ長調 K.299",
+          "ベートーヴェン／交響曲第7番 イ長調 op.92"
+        ],
+        "sourceEventId": 4797,
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-7"
+        ]
+      },
+      {
+        "title": "Ensemble Brew Concert vol.4",
+        "date": "2027-02-06",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://teket.jp/7133/71280",
+        "program": [
+          "J.S.バッハ（田中 克典 編曲）／イタリア協奏曲 BWV 971",
+          "D.ロヴレーリョ（磯崎 敦博 編曲）／ヴェルディの歌劇「椿姫」の主題による演奏会用幻想曲（E♭クラリネット独奏：小澤 里沙）",
+          "A.ボロディン（清水 大輔 編曲）／歌劇「イーゴリ公」より、序曲、ダッタン人の踊り"
+        ],
+        "sourceEventId": 4739,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "神奈川フィルハーモニー管弦楽団　みなとみらいシリーズ定期演奏会第420回",
+        "date": "2027-02-06",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://www.kanaphil.or.jp/concert/3969/",
+        "program": [
+          "ベルリオーズ／序曲「海賊」Op.21",
+          "ブルッフ／ヴァイオリン協奏曲第1番ト短調Op.26",
+          "メンデルスゾーン／交響曲第3番イ短調Op.56「スコットランド」　"
+        ],
+        "sourceEventId": 4813,
+        "area": "神奈川",
+        "workIds": [
+          "mendelssohn-3"
+        ]
+      },
+      {
+        "title": "ズーラシアンブラス・バレンタイン・コンサート",
+        "date": "2027-02-11",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://www.superkids.co.jp/z-brass/concert/2702ZVC/",
+        "program": [
+          "モーツァルト／アイネ・クライネ・ナハトムジーク",
+          "ジョージ・ダグラス／ジョージ・ワイス（編曲：石川亮太 ）／この素晴らしき世界"
+        ],
+        "sourceEventId": 4770,
+        "area": "神奈川",
+        "workIds": [
+          "mozart-9"
+        ]
+      },
+      {
+        "title": "阪田知樹　ピアノ・リサイタル　超絶技巧練習曲",
+        "date": "2027-02-11",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9623/",
+        "program": [
+          "ラフマニノフ（阪田知樹 編曲）／ヴォカリーズ Op.34-14",
+          "ラフマニノフ／楽興の時 Op.16［全6曲］",
+          "リスト／超絶技巧練習曲 S.139［全12曲］"
+        ],
+        "sourceEventId": 4825,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "東京藝術大学 モーニング・コンサート第12回",
+        "date": "2027-02-04",
+        "time": "11:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://www.geidai.ac.jp/container/sogakudo/162997.html",
+        "program": [
+          "江田士恩／Re: Silent Letter",
+          "デュプレ／オルガン協奏曲　ホ短調　作品31"
+        ],
+        "sourceEventId": 4850,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "高橋里奈ピアノリサイタル～作曲家たちの遺した愛の物語～",
+        "date": "2027-03-18",
+        "time": "19:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://www.rina-takahashi.com",
+        "program": [
+          "ベートーヴェン／ピアノ·ソナタ第8番作品13「悲愴」",
+          "ショパン／バラード",
+          "グラナドス／スペイン舞曲集より"
+        ],
+        "sourceEventId": 4746,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "読売日本交響楽団 第156回横浜マチネーシリーズ",
+        "date": "2027-01-30",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://yomikyo.or.jp/concert/2026/01/156-2.php#concert",
+        "program": [
+          "グリンカ／歌劇「ルスランとリュドミラ」序曲",
+          "ラフマニノフ／パガニーニの主題による狂詩曲 Op.43",
+          "ベルリオーズ／幻想交響曲 Op.14"
+        ],
+        "sourceEventId": 4625,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "三ツ沢弦楽アンサンブル第22回定期演奏会",
+        "date": "2027-01-30",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://mitsuzawa.sakura.ne.jp/",
+        "program": [
+          "モーツァルト／アイネ・クライネ・ナハトムジーク",
+          "メンデルスゾーン／シンフォニアNo.1"
+        ],
+        "sourceEventId": 4757,
+        "area": "神奈川",
+        "workIds": [
+          "mozart-9"
+        ]
+      },
+      {
+        "title": "東京交響楽団クリスマスコンサート2026　森 麻季(ソプラノ)のクリスマス＆オペラ",
+        "date": "2026-12-25",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9328/",
+        "program": [
+          "マスカーニ／アヴェ・マリア",
+          "プッチーニ／私が街を歩けば～歌劇「ラ・ボエーム」より",
+          "アダン／オー・ホーリー・ナイト ほか"
+        ],
+        "sourceEventId": 4661,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "ウクライナ国立歌劇場管弦楽団　第九＆運命",
+        "date": "2026-12-28",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9244/",
+        "program": [
+          "ベートーヴェン／交響曲第５番ハ短調 Op.67「運命」",
+          "ベートーヴェン／交響曲第９番「合唱付き」"
+        ],
+        "sourceEventId": 4662,
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-1",
+          "beethoven-2"
+        ]
+      },
+      {
+        "title": "クリスマス/アヴェ・マリア　エリザベート弦楽アンサンブル",
+        "date": "2026-12-05",
+        "time": "11:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9340/",
+        "program": [
+          "J.S.バッハ（グノー編曲）／アヴェ・マリア",
+          "ヴィヴァルディ／「四季」より冬",
+          "マスネ／タイスの瞑想曲"
+        ],
+        "sourceEventId": 4715,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "クリスマス/アヴェ・マリア　エリザベート弦楽アンサンブル",
+        "date": "2026-12-05",
+        "time": "15:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9340/",
+        "program": [
+          "J.S.バッハ（グノー編曲）／アヴェ・マリア",
+          "ヴィヴァルディ／「四季」より冬",
+          "マスネ／タイスの瞑想曲"
+        ],
+        "sourceEventId": 4716,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "読売日本交響楽団 第155回横浜マチネーシリーズ",
+        "date": "2026-12-27",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://yomikyo.or.jp/concert/2026/01/155-2.php#concert",
+        "program": [
+          "ベートーヴェン／交響曲第9番 ニ短調 作品125 「合唱付き」"
+        ],
+        "sourceEventId": 4606,
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "女声合唱団\"Asuka\"第8回演奏会",
+        "date": "2026-12-16",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://sites.google.com/site/asukaonweb/",
+        "program": [
+          "新実徳英／五つのシャンソン",
+          "林 光／長くて短い六つの歌より",
+          "山下祐加／女声合唱組曲　あしたがある　他"
+        ],
+        "sourceEventId": 4596,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "新日本フィルハーモニー交響楽団 SMBC Presents「第九」特別演奏会2026　",
+        "date": "2026-12-16",
+        "time": "19:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://www.njp.or.jp/",
+        "program": [
+          "ベートーヴェン／交響曲第9番ニ短調『合唱付き』op.125"
+        ],
+        "sourceEventId": 4615,
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "五十嵐紅トリオ｜クリスマス 2026 (みなとみらい公演)",
+        "date": "2026-12-09",
+        "time": "19:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://kohigarashi.com",
+        "program": [
+          "グルーバー／きよしこの夜"
+        ],
+        "sourceEventId": 4657,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "みなとみらいアフタヌーンコンサート2026後期≪名匠たちのデュオ≫郷古廉＆ホセ・ガヤルド　デュオ･リサイタル",
+        "date": "2027-01-26",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9152/",
+        "program": [
+          "シューベルト／ロンド・ブリランテ ロ短調 D895",
+          "ベートーヴェン／ヴァイオリン・ソナタ 第10番 ト長調 Op.96",
+          "プロコフィエフ／ヴァイオリン・ソナタ 第1番 ヘ短調 Op.80　ほか"
+        ],
+        "sourceEventId": 4787,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "Studio-B Piano Concert 華麗なる2台ピアノと連弾の世界",
+        "date": "2027-01-26",
+        "time": "18:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://studio-b-suetaro.jimdofree.com/",
+        "program": [
+          "ラフマニノフ／組曲　第2番より",
+          "ラヴェル／ラ・ヴァルス",
+          "ガーシュウィン／ラプソディ・イン・ブルー"
+        ],
+        "sourceEventId": 4780,
+        "area": "神奈川",
+        "workIds": [
+          "gershwin-1",
+          "ravel-14"
+        ]
+      },
+      {
+        "title": "みなとみらいアフタヌーンコンサート2027前期<br>≪ショパン＆スクリャービン≫小井土文哉　ピアノ・リサイタル",
+        "date": "2027-06-22",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9707/",
+        "program": [
+          "ショパン／ノクターン第18番 ホ長調 Op.62-2",
+          "ショパン／幻想ポロネーズ Op.61",
+          "スクリャービン／幻想曲 Op.28"
+        ],
+        "sourceEventId": 4838,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "アンサンブル・フモレスケ　－弦楽四重奏で紡ぐ伝統と革新のしらべ－",
+        "date": "2026-12-03",
+        "time": "19:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://yamano-bunka.or.jp/",
+        "program": [
+          "シューベルト／弦楽四重奏曲ト長調　D887より　第1楽章 ",
+          "ベートーヴェン／弦楽四重奏曲へ長調　作品135より　第1楽章",
+          "メンデルスゾーン／弦楽四重奏曲イ短調　作品13"
+        ],
+        "sourceEventId": 4824,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "ザ・チェンバーブラス －NHK交響楽団の金管奏者たち－",
+        "date": "2027-01-18",
+        "time": "19:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://azumarts.jp/",
+        "program": [
+          "アーノルド／金管五重奏曲 作品73",
+          "ガーシュウィン（エデン編）／パリのアメリカ人",
+          "ピアソラ（井澗昌樹編）／リベルタンゴ"
+        ],
+        "sourceEventId": 4845,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "神奈川混声合唱団　第20回定期演奏会",
+        "date": "2027-03-22",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://nishiguchi81.wixsite.com/kanakon",
+        "program": [
+          "ドヴォルジャーク／ミサ曲 ニ長調  op. 86",
+          "ラインベルガー／レクイエム 変ロ短調  op. 60"
+        ],
+        "sourceEventId": 4781,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "第2回～大学OB合唱団による～男声合唱 新・化学反応",
+        "date": "2027-01-17",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://teket.jp/17387/65175",
+        "program": [
+          "宮本正太郎／男声合唱とピアノのための組曲「穴の空いた大船に乗って」（委嘱初演）",
+          "新実德英／男声合唱とピアノのための「花に寄せて」",
+          "木下牧子／男声合唱組曲「Enfance finie ～過ぎ去りし少年時代～」　他"
+        ],
+        "sourceEventId": 4760,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "Joint Concert ~WA~",
+        "date": "2027-01-17",
+        "time": "18:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://forms.gle/bSW3SNgjxbp6vGCq6",
+        "program": [
+          "横山潤子／混声合唱曲集「笑いのコーラス」",
+          "藤嶋美穂／混声合唱とピアノのための「バナナ・トレイン」"
+        ],
+        "sourceEventId": 4801,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "みずほフィルハーモニー　第48回定期演奏会",
+        "date": "2027-01-24",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://mizuhophilharmony.web.fc2.com/",
+        "program": [
+          "ベルリオーズ／ローマの謝肉祭序曲",
+          "サン・サーンス／アルジェリア組曲",
+          "シベリウス／交響曲第1番　ホ短調　op.39"
+        ],
+        "sourceEventId": 4794,
+        "area": "神奈川",
+        "workIds": [
+          "sibelius-4"
+        ]
+      },
+      {
+        "title": "みなとみらいアフタヌーンコンサート2027前期<br>≪圧巻！ピアノ・デュオの世界≫アンセットシス　山中惇史＆高橋優介　ピアノ・デュオ・リサイタル",
+        "date": "2027-07-16",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9701/",
+        "program": [
+          "ドビュッシー（カプレ編）／イベリア",
+          "ラヴェル／ラ・ヴァルス",
+          "レスピーギ（アンセットシス編）／交響詩「ローマの祭り」"
+        ],
+        "sourceEventId": 4839,
+        "area": "神奈川",
+        "workIds": [
+          "ravel-14"
+        ]
+      },
+      {
+        "title": "みなとみらいアフタヌーンコンサート2027前期<br>≪ベートーヴェン２大ソナタ≫前橋汀子＆フランク・ブラレイ　デュオ･リサイタル",
+        "date": "2027-03-02",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9685/",
+        "program": [
+          "モーツァルト／ヴァイオリン・ソナタ第18番 ト長調 K.301",
+          "ベートーヴェン／ヴァイオリン・ソナタ第5番 ヘ長調 Op.24「春」",
+          "ベートーヴェン／ヴァイオリン・ソナタ第9番 イ長調 Op.47「クロイツェル」"
+        ],
+        "sourceEventId": 4791,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "ハリウッド・フェスティバル・オーケストラ　ニューイヤーコンサート！",
+        "date": "2027-01-04",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9460/",
+        "program": [
+          "懐かしの名作／ニュー・シネマ・パラダイス",
+          "ハリウッド超大作／ミッション・インポッシブル",
+          "佐藤隆紀セレクション／ミュージカル曲　ほか"
+        ],
+        "sourceEventId": 4851,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "女声合唱団 Bella Voce 第9回定期演奏会",
+        "date": "2027-01-11",
+        "time": "13:45",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://www.instagram.com/bellavoce_koho?igsi=MWc1MHBibDVqeGpneQ==",
+        "program": [
+          "田中達也／女声合唱とピアノのための『わたしの水平線』",
+          "山田耕筰／ペチカ",
+          "Bob Chilcott／Nidaros Jazz Mass"
+        ],
+        "sourceEventId": 4754,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "プラハ交響楽団　ニューイヤー名曲コンサート",
+        "date": "2027-01-11",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9360/",
+        "program": [
+          "ベートーヴェン／「エグモント」序曲 Op.84",
+          "ドヴォルジャーク／チェロ協奏曲ロ短調 Op.104 B.191",
+          "ベートーヴェン／ピアノ協奏曲第5番 変ホ長調 Op.73「皇帝」"
+        ],
+        "sourceEventId": 4786,
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-6"
+        ]
+      },
+      {
+        "title": "アラン・ギルバート（指揮）角野隼斗（ピアノ）　NDRエルプフィルハーモニー管弦楽団",
+        "date": "2027-02-23",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9508/",
+        "program": [
+          "ブラームス／大学祝典序曲 ハ短調 Op.80",
+          "ガーシュウィン／ピアノ協奏曲 へ調",
+          "ブラームス／交響曲第4番 ホ短調 Op.98"
+        ],
+        "sourceEventId": 4790,
+        "area": "神奈川",
+        "workIds": [
+          "brahms-6"
+        ]
+      },
+      {
+        "title": "第一回ブルーポロニア演奏会",
+        "date": "2027-03-03",
+        "time": "18:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://blueporonia.jimdofree.com/",
+        "program": [
+          "鈴木輝昭／同声(女声)合唱とピアノ(弦楽オーケストラ)のためのじゅうにつき"
+        ],
+        "sourceEventId": 4569,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "みなとみらいアフタヌーンコンサート2027前期<br>≪千住真理子：至高の名曲選≫千住真理子　ヴァイオリン・リサイタル",
+        "date": "2027-05-20",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9704/",
+        "program": [
+          "クライスラー／美しきロスマリン",
+          "ラヴェル／亡き王女のためのパヴァーヌ",
+          "フランク／ヴァイオリン・ソナタ"
+        ],
+        "sourceEventId": 4837,
+        "area": "神奈川",
+        "workIds": [
+          "ravel-6"
+        ]
+      },
+      {
+        "title": "プラチナ・シンガーズ第8回演奏会",
+        "date": "2027-02-03",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://platinumsingers.jimdofree.com/",
+        "program": [
+          "フォーレ／レクイエム（1900年版）",
+          "木下牧子／光はここに（オーケストラ版）"
+        ],
+        "sourceEventId": 4826,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "神奈川大学マンドリンアンサンブル 創部60周年 第50回記念定期演奏会",
+        "date": "2027-03-21",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://www.instagram.com/jindai_mandolin/",
+        "program": [
+          "久保田孝／舞踊風組曲第2番",
+          "鈴木静一／タイ舞曲「パゴダの舞姫」"
+        ],
+        "sourceEventId": 4768,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "華麗なるヴァイオリンの祭典～世代を超えて響き合う音楽の喜び～",
+        "date": "2027-02-28",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "http://nature61.wixsite.com/po-nature",
+        "program": [
+          "ヴィヴァルディ／ヴァイオリン協奏曲集Op.8「四季」より"
+        ],
+        "sourceEventId": 4849,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "エセンツ・フィルハーモニカー　第8回定期演奏会",
+        "date": "2027-03-07",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://essenzphil.jp/",
+        "program": [
+          "シベリウス／交響曲第5番",
+          "ブラームス／交響曲第4番"
+        ],
+        "sourceEventId": 4800,
+        "area": "神奈川",
+        "workIds": [
+          "brahms-6",
+          "sibelius-7"
+        ]
+      },
+      {
+        "title": "ナナズミュージック【 第3回 Strings Ensemble Concert ～弦楽アンサンブルコンサート】",
+        "date": "2027-03-07",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://nanaz-music.com/ensemble-5",
+        "program": [
+          "チャイコフスキー／弦楽セレナーデ ハ長調 Op.48",
+          "ブラームス／ハンガリー舞曲 第5番",
+          "パッヘルベル／カノン"
+        ],
+        "sourceEventId": 4805,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "第10回記念　サクソフォンアンサンブル演奏会",
+        "date": "2027-02-07",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "http://ysa.moutonstore.com",
+        "program": [
+          "樽屋雅徳／マードックからの最後の手紙",
+          "M.ムソルグスキー／展覧会の絵",
+          "S.プロコフィエフ／ロミオとジュリエット"
+        ],
+        "sourceEventId": 4821,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "日本フィルハーモニー交響楽団　第425回横浜定期演奏会",
+        "date": "2027-03-27",
+        "time": "15:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://japanphil.or.jp/concert/20270327/",
+        "program": [
+          "ハチャトゥリアン／ヴァイオリン協奏曲 ニ短調",
+          "ムソルグスキー（リムスキー=コルサコフ編曲）／交響詩《はげ山の一夜》",
+          "レスピーギ／交響詩《ローマの松》ほか"
+        ],
+        "sourceEventId": 4798,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "イヴァン・フィッシャー（指揮）ブルース・リウ（ピアノ）　ブダペスト祝祭管弦楽団",
+        "date": "2027-02-21",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9513/",
+        "program": [
+          "ラフマニノフ／ヴォカリーズ Op.34-14",
+          "チャイコフスキー／ピアノ協奏曲 第1番 変ロ短調 Op. 23",
+          "ベートーヴェン／交響曲第6番 ヘ長調 Op.68 「田園」"
+        ],
+        "sourceEventId": 4789,
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-5",
+          "rachmaninoff-41",
+          "tchaikovsky-2"
+        ]
+      },
+      {
+        "title": "横浜室内アンサンブル　第26回演奏会",
+        "date": "2027-02-21",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://sites.google.com/view/yce1991",
+        "program": [
+          "シェーンベルク／Friede auf Erden",
+          "池辺晋一郎／六つの子守歌",
+          "萩 京子／魂のいちばんおいしいところ　他"
+        ],
+        "sourceEventId": 4815,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "横浜フィルハーモニー管弦楽団 第94回定期演奏会",
+        "date": "2026-12-06",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://www.yokohamaphil.com/",
+        "program": [
+          "リスト／交響詩「フン族の戦い」",
+          "コダーイ／ガランタ舞曲",
+          "サン＝サーンス／交響曲第３番「オルガン付き」"
+        ],
+        "sourceEventId": 4656,
+        "area": "神奈川",
+        "workIds": [
+          "saintsaens-3"
+        ]
+      },
+      {
+        "title": "みなとみらいストリングオーケストラ第６回演奏会",
+        "date": "2026-12-19",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://www.minatomirai-string-orch.com/",
+        "program": [
+          "エルガー／弦楽セレナーデ",
+          "バーバー／弦楽のためのアダージョ",
+          "ディーリアス／2つの水彩画ほか"
+        ],
+        "sourceEventId": 4671,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "日本フィルハーモニー交響楽団　第423回横浜定期演奏会",
+        "date": "2026-12-19",
+        "time": "15:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://japanphil.or.jp/concert/20261219/",
+        "program": [
+          "J.S.バッハ／暁の星のいと美しきかな BWV739、羊は安らかに草を食み BWV208-9、トッカータとフーガ ニ短調 BWV565　（以上3曲オルガン独奏）",
+          "ベートーヴェン／交響曲第9番《合唱》 ニ短調 op.125"
+        ],
+        "sourceEventId": 4675,
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "堀 由紀子ピアノリサイタル　〜幻想への誘い〜",
+        "date": "2026-12-04",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://yukikohori.com",
+        "program": [
+          "W. A. モーツァルト／12の変奏曲 変ロ長調 KV 500、ロンド イ短調 KV 511",
+          "R. シューマン／クライスレリアーナ op. 16",
+          "F. リスト／ピアノソナタ ロ短調"
+        ],
+        "sourceEventId": 4653,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "生きる～2027 若い命を支えるコンサート～ ",
+        "date": "2027-01-23",
+        "time": "15:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://yokohama.mainichi-classic.net/",
+        "program": [
+          "メンデルスゾーン／ヴァイオリン協奏曲 ホ短調 Op.64",
+          "ドヴォルジャーク／交響曲第9番 ホ短調 Op.95「新世界より」ほか"
+        ],
+        "sourceEventId": 4759,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "五十嵐紅トリオ｜New Year 2027（みなとみらい公演）",
+        "date": "2027-01-23",
+        "time": "19:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://kohigarashi.com",
+        "program": [
+          "モリコーネ／ニュー・シネマ・パラダイス"
+        ],
+        "sourceEventId": 4751,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "みなとみらいアフタヌーンコンサート2026後期≪アメイジング・マリンバatクリスマス≫塚越慎子　マリンバ・リサイタル",
+        "date": "2026-12-18",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9149/",
+        "program": [
+          "ハチャトゥリアン／剣の舞",
+          "ラヴェル（志村和音 編曲）／ボレロ"
+        ],
+        "sourceEventId": 4660,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "横浜みなとみらいホール2027　オープニング・コンサート<br>ウィーン・ヨハン・シュトラウス管弦楽団　ウィンナワルツ・ニューイヤー・コンサート2027",
+        "date": "2027-01-03",
+        "time": "15:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9427/",
+        "program": [
+          "J.シュトラウスⅡ世／「ジプシー男爵」序曲",
+          "J.シュトラウスⅡ世／観光列車",
+          "J.シュトラウスⅡ世／美しく青きドナウ"
+        ],
+        "sourceEventId": 4783,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "横浜交響楽団 第751回定期演奏会　〜青少年のための音楽会〜",
+        "date": "2026-12-17",
+        "time": "19:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://yokokyo.net",
+        "program": [
+          "ベートーヴェン／交響曲第9番 ニ短調 作品125「合唱付き」"
+        ],
+        "sourceEventId": 4598,
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "マーラーウェズンフィルハーモニック東京　第6回演奏会",
+        "date": "2027-04-10",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://mahlertokyo.com",
+        "program": [
+          "グスタフ・マーラー／交響曲第2番「復活」",
+          "カミーユ・サン＝サーンス／糸杉と月桂樹"
+        ],
+        "sourceEventId": 4831,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "小山実稚恵＆下野竜也指揮　東京交響楽団　ニューイヤーコンサート2027",
+        "date": "2027-01-10",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9329/",
+        "program": [
+          "スッペ／「ウィーンの朝・昼・晩」序曲",
+          "ショパン／ピアノ協奏曲 第1番 ホ短調 Op.11",
+          "ドヴォルジャーク／交響曲 第9番 ホ短調 Op.95「新世界より」"
+        ],
+        "sourceEventId": 4785,
+        "area": "神奈川",
+        "workIds": [
+          "chopin-3"
+        ]
+      },
+      {
+        "title": "日本フィルハーモニー交響楽団　第九特別演奏会2026",
+        "date": "2026-12-26",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://japanphil.or.jp/concert/20261226/",
+        "program": [
+          "J.S.バッハ／前奏曲 ハ長調 BWV531、小フーガ ト短調 BWV578、トッカータとフーガ ニ短調 BWV565",
+          "ベートーヴェン／交響曲第9番《合唱》ニ短調 op.125"
+        ],
+        "sourceEventId": 4674,
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "アンサンブル・マーレ 第41回定期演奏会",
+        "date": "2027-01-31",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://sites.google.com/view/ensemble-mare",
+        "program": [
+          "藤掛廣幸／山河緑照",
+          "W.モーツァルト／セレナード第6番 ニ長調 「セレナータ・ノットゥルナ」 K.239",
+          "J.S.バッハ／アリオーソ (カンタータ第156番より「シンフォニア」) 　他"
+        ],
+        "sourceEventId": 4756,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "日本フィルハーモニー交響楽団　第424回横浜定期演奏会",
+        "date": "2027-01-09",
+        "time": "15:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://japanphil.or.jp/concert/20270109/",
+        "program": [
+          "ハイドン／トランペット協奏曲 変ホ長調 Hob.VIIe:1",
+          "J.シュトラウスⅡ世／美しく青きドナウ",
+          "ラヴェル／《ダフニスとクロエ》第2組曲　ほか"
+        ],
+        "sourceEventId": 4796,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "ウィーン宮殿祝賀コンサート　ウィンナー・ワルツ祝祭オーケストラ",
+        "date": "2027-01-05",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9347/",
+        "program": [
+          "J.シュトラウスⅡ世／皇帝円舞曲",
+          "J.シュトラウスⅡ世／美しく青きドナウ",
+          "J.シュトラウスⅠ世／ラデツキー行進曲"
+        ],
+        "sourceEventId": 4784,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "フロイデ・コーア・ヨコハマ　第20回演奏会　メンデルスゾーン『エリヤ』",
+        "date": "2027-03-12",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://freudechoryokohama.jimdofree.com/",
+        "program": [
+          "メンデルスゾーン／『エリヤ』"
+        ],
+        "sourceEventId": 4748,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "神奈川フィルハーモニー管弦楽団　For Future 巡回公演シリーズ横浜公演 ベートーヴェン「第九」",
+        "date": "2026-12-20",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://www.kanaphil.or.jp/concert/3987/",
+        "program": [
+          "ベートーヴェン／交響曲第9番ニ短調Op.125「合唱付き」"
+        ],
+        "sourceEventId": 4743,
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "第39回ヨコハマ・ワーグナー祭 ベートーヴェン没後200年記念「歓喜」への道 ～人生を巡る音楽の旅～",
+        "date": "2027-01-08",
+        "time": "18:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://onbunkyo.com",
+        "program": [
+          "ベートーヴェン／ビアノ協奏曲第5番「皇帝」変ホ長調Op.73より第3楽章（ピアノ五重奏版）",
+          "ベートーヴェン／弦楽五重奏曲 八短調 Op.104 より第1楽章",
+          "ベートーヴェン／アデライーデ Op.46　ほか"
+        ],
+        "sourceEventId": 4766,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "Kleine Harmonie Orchester 第10回定期演奏会",
+        "date": "2026-12-13",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kleine.mystrikingly.com/",
+        "program": [
+          "モーツァルト／『きらきら星変奏曲』- 『ああ、お母さん、あなたに申しましょう』による12の変奏曲 [オルガン独奏]",
+          "モーツァルト／自動オルガンのための幻想曲 [オルガン独奏]",
+          "モーツァルト／レクイエム"
+        ],
+        "sourceEventId": 4638,
+        "area": "神奈川",
+        "workIds": [
+          "mozart-2"
+        ]
+      },
+      {
+        "title": "混声合唱団アンサンブルKATOO第20回定期演奏会",
+        "date": "2026-12-13",
+        "time": "14:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 20,
+        "sourceUrl": "https://sound.jp/ekt/",
+        "program": [
+          "信長 貴富／混声合唱曲集『旅のかなたに』",
+          "ヨハネス・ブラームス／Fest- und Gedenksprüche, Op. 109（祝辞と格言）",
+          "ダン・フォレスト／Requiem for the Living（生きている者のためのレクイエム）"
+        ],
+        "sourceEventId": 4636,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "みなとみらいアフタヌーンコンサート2027前期<br>≪珠玉の共演≫宮田 大＆福間洸太朗　デュオ・リサイタル",
+        "date": "2027-04-08",
+        "time": "13:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://kanagawa-geikyo.com/concert/concert-9702/",
+        "program": [
+          "リヒャルト・シュトラウス／チェロ・ソナタ へ長調 Op.6",
+          "メンデルスゾーン／無言歌 Op.109",
+          "メンデルスゾーン／チェロ・ソナタ第2番 ニ長調 Op.58　ほか"
+        ],
+        "sourceEventId": 4835,
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "N響オーチャード定期2026/2027  東横シリーズ in 横浜 ＜傑作ピアノ協奏曲＆三大バレエ音楽＞ 第139回 Supported by 株式会社 日立製作所",
+        "date": "2027-04-29",
+        "time": "15:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://www.bunkamura.co.jp/orchard/lineup/nkyo/26_27/139.html",
+        "program": [
+          "チャイコフスキー／幻想序曲「ロメオとジュリエット」",
+          "チャイコフスキー／ピアノ協奏曲第1番 変ロ短調 作品23 ",
+          "チャイコフスキー／バレエ音楽「白鳥の湖」＜エリム・チャン版＞"
+        ],
+        "sourceEventId": 4557,
+        "area": "神奈川",
+        "workIds": [
+          "tchaikovsky-2"
+        ]
+      },
+      {
+        "title": "N響オーチャード定期2026/2027  東横シリーズ in 横浜 ＜傑作ピアノ協奏曲＆三大バレエ音楽＞ 第140回 Supported by 株式会社 日立製作所",
+        "date": "2027-07-04",
+        "time": "15:30",
+        "venue": "横浜みなとみらいホール",
+        "venueCode": 10,
+        "sourceUrl": "https://www.bunkamura.co.jp/orchard/lineup/nkyo/26_27/140.html",
+        "program": [
+          "プロコフィエフ／ピアノ協奏曲第3番 ハ長調 作品26",
+          "チャイコフスキー／バレエ音楽「眠れる森の美女」＜熊倉優版＞"
+        ],
+        "sourceEventId": 4558,
+        "area": "神奈川",
+        "workIds": [
+          "prokofiev-3"
+        ]
+      }
+    ]
+  }
+}
