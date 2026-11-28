@@ -27,6 +27,8 @@ def probe(source):
     print("HTTP", response.status_code)
     if response.status_code != 200:
         return
+    if response.encoding in (None, "ISO-8859-1"):
+        response.encoding = response.apparent_encoding or "utf-8"
     soup = BeautifulSoup(response.text, "html.parser")
     print("JSON-LD events:", len(list(jsonld(response.text))))
     print("Content-Type:", response.headers.get("Content-Type"))
