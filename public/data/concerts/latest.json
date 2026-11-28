@@ -1,7 +1,7 @@
 {
-  "file": "2026-11-28-import.json",
+  "file": "2026-11-29-monthly.json",
   "sample": false,
-  "concertCount": 195,
-  "updatedAt": "2026-11-28",
-  "method": "official-source extraction; automated matching"
+  "concertCount": 192,
+  "updatedAt": "2026-11-29",
+  "method": "monthly official-source extraction"
 }
