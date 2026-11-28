@@ -118,7 +118,8 @@ def detail_rows(kind):
 def cityphil():
     base = "https://www.cityphil.jp/concert/"
     soup = BeautifulSoup(fetch(base).text, "html.parser")
-    links = dict.fromkeys(urljoin(base, a["href"]) for a in soup.select('a[href*="detail.php?id="]')
+    home = BeautifulSoup(fetch("https://www.cityphil.jp/").text, "html.parser")
+    links = dict.fromkeys(urljoin(base, a["href"]).split("&")[0] for a in home.select('a[href*="detail.php?id="]') + soup.select('a[href*="detail.php?id="]')
                           if urlparse(urljoin(base, a["href"])).path == "/concert/detail.php"
                           and urlparse(urljoin(base, a["href"])).netloc == urlparse(base).netloc)
     for url in list(links)[:20]:
@@ -149,6 +150,42 @@ def cityphil():
                "sourceUrl": url, "program": songs}
 
 
+def yomikyo():
+    base = "https://yomikyo.or.jp/concert/"
+    pending = [base]
+    seen = set()
+    for page in pending:
+        if len(seen) >= 24:
+            break
+        if page in seen:
+            continue
+        seen.add(page)
+        try:
+            soup = BeautifulSoup(fetch(page).text, "html.parser")
+        except (requests.RequestException, ValueError):
+            continue
+        for anchor in soup.select("a[href]"):
+            url = urljoin(base, anchor["href"]).split("#")[0]
+            if urlparse(url).netloc == urlparse(base).netloc and re.fullmatch(r"/concert/20\d{2}/\d{2}/[^/]+\.php", urlparse(url).path) and url not in pending:
+                pending.append(url)
+        title = value(soup, "title").split(" | ")[0]
+        if page == base or "中止" in title:
+            continue
+        body = soup.get_text(" ", strip=True)
+        event = re.search(r"Concert\s+" + re.escape(title) + r"\s+(20\d{2})\s+(\d{1,2})\.(\d{1,2})\s*[〈＜][^〉＞]+[〉＞]\s*(\d{1,2}:\d{2})\s+(.+?)(?=\s+(?:指揮|出演|ピアノ|ヴァイオリン|チェロ)[＝=:：])", body)
+        if not event:
+            continue
+        try:
+            day = dt.date(*map(int, event.groups()[:3])).isoformat()
+        except ValueError:
+            continue
+        program = body[event.end():].split("【発売日】")[0]
+        songs = [n.get_text(" ", strip=True) for n in soup.find_all(["p", "li"])
+                 if n.get_text(" ", strip=True) in program and "：" in n.get_text(" ", strip=True)]
+        yield {"title": title, "date": day, "time": event.group(4), "venue": event.group(5).strip(),
+               "sourceUrl": page, "program": songs}
+
+
 def main():
     master = ROOT / "public/data/master"
     composers = json.loads((master / "composers.json").read_text(encoding="utf-8"))
@@ -158,6 +195,7 @@ def main():
     AREAS.update({"綾瀬市オーエンス文化会館": "神奈川", "横浜美術館": "神奈川", "神奈川県民ホール": "神奈川", "神奈川県立音楽堂": "神奈川"})
     AREAS.update({"東京オペラシティ": "東京", "豊洲シビックセンター": "東京", "ミューザ川崎": "神奈川", "ティアラこうとう": "東京"})
     sources = {
+        "yomikyo": yomikyo,
         "tokyosymphony": lambda: html_rows("https://tokyosymphony.jp/concert/", ".concertslist__box", ".concertslist__contents-date", ".concertslist__contents-title", ".concertslist__contents-location", "a.concertslist__box-link", ".concertslist__program-items", time_selector=".concertslist__contents-time"),
         "cityphil": cityphil,
         "kanaphil": lambda: detail_rows("kanaphil"),
