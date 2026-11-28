@@ -18,5 +18,17 @@
   {
     "id": "nhkso-special",
     "url": "https://www.nhkso.or.jp/concert/special/index.html"
+  },
+  {
+    "id": "nhkso-program-a",
+    "url": "https://www.nhkso.or.jp/concert/subscription/program_a/index.html"
+  },
+  {
+    "id": "nhkso-program-b",
+    "url": "https://www.nhkso.or.jp/concert/subscription/program_b/index.html"
+  },
+  {
+    "id": "nhkso-program-c",
+    "url": "https://www.nhkso.or.jp/concert/subscription/program_c/index.html"
   }
 ]
