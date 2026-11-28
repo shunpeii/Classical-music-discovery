@@ -70,6 +70,25 @@ def probe(source):
         print("Main link:", link.get_text(" ", strip=True)[:120], link.get("href"))
     for link in soup.select("a[href]")[:60]:
         print("Link:", link.get_text(" ", strip=True)[:100], link.get("href"))
+    # Capture nearby event markup so selectors can be derived in one pass.
+    seen = set()
+    for node in soup.find_all(string=re.compile(r"20\d{2}\s*年\s*\d{1,2}\s*月\s*\d{1,2}\s*日")):
+        if node.parent.name in ("script", "style"):
+            continue
+        for parent in list(node.parents)[1:6]:
+            if parent.name in ("body", "html"):
+                break
+            if not parent.select_one("a[href]"):
+                continue
+            markup = str(parent)
+            if len(markup) > 18000:
+                break
+            if markup not in seen:
+                seen.add(markup)
+                print("Event markup:", markup[:6500])
+            break
+        if len(seen) >= 8:
+            break
     for node in soup.select("time, [datetime], [data-date]")[:20]:
         print("Date element:", str(node)[:300])
     for heading in soup.select("h2,h3")[:20]:
