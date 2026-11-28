@@ -72,13 +72,59 @@ def yokohama():
                    "program": songs, "sourceEventId": event.get("id")}
 
 
+def detail_rows(kind):
+    base = "https://www.kanaphil.or.jp/" if kind == "kanaphil" else "https://www.geigeki.jp/"
+    soup = BeautifulSoup(fetch(base).text, "html.parser")
+    selector = ".concert-list__item a[href]" if kind == "kanaphil" else 'a[href*="/performance/concert"]'
+    links = {}
+    for anchor in soup.select(selector):
+        url = urljoin(base, anchor["href"])
+        if urlparse(url).netloc == urlparse(base).netloc:
+            links[url] = anchor
+    for url, anchor in list(links.items())[:12]:
+        try:
+            detail = BeautifulSoup(fetch(url).text, "html.parser")
+        except (requests.RequestException, ValueError):
+            continue
+        if kind == "kanaphil":
+            title = value(anchor, ".concert-list__ttl")
+            date = value(detail, ".concert__date")
+            text = detail.get_text(" ", strip=True)
+            timing = re.search(r"開演時間\s*(\d{1,2}:\d{2})", text)
+            place = re.search(r"公演場所\s*(.+?)(?=\s*(?:指揮者|共演者|出演者|主な演目|チケットを購入|料金))", text)
+            venue = place.group(1).strip() if place else ""
+            songs = [n.get_text(" ", strip=True) for n in anchor.select(".concert-list__programs span")]
+        else:
+            title = value(detail, "title")
+            fields = {n.get_text(" ", strip=True): n.find_next_sibling("dd").get_text(" ", strip=True)
+                      for n in detail.select(".p-performance-titles__data dt") if n.find_next_sibling("dd")}
+            date = fields.get("日程", "")
+            if len(re.findall(r"20\d{2}\s*年", date)) != 1 or re.search(r"[～〜－]|全\d+回", date):
+                continue
+            timing = re.search(r"(\d{1,2}:\d{2})\s*開演", date)
+            venue = "東京芸術劇場 " + fields["会場"] if fields.get("会場") else ""
+            songs = []
+        found = re.search(r"(20\d{2})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日", date)
+        if not found or "中止" in title:
+            continue
+        try:
+            day = dt.date(*map(int, found.groups())).isoformat()
+        except ValueError:
+            continue
+        yield {"title": title, "date": day, "time": timing.group(1) if timing else "",
+               "venue": venue, "sourceUrl": url, "program": songs}
+
+
 def main():
     master = ROOT / "public/data/master"
     composers = json.loads((master / "composers.json").read_text(encoding="utf-8"))
     works = json.loads((master / "works.json").read_text(encoding="utf-8"))
     today = dt.datetime.now(ZoneInfo("Asia/Tokyo")).date()
     AREAS.update({"日生劇場": "東京", "ドイツ文化会館OAGホール": "東京", "S＆D秋川キララホール": "東京"})
+    AREAS.update({"綾瀬市オーエンス文化会館": "神奈川", "横浜美術館": "神奈川", "神奈川県民ホール": "神奈川", "神奈川県立音楽堂": "神奈川"})
     sources = {
+        "kanaphil": lambda: detail_rows("kanaphil"),
+        "geigeki": lambda: detail_rows("geigeki"),
         "njp": lambda: html_rows("https://www.njp.or.jp/concerts/", "div:has(> .--title):has(> .--date)", ".--date", ".--title", ".--place", "a.--detail", ".program__list"),
         "tmso": lambda: html_rows("https://www.tmso.or.jp/j/concert/", ".entry-content", ".entry-date", ".entry-title", ".entry-hall", ".entry-link", ".notes"),
         "triphony": lambda: html_rows("https://www.triphony.com/", ".boxPickUp", ".eventDate", ".ttlPickUp", "", ".txtMore a", "", "すみだトリフォニーホール"),
