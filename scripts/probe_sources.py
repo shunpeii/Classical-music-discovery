@@ -49,7 +49,7 @@ def probe(source):
             js = requests.get(script_url, headers={"User-Agent": AGENT}, timeout=20, allow_redirects=False)
             if js.status_code != 200:
                 continue
-            for match in list(re.finditer(r"fetch\s*\(|ajax\s*\(|getJSON\s*\(|\.json\b|/api/|\.php\b", js.text, re.I))[:35]:
+            for match in list(re.finditer(r"fetch\s*\(|ajax\s*\(|getJSON\s*\(|\.json\b|/api/|\.php\b", js.text, re.IGNORECASE))[:35]:
                 print("JS candidate:", script_url, js.text[max(0, match.start()-100):match.end()+150])
         except requests.RequestException as exc:
             print("Script probe failed:", exc)
