@@ -12,7 +12,7 @@
   {
     "id": "tpo",
     "url": "https://www.tpo.or.jp/calendar/",
-    "diagnostics": "Probe failed: HTTPSConnectionPool(host='www.tpo.or.jp', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.tpo.or.jp', port=443) at 0x79bad8d60620>, 'Connection to www.tpo.or.jp timed out. (connect timeout=20)'))\n"
+    "diagnostics": "Probe failed: HTTPSConnectionPool(host='www.tpo.or.jp', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.tpo.or.jp', port=443) at 0x7d93e1474590>, 'Connection to www.tpo.or.jp timed out. (connect timeout=20)'))\n"
   },
   {
     "id": "nhkso-subscription",
