@@ -30,6 +30,17 @@ def probe(source):
         return
     if response.encoding in (None, "ISO-8859-1"):
         response.encoding = response.apparent_encoding or "utf-8"
+    if source.get("format") == "json":
+        payload = response.json()
+        print("JSON root type:", type(payload).__name__)
+        if isinstance(payload, dict):
+            print("JSON keys:", list(payload))
+            for key, value in payload.items():
+                print("Field:", key, type(value).__name__, str(value)[:2500])
+        elif isinstance(payload, list):
+            print("JSON count:", len(payload))
+            print("JSON sample:", json.dumps(payload[:2], ensure_ascii=False)[:5000])
+        return
     soup = BeautifulSoup(response.text, "html.parser")
     print("JSON-LD events:", len(list(jsonld(response.text))))
     print("Content-Type:", response.headers.get("Content-Type"))
