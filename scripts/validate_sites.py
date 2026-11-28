@@ -77,7 +77,9 @@ def main():
     composers = json.loads((master / "composers.json").read_text(encoding="utf-8"))
     works = json.loads((master / "works.json").read_text(encoding="utf-8"))
     today = dt.datetime.now(ZoneInfo("Asia/Tokyo")).date()
+    AREAS.update({"日生劇場": "東京", "ドイツ文化会館OAGホール": "東京", "S＆D秋川キララホール": "東京"})
     sources = {
+        "njp": lambda: html_rows("https://www.njp.or.jp/concerts/", "div:has(> .--title):has(> .--date)", ".--date", ".--title", ".--place", "a.--detail", ".program__list"),
         "tmso": lambda: html_rows("https://www.tmso.or.jp/j/concert/", ".entry-content", ".entry-date", ".entry-title", ".entry-hall", ".entry-link", ".notes"),
         "triphony": lambda: html_rows("https://www.triphony.com/", ".boxPickUp", ".eventDate", ".ttlPickUp", "", ".txtMore a", "", "すみだトリフォニーホール"),
         "yokohama": yokohama,
