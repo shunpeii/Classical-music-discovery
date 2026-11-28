@@ -1,7 +1,7 @@
 name: Refresh concerts
 on:
   schedule:
-    - cron: '20 18 * * *'
+    - cron: '0 18 28-31 * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -12,31 +12,54 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
+      - name: Check monthly date
+        id: calendar
+        run: |
+          if [ '${{ github.event_name }}' = workflow_dispatch ] || [ "$(TZ=Asia/Tokyo date +%d)" = 01 ]; then
+            echo 'run=true' >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@v4
+        if: steps.calendar.outputs.run == 'true'
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
+        if: steps.calendar.outputs.run == 'true'
         with:
           python-version: '3.12'
       - uses: actions/setup-node@v4
+        if: steps.calendar.outputs.run == 'true'
         with:
           node-version: '22'
-      - run: pip install -r scripts/requirements.txt ruff
-      - run: ruff check --select E9,F63,F7,F82 scripts
-      - run: python -m unittest discover -s scripts -p 'test_*.py'
-      - run: npm install
-      - run: npm run check
-      - name: Refresh approved sources
+      - if: steps.calendar.outputs.run == 'true'
+        run: pip install -r scripts/requirements.txt ruff
+      - if: steps.calendar.outputs.run == 'true'
+        run: ruff check --select E9,F63,F7,F82 scripts
+      - if: steps.calendar.outputs.run == 'true'
+        run: python -m unittest discover -s scripts -p 'test_*.py'
+      - if: steps.calendar.outputs.run == 'true'
+        run: npm install
+      - if: steps.calendar.outputs.run == 'true'
+        run: npm run check
+      - name: Refresh validated adapters
+        if: steps.calendar.outputs.run == 'true'
         run: |
-          if python -c 'import json,sys; sys.exit(not any(s.get("approved") for s in json.load(open("scripts/sources.json"))))'; then
-            python scripts/scrape.py
-          else
-            echo "::warning::No approved concert sources; skipping refresh"
-          fi
+          python scripts/validate_nhk.py || python -c 'import json; from pathlib import Path; Path("scripts/diagnostics/nhk-validation.json").write_text(json.dumps({"error":"NHK refresh failed"}))'
+          python scripts/validate_sites.py
+          python scripts/publish_concerts.py
       - name: Commit snapshot
+        if: steps.calendar.outputs.run == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add public/data/concerts
           if ! git diff --cached --quiet; then
             git commit -m 'data: refresh concert snapshot'
-            git push
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              if git push origin HEAD:main; then exit 0; fi
+              sleep 3
+            done
+            exit 1
           fi
