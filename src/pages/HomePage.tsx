@@ -1,6 +1,11 @@
-import type {Era,Composer} from '../types';
+import type {Era,Composer,Concert,Work} from '../types';
 import {Portrait} from '../components/Portrait';
-type Props={eras:Era[];composers:Composer[];era:string;setEra:(s:string)=>void;go:(r:string)=>void;query:string;setQuery:(s:string)=>void};
-export function HomePage({eras,composers,era,setEra,go,query,setQuery}:Props){return <>
+type Props={eras:Era[];composers:Composer[];concerts:Concert[];works:Work[];era:string;setEra:(s:string)=>void;go:(r:string)=>void;query:string;setQuery:(s:string)=>void};
+export function HomePage({eras,composers,concerts,works,era,setEra,go,query,setQuery}:Props){
+const counts=new Map<string,number>();
+const owners=new Map(works.map(w=>[w.id,w.composerId]));
+for(const concert of concerts){const ids=new Set([...(concert.composerIds||[]),...concert.workIds.map(id=>owners.get(id))]);for(const id of ids)if(id)counts.set(id,(counts.get(id)||0)+1);}
+return <>
 <section className="welcome"><h1>はじめての<br/>クラシックコンサート</h1><p>有名な作曲家から、<br/>今聴けるコンサートを見つけよう</p><form onSubmit={e=>{e.preventDefault();go('concerts')}}><input aria-label="公演検索" placeholder="⌕ 作曲家・曲・会場で探す" value={query} onChange={e=>setQuery(e.target.value)}/></form></section>
-<section className="browse"><h2>時代から探す</h2><div className="eras">{eras.map(e=><button className={era===e.id?'active':''} key={e.id} onClick={()=>setEra(e.id)}>{e.name}<small>{e.years}</small></button>)}</div><h2>この時代の有名な作曲家</h2><div className="composer-grid">{composers.filter(c=>c.eraId===era).map((c,i)=><button key={c.id} onClick={()=>go('composer/'+c.id)}><Portrait composer={c} priority={i<6}/><strong>{c.name}</strong></button>)}</div><button className="link history-link" onClick={()=>go('history')}>この時代の歴史を知る ›</button></section></>;}
+<div className="home-shortcuts"><button onClick={()=>go('concerts')}>公演を探す <span>›</span></button><button onClick={()=>go('history')}>音楽史を知る <span>›</span></button></div>
+<section className="browse"><h2>時代から探す</h2><div className="eras">{eras.map(e=><button className={era===e.id?'active':''} key={e.id} onClick={()=>setEra(e.id)}>{e.name}<small>{e.years}</small></button>)}</div><h2>この時代の有名な作曲家</h2><div className="composer-grid">{composers.filter(c=>c.eraId===era).map((c,i)=><button key={c.id} onClick={()=>go('composer/'+c.id)}><Portrait composer={c} priority={i<6}/><strong>{c.name}</strong><small className="composer-count">{counts.get(c.id)||0}件の公演</small></button>)}</div><button className="link history-link" onClick={()=>go('history')}>この時代の歴史を知る ›</button></section><section className="home-upcoming"><div className="line"><h2>まもなく開催</h2><button className="link history-link" onClick={()=>go('concerts')}>すべて見る ›</button></div>{[...concerts].sort((a,b)=>a.date.localeCompare(b.date)).slice(0,4).map(c=><button className="upcoming-row" key={c.id} onClick={()=>go('concert/'+c.id)}><span className="date-tile">{c.date.slice(5).replace('-','/')}</span><span><strong>{c.title}</strong><small>{c.venue}</small></span><span>›</span></button>)}</section></>;}
