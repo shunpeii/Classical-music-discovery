@@ -9,7 +9,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from urllib.robotparser import RobotFileParser
 import requests
-from bs4 import BeautifulSoup
+from extractors import jsonld, css, api_json, rss, price
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "public/data/concerts"
@@ -23,6 +23,30 @@ def write(path, value):
     temp.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
     temp.replace(path)
 
+def normalize(raw, source):
+    title = str(raw.get("title") or "").strip()
+    match = re.search(r"(\d{4})[年./-](\d{1,2})[月./-](\d{1,2})", str(raw.get("date") or ""))
+    if not title or not match or "EventCancelled" in str(raw.get("status", "")):
+        return None
+    try:
+        day = dt.date(*map(int, match.groups())).isoformat()
+    except ValueError:
+        return None
+    if day < dt.datetime.now(ZoneInfo("Asia/Tokyo")).date().isoformat():
+        return None
+    href = urljoin(source["url"], str(raw.get("link") or source["url"]))
+    if urlparse(href).scheme not in ("http", "https"):
+        return None
+    venue = raw.get("venue") or source.get("venue")
+    area = raw.get("area") or source.get("area")
+    if not venue or not area:
+        return None
+    key = hashlib.sha256(f"{source['id']}|{day}|{title}|{href}".encode()).hexdigest()[:24]
+    return dict(id=key, title=title, date=day, venue=venue, area=area,
+                price=price(raw.get("price")), workIds=[], mood="", sourceId=source["id"],
+                sourceUrl=href, program=str(raw.get("program") or ""))
+
+
 def scrape(source):
     url = source["url"]
     if not source.get("approved"):
@@ -31,32 +55,29 @@ def scrape(source):
     robot.read()
     if not robot.can_fetch(AGENT, url):
         raise ValueError("robots.txt disallows fetching")
-    response = requests.get(url, headers={"User-Agent": AGENT}, timeout=25)
+    response = requests.get(url, headers={"User-Agent": AGENT}, timeout=25, allow_redirects=False)
+    if response.is_redirect:
+        raise ValueError("Configure final URL and verify robots.txt")
     response.raise_for_status()
-    soup = BeautifulSoup(response.text, "html.parser")
-    rows = []
-    for node in soup.select(source["item"]):
-        def field(key):
-            el = node.select_one(source[key])
-            return el.get_text(" ", strip=True) if el else ""
-        title = field("title")
-        date = field("date")
-        match = re.search(r"(\d{4})[年./-](\d{1,2})[月./-](\d{1,2})", date)
-        if not title or not match:
-            continue
-        day = dt.date(*map(int, match.groups())).isoformat()
-        if day < dt.datetime.now(ZoneInfo('Asia/Tokyo')).date().isoformat():
-            continue
-        link = node.select_one(source["link"])
-        href = urljoin(url, link.get("href", "")) if link else url
-        if urlparse(href).scheme not in ("http", "https"):
-            continue
-        venue = source["venue"]
-        key = hashlib.sha256(f"{source['id']}|{day}|{title}|{href}".encode()).hexdigest()[:24]
-        rows.append(dict(id=key,title=title,date=day,venue=venue,area=source["area"],price=None,workIds=[],mood="",sourceId=source["id"],sourceUrl=href))
-    if not rows:
-        raise ValueError("No valid future events; verify selectors")
-    return rows
+    methods = source.get("methods", ["jsonld", "css"])
+    for method in methods:
+        if method == "jsonld":
+            raw = jsonld(response.text)
+        elif method == "css":
+            if not source.get("selectors") and not source.get("item"):
+                continue
+            raw = css(response.text, source)
+        elif method == "api":
+            raw = api_json(response.text, source)
+        elif method == "rss":
+            raw = rss(response.text, source)
+        else:
+            raise ValueError(f"Unknown extraction method: {method}")
+        rows = [row for item in raw if (row := normalize(item, source))]
+        if rows:
+            return rows
+    raise ValueError("No valid future events; verify configuration")
+
 
 def main():
     parser = argparse.ArgumentParser()
