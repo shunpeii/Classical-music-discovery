@@ -110,5 +110,17 @@
     "id": "yokohama-calendar-json",
     "url": "https://yokohama-minatomiraihall.jp/cal.json",
     "format": "json"
+  },
+  {
+    "id": "kanaphil-detail",
+    "url": "https://www.kanaphil.or.jp/concert/4686/"
+  },
+  {
+    "id": "geigeki-list",
+    "url": "https://www.geigeki.jp/performance/"
+  },
+  {
+    "id": "geigeki-detail",
+    "url": "https://www.geigeki.jp/performance/concert367-c367-2/"
   }
 ]
