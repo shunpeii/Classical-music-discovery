@@ -144,7 +144,14 @@ def expand_program(songs, composers):
 def composer_ids(songs, composers, works, work_ids):
     """Identify composers independently of whether a work is catalogued."""
     names = {key(c["name"]): c["id"] for c in composers}
-    names.update({"jsバッハ": "bach", "fメンデルスゾーン": "mendelssohn",
+    names.update({"bach": "bach", "jsbach": "bach", "mozart": "mozart",
+                  "beethoven": "beethoven", "lvbeethoven": "beethoven",
+                  "mahler": "mahler", "gmahler": "mahler", "brahms": "brahms",
+                  "bartok": "bartok", "bbartók": "bartok", "bartók": "bartok",
+                  "schoenberg": "schoenberg", "stravinsky": "stravinsky",
+                  "istravinsky": "stravinsky", "rstrauss": "rstrauss",
+                  "haydn": "haydn", "jhaydn": "haydn", "vivaldi": "vivaldi",
+                  "jsバッハ": "bach", "fメンデルスゾーン": "mendelssohn",
                   "fリスト": "liszt", "jシュトラウスii世": "jstrauss",
                   "jシュトラウスii": "jstrauss", "jシュトラウス2世": "jstrauss",
                   "rシュトラウス": "rstrauss", "ドヴォルジャーク": "dvorak"})
@@ -156,7 +163,8 @@ def composer_ids(songs, composers, works, work_ids):
         name = key(re.sub(r"[（(][^）)]*(?:編曲|編)[）)]", "", author[0]))
         if name in names:
             result.add(names[name])
-    return sorted(result)
+    valid_ids = {c["id"] for c in composers}
+    return sorted(result & valid_ids)
 
 
 def normalize(concerts, halls, composers, works, today):
