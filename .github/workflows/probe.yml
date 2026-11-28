@@ -8,6 +8,9 @@ on:
       - scripts/validate_sites.py
       - scripts/candidates.json
       - .github/workflows/probe.yml
+concurrency:
+  group: probe-concert-sources-main
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
@@ -15,6 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -32,5 +38,13 @@ jobs:
           git add scripts/diagnostics/latest.json scripts/diagnostics/nhk-validation.json scripts/diagnostics/sites-validation.json
           if ! git diff --cached --quiet; then
             git commit -m 'data: update source diagnostics'
-            git push
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              sleep 3
+            done
+            exit 1
           fi
