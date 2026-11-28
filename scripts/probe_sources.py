@@ -27,6 +27,16 @@ def probe(source):
         return
     soup = BeautifulSoup(response.text, "html.parser")
     print("JSON-LD events:", len(list(jsonld(response.text))))
+    print("Content-Type:", response.headers.get("Content-Type"))
+    print("Response bytes:", len(response.content))
+    print("Title:", soup.title.get_text(strip=True) if soup.title else "")
+    print("Body preview:", soup.get_text(" ", strip=True)[:1500])
+    print("Script sources:", [s.get("src") for s in soup.select("script[src]")][:30])
+    print("Inline script types:", [s.get("type") for s in soup.select("script:not([src])")][:20])
+    for link in soup.select("a[href]")[:60]:
+        print("Link:", link.get_text(" ", strip=True)[:100], link.get("href"))
+    for node in soup.select("time, [datetime], [data-date]")[:20]:
+        print("Date element:", str(node)[:300])
     for heading in soup.select("h2,h3")[:20]:
         print("Heading:", heading.get_text(" ", strip=True)[:100])
         for parent in list(heading.parents)[:4]:
