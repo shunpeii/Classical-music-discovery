@@ -35,5 +35,10 @@
     "id": "nhkso-archive-index",
     "url": "https://www.nhkso.or.jp/concert/json/list_archive_concert.json",
     "format": "json"
+  },
+  {
+    "id": "nhkso-2026",
+    "url": "https://www.nhkso.or.jp/concert/json/archive_concert_2026.json",
+    "format": "json"
   }
 ]
