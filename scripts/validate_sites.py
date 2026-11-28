@@ -32,6 +32,18 @@ def value(node, selector):
     return child.get_text(" ", strip=True) if child else ""
 
 
+def program_lines(detail):
+    for heading in detail.find_all(["h2", "h3", "h4", "dt", "th"]):
+        if heading.get_text(strip=True) not in {"曲目", "演奏曲目", "プログラム", "主な演目", "予定曲目"}:
+            continue
+        sibling = heading.find_next_sibling() or heading.parent.find_next_sibling()
+        if sibling:
+            lines = sibling.get_text("\n", strip=True).splitlines()
+            if lines:
+                return lines
+    return []
+
+
 def html_rows(url, item, date, title, venue, link, program, fixed_venue="", time_selector=""):
     soup = BeautifulSoup(fetch(url).text, "html.parser")
     for node in soup.select(item):
@@ -51,10 +63,16 @@ def html_rows(url, item, date, title, venue, link, program, fixed_venue="", time
             continue
         time = re.search(r"\d{1,2}:\d{2}", value(node, time_selector) if time_selector else raw_date)
         songs = node.select(program) if program else []
+        lines = [line.strip() for song in songs for line in song.get_text("\n", strip=True).splitlines() if line.strip()]
+        if not lines and fixed_venue:
+            try:
+                lines = program_lines(BeautifulSoup(fetch(urljoin(url, anchor["href"])).text, "html.parser"))
+            except (requests.RequestException, ValueError):
+                pass
         yield {"title": name, "date": day, "time": time.group() if time else "",
                "venue": fixed_venue or value(node, venue),
                "sourceUrl": urljoin(url, anchor["href"]),
-               "program": [line.strip() for song in songs for line in song.get_text("\n", strip=True).splitlines() if line.strip()]}
+               "program": lines}
 
 
 def yokohama():
@@ -103,7 +121,7 @@ def detail_rows(kind):
                 continue
             timing = re.search(r"(\d{1,2}:\d{2})\s*開演", date)
             venue = "東京芸術劇場 " + fields["会場"] if fields.get("会場") else ""
-            songs = []
+            songs = program_lines(detail)
         found = re.search(r"(20\d{2})\s*年\s*(\d{1,2})\s*月\s*(\d{1,2})\s*日", date)
         if not found or "中止" in title:
             continue
@@ -139,13 +157,7 @@ def cityphil():
             day = dt.date(*map(int, date.groups()[:3])).isoformat()
         except ValueError:
             continue
-        songs = []
-        for heading in detail.find_all(["h2", "h3", "h4"]):
-            if heading.get_text(strip=True) == "曲目":
-                sibling = heading.find_next_sibling()
-                if sibling:
-                    songs = sibling.get_text("\n", strip=True).splitlines()
-                break
+        songs = program_lines(detail)
         yield {"title": title, "date": day, "time": date.group(4), "venue": venue.group(1).strip(),
                "sourceUrl": url, "program": songs}
 
@@ -180,8 +192,9 @@ def yomikyo():
         except ValueError:
             continue
         program = body[event.end():].split("【発売日】")[0]
-        songs = [n.get_text(" ", strip=True) for n in soup.find_all(["p", "li"])
-                 if n.get_text(" ", strip=True) in program and "：" in n.get_text(" ", strip=True)]
+        songs = [line for n in soup.find_all(["p", "li"])
+                 if n.get_text(" ", strip=True) in program
+                 for line in n.get_text("\n", strip=True).splitlines() if "：" in line or ":" in line]
         yield {"title": title, "date": day, "time": event.group(4), "venue": event.group(5).strip(),
                "sourceUrl": page, "program": songs}
 
@@ -226,6 +239,8 @@ def main():
                 row["workIds"] = sorted({w for song in row["program"] if (w := match(song, composers, works))})
                 rows[(row["date"], row["time"], row["title"], venue)] = row
             reports[source] = {"normalizedCount": len(rows), "incompleteCount": incomplete,
+                               "missingProgramCount": sum(not row["program"] for row in rows.values()),
+                               "unmatchedSongs": sorted({song for row in rows.values() for song in row["program"] if not match(song, composers, works)}),
                                "matchedConcertCount": sum(bool(row["workIds"]) for row in rows.values()),
                                "rows": list(rows.values())}
         except (requests.RequestException, ValueError, KeyError, TypeError) as exc:
