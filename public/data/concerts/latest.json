@@ -1,7 +1,7 @@
 {
-  "file": "2026-11-27-verified.json",
+  "file": "2026-11-28-import.json",
   "sample": false,
-  "concertCount": 6,
-  "updatedAt": "2026-11-27",
-  "method": "manual official-source verification"
+  "concertCount": 195,
+  "updatedAt": "2026-11-28",
+  "method": "official-source extraction; automated matching"
 }
