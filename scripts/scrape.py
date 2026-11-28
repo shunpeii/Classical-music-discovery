@@ -59,6 +59,8 @@ def scrape(source):
     if response.is_redirect:
         raise ValueError("Configure final URL and verify robots.txt")
     response.raise_for_status()
+    if response.encoding in (None, 'ISO-8859-1'):
+        response.encoding = response.apparent_encoding or 'utf-8'
     methods = source.get("methods", ["jsonld", "css"])
     for method in methods:
         if method == "jsonld":
