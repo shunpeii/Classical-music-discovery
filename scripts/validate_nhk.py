@@ -141,6 +141,24 @@ def expand_program(songs, composers):
     return result
 
 
+def composer_ids(songs, composers, works, work_ids):
+    """Identify composers independently of whether a work is catalogued."""
+    names = {key(c["name"]): c["id"] for c in composers}
+    names.update({"jsバッハ": "bach", "fメンデルスゾーン": "mendelssohn",
+                  "fリスト": "liszt", "jシュトラウスii世": "jstrauss",
+                  "jシュトラウスii": "jstrauss", "jシュトラウス2世": "jstrauss",
+                  "rシュトラウス": "rstrauss", "ドヴォルジャーク": "dvorak"})
+    result = {w["composerId"] for w in works if w["id"] in work_ids}
+    for song in expand_program(songs, composers):
+        author = re.split(r"[／/：:]", song, maxsplit=1)
+        if len(author) != 2:
+            continue
+        name = key(re.sub(r"[（(][^）)]*(?:編曲|編)[）)]", "", author[0]))
+        if name in names:
+            result.add(names[name])
+    return sorted(result)
+
+
 def normalize(concerts, halls, composers, works, today):
     rows = {}
     unknown = set()
@@ -172,7 +190,8 @@ def normalize(concerts, halls, composers, works, today):
             rows[identity] = {"title": title, "date": day.isoformat(), "time": time,
                               "venue": venue, "area": area, "sourceUrl": url,
                               "ticketUrl": detail.get("ticket_url"), "program": songs,
-                              "workIds": sorted({w for w in matched if w})}
+                              "workIds": sorted({w for w in matched if w}),
+                              "composerIds": composer_ids(songs, composers, works, matched)}
     return list(rows.values()), sorted(unknown), sorted(unmatched)
 
 
@@ -185,6 +204,7 @@ def main():
     rows, unknown, unmatched = normalize(concerts, halls, composers, works, dt.datetime.now(ZoneInfo("Asia/Tokyo")).date())
     report = {"rawCount": len(concerts), "normalizedCount": len(rows),
               "matchedConcertCount": sum(bool(r["workIds"]) for r in rows),
+              "composerMatchedConcertCount": sum(bool(r["composerIds"]) for r in rows),
               "unknownOrOutsideAreaVenues": unknown, "unmatchedSongs": unmatched, "rows": rows}
     destination = ROOT / "scripts/diagnostics/nhk-validation.json"
     destination.parent.mkdir(exist_ok=True)
