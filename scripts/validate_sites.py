@@ -32,7 +32,7 @@ def value(node, selector):
     return child.get_text(" ", strip=True) if child else ""
 
 
-def html_rows(url, item, date, title, venue, link, program, fixed_venue=""):
+def html_rows(url, item, date, title, venue, link, program, fixed_venue="", time_selector=""):
     soup = BeautifulSoup(fetch(url).text, "html.parser")
     for node in soup.select(item):
         anchor = node.select_one(link)
@@ -49,7 +49,7 @@ def html_rows(url, item, date, title, venue, link, program, fixed_venue=""):
         name = value(node, title)
         if fixed_venue and not re.search(r"クラシック|オーケストラ|交響楽|オルガン|管弦楽|ピアノ|室内楽|弦楽", name):
             continue
-        time = re.search(r"\d{1,2}:\d{2}", raw_date)
+        time = re.search(r"\d{1,2}:\d{2}", value(node, time_selector) if time_selector else raw_date)
         songs = node.select(program) if program else []
         yield {"title": name, "date": day, "time": time.group() if time else "",
                "venue": fixed_venue or value(node, venue),
@@ -115,6 +115,40 @@ def detail_rows(kind):
                "venue": venue, "sourceUrl": url, "program": songs}
 
 
+def cityphil():
+    base = "https://www.cityphil.jp/concert/"
+    soup = BeautifulSoup(fetch(base).text, "html.parser")
+    links = dict.fromkeys(urljoin(base, a["href"]) for a in soup.select('a[href*="detail.php?id="]')
+                          if urlparse(urljoin(base, a["href"])).path == "/concert/detail.php"
+                          and urlparse(urljoin(base, a["href"])).netloc == urlparse(base).netloc)
+    for url in list(links)[:20]:
+        try:
+            detail = BeautifulSoup(fetch(url).text, "html.parser")
+        except (requests.RequestException, ValueError):
+            continue
+        title = value(detail, "title").split("｜")[0]
+        if "中止" in title:
+            continue
+        body = detail.get_text(" ", strip=True)
+        date = re.search(r"(20\d{2})\s*/\s*(\d{1,2})\s*/\s*(\d{1,2})\s*[（(][^）)]*[）)]\s*(\d{1,2}:\d{2})\s*開演", body)
+        venue = re.search(r"会場[：:]\s*(.+?)\s*(?=>?会場アクセス|>座席表)", body)
+        if not date or not venue:
+            continue
+        try:
+            day = dt.date(*map(int, date.groups()[:3])).isoformat()
+        except ValueError:
+            continue
+        songs = []
+        for heading in detail.find_all(["h2", "h3", "h4"]):
+            if heading.get_text(strip=True) == "曲目":
+                sibling = heading.find_next_sibling()
+                if sibling:
+                    songs = sibling.get_text("\n", strip=True).splitlines()
+                break
+        yield {"title": title, "date": day, "time": date.group(4), "venue": venue.group(1).strip(),
+               "sourceUrl": url, "program": songs}
+
+
 def main():
     master = ROOT / "public/data/master"
     composers = json.loads((master / "composers.json").read_text(encoding="utf-8"))
@@ -122,7 +156,10 @@ def main():
     today = dt.datetime.now(ZoneInfo("Asia/Tokyo")).date()
     AREAS.update({"日生劇場": "東京", "ドイツ文化会館OAGホール": "東京", "S＆D秋川キララホール": "東京"})
     AREAS.update({"綾瀬市オーエンス文化会館": "神奈川", "横浜美術館": "神奈川", "神奈川県民ホール": "神奈川", "神奈川県立音楽堂": "神奈川"})
+    AREAS.update({"東京オペラシティ": "東京", "豊洲シビックセンター": "東京", "ミューザ川崎": "神奈川", "ティアラこうとう": "東京"})
     sources = {
+        "tokyosymphony": lambda: html_rows("https://tokyosymphony.jp/concert/", ".concertslist__box", ".concertslist__contents-date", ".concertslist__contents-title", ".concertslist__contents-location", "a.concertslist__box-link", ".concertslist__program-items", time_selector=".concertslist__contents-time"),
+        "cityphil": cityphil,
         "kanaphil": lambda: detail_rows("kanaphil"),
         "geigeki": lambda: detail_rows("geigeki"),
         "njp": lambda: html_rows("https://www.njp.or.jp/concerts/", "div:has(> .--title):has(> .--date)", ".--date", ".--title", ".--place", "a.--detail", ".program__list"),
