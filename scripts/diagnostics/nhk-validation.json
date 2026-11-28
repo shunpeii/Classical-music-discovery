@@ -2,6 +2,7 @@
   "rawCount": 78,
   "normalizedCount": 50,
   "matchedConcertCount": 48,
+  "composerMatchedConcertCount": 50,
   "unknownOrOutsideAreaVenues": [
     "iichiko総合文化センター iichikoグランシアタ",
     "ザ・シンフォニーホール",
@@ -84,6 +85,9 @@
       ],
       "workIds": [
         "wagner-1"
+      ],
+      "composerIds": [
+        "wagner"
       ]
     },
     {
@@ -113,7 +117,13 @@
         "J. シュトラウス I世／ワルツ「ローレライ・ラインの調べ」作品154",
         "ビゼー／「アルルの女」組曲 第2番―「ファランドール」"
       ],
-      "workIds": []
+      "workIds": [],
+      "composerIds": [
+        "bizet",
+        "jstrauss",
+        "mussorgsky",
+        "sibelius"
+      ]
     },
     {
       "title": "N響大河ドラマ＆名曲コンサート",
@@ -142,7 +152,13 @@
         "J. シュトラウス I世／ワルツ「ローレライ・ラインの調べ」作品154",
         "ビゼー／「アルルの女」組曲 第2番―「ファランドール」"
       ],
-      "workIds": []
+      "workIds": [],
+      "composerIds": [
+        "bizet",
+        "jstrauss",
+        "mussorgsky",
+        "sibelius"
+      ]
     },
     {
       "title": "NHK交響楽団 in ICHIKAWA",
@@ -159,6 +175,10 @@
       "workIds": [
         "beethoven-6",
         "tchaikovsky-1"
+      ],
+      "composerIds": [
+        "beethoven",
+        "tchaikovsky"
       ]
     },
     {
@@ -177,6 +197,11 @@
       "workIds": [
         "beethoven-7",
         "brahms-3"
+      ],
+      "composerIds": [
+        "beethoven",
+        "brahms",
+        "schubert"
       ]
     },
     {
@@ -198,6 +223,11 @@
         "brahms-14",
         "ravel-5",
         "stravinsky-6"
+      ],
+      "composerIds": [
+        "brahms",
+        "ravel",
+        "stravinsky"
       ]
     },
     {
@@ -216,6 +246,11 @@
       "workIds": [
         "prokofiev-2",
         "stravinsky-1"
+      ],
+      "composerIds": [
+        "mozart",
+        "prokofiev",
+        "stravinsky"
       ]
     },
     {
@@ -234,6 +269,11 @@
       "workIds": [
         "prokofiev-2",
         "stravinsky-1"
+      ],
+      "composerIds": [
+        "mozart",
+        "prokofiev",
+        "stravinsky"
       ]
     },
     {
@@ -253,6 +293,10 @@
       "workIds": [
         "debussy-2",
         "ravel-2"
+      ],
+      "composerIds": [
+        "debussy",
+        "ravel"
       ]
     },
     {
@@ -272,6 +316,10 @@
       "workIds": [
         "debussy-2",
         "ravel-2"
+      ],
+      "composerIds": [
+        "debussy",
+        "ravel"
       ]
     },
     {
@@ -289,6 +337,9 @@
       ],
       "workIds": [
         "rstrauss-6"
+      ],
+      "composerIds": [
+        "rstrauss"
       ]
     },
     {
@@ -306,6 +357,9 @@
       ],
       "workIds": [
         "rstrauss-6"
+      ],
+      "composerIds": [
+        "rstrauss"
       ]
     },
     {
@@ -321,6 +375,9 @@
       ],
       "workIds": [
         "bach-4"
+      ],
+      "composerIds": [
+        "bach"
       ]
     },
     {
@@ -336,6 +393,9 @@
       ],
       "workIds": [
         "bach-4"
+      ],
+      "composerIds": [
+        "bach"
       ]
     },
     {
@@ -366,6 +426,10 @@
         "wagner-1",
         "wagner-2",
         "wagner-5"
+      ],
+      "composerIds": [
+        "jstrauss",
+        "wagner"
       ]
     },
     {
@@ -396,6 +460,10 @@
         "wagner-1",
         "wagner-2",
         "wagner-5"
+      ],
+      "composerIds": [
+        "jstrauss",
+        "wagner"
       ]
     },
     {
@@ -412,6 +480,10 @@
       ],
       "workIds": [
         "beethoven-1"
+      ],
+      "composerIds": [
+        "bach",
+        "beethoven"
       ]
     },
     {
@@ -427,6 +499,9 @@
       ],
       "workIds": [
         "beethoven-1"
+      ],
+      "composerIds": [
+        "beethoven"
       ]
     },
     {
@@ -443,6 +518,9 @@
       ],
       "workIds": [
         "beethoven-1"
+      ],
+      "composerIds": [
+        "beethoven"
       ]
     },
     {
@@ -459,6 +537,9 @@
       ],
       "workIds": [
         "beethoven-1"
+      ],
+      "composerIds": [
+        "beethoven"
       ]
     },
     {
@@ -475,6 +556,9 @@
       ],
       "workIds": [
         "beethoven-1"
+      ],
+      "composerIds": [
+        "beethoven"
       ]
     },
     {
@@ -491,6 +575,9 @@
       ],
       "workIds": [
         "beethoven-1"
+      ],
+      "composerIds": [
+        "beethoven"
       ]
     },
     {
@@ -507,6 +594,10 @@
       ],
       "workIds": [
         "prokofiev-3"
+      ],
+      "composerIds": [
+        "prokofiev",
+        "tchaikovsky"
       ]
     },
     {
@@ -526,6 +617,9 @@
         "tchaikovsky-18",
         "tchaikovsky-2",
         "tchaikovsky-3"
+      ],
+      "composerIds": [
+        "tchaikovsky"
       ]
     },
     {
@@ -544,6 +638,10 @@
       "workIds": [
         "beethoven-6",
         "rstrauss-7"
+      ],
+      "composerIds": [
+        "beethoven",
+        "rstrauss"
       ]
     },
     {
@@ -562,6 +660,10 @@
       "workIds": [
         "beethoven-6",
         "rstrauss-7"
+      ],
+      "composerIds": [
+        "beethoven",
+        "rstrauss"
       ]
     },
     {
@@ -578,6 +680,10 @@
       ],
       "workIds": [
         "bruckner-5"
+      ],
+      "composerIds": [
+        "bruckner",
+        "mozart"
       ]
     },
     {
@@ -594,6 +700,10 @@
       ],
       "workIds": [
         "bruckner-5"
+      ],
+      "composerIds": [
+        "bruckner",
+        "mozart"
       ]
     },
     {
@@ -612,6 +722,10 @@
       ],
       "workIds": [
         "beethoven-20"
+      ],
+      "composerIds": [
+        "beethoven",
+        "rstrauss"
       ]
     },
     {
@@ -630,6 +744,10 @@
       ],
       "workIds": [
         "beethoven-20"
+      ],
+      "composerIds": [
+        "beethoven",
+        "rstrauss"
       ]
     },
     {
@@ -646,6 +764,9 @@
       ],
       "workIds": [
         "grieg-1"
+      ],
+      "composerIds": [
+        "grieg"
       ]
     },
     {
@@ -662,6 +783,9 @@
       ],
       "workIds": [
         "grieg-1"
+      ],
+      "composerIds": [
+        "grieg"
       ]
     },
     {
@@ -682,6 +806,11 @@
       "workIds": [
         "beethoven-19",
         "shostakovich-9"
+      ],
+      "composerIds": [
+        "beethoven",
+        "dvorak",
+        "shostakovich"
       ]
     },
     {
@@ -702,6 +831,11 @@
       "workIds": [
         "beethoven-19",
         "shostakovich-9"
+      ],
+      "composerIds": [
+        "beethoven",
+        "dvorak",
+        "shostakovich"
       ]
     },
     {
@@ -719,6 +853,10 @@
       "workIds": [
         "mendelssohn-1",
         "rstrauss-3"
+      ],
+      "composerIds": [
+        "mendelssohn",
+        "rstrauss"
       ]
     },
     {
@@ -736,6 +874,10 @@
       "workIds": [
         "mendelssohn-1",
         "rstrauss-3"
+      ],
+      "composerIds": [
+        "mendelssohn",
+        "rstrauss"
       ]
     },
     {
@@ -755,6 +897,10 @@
       ],
       "workIds": [
         "beethoven-17"
+      ],
+      "composerIds": [
+        "beethoven",
+        "schumann"
       ]
     },
     {
@@ -774,6 +920,10 @@
       ],
       "workIds": [
         "beethoven-17"
+      ],
+      "composerIds": [
+        "beethoven",
+        "schumann"
       ]
     },
     {
@@ -793,6 +943,12 @@
       "workIds": [
         "mahler-14",
         "schubert-1"
+      ],
+      "composerIds": [
+        "bach",
+        "mahler",
+        "schoenberg",
+        "schubert"
       ]
     },
     {
@@ -812,6 +968,12 @@
       "workIds": [
         "mahler-14",
         "schubert-1"
+      ],
+      "composerIds": [
+        "bach",
+        "mahler",
+        "schoenberg",
+        "schubert"
       ]
     },
     {
@@ -830,6 +992,9 @@
       ],
       "workIds": [
         "beethoven-18"
+      ],
+      "composerIds": [
+        "beethoven"
       ]
     },
     {
@@ -848,6 +1013,9 @@
       ],
       "workIds": [
         "beethoven-18"
+      ],
+      "composerIds": [
+        "beethoven"
       ]
     },
     {
@@ -863,6 +1031,9 @@
       ],
       "workIds": [
         "mahler-6"
+      ],
+      "composerIds": [
+        "mahler"
       ]
     },
     {
@@ -878,6 +1049,9 @@
       ],
       "workIds": [
         "mahler-6"
+      ],
+      "composerIds": [
+        "mahler"
       ]
     },
     {
@@ -896,6 +1070,9 @@
       "workIds": [
         "beethoven-12",
         "beethoven-7"
+      ],
+      "composerIds": [
+        "beethoven"
       ]
     },
     {
@@ -914,6 +1091,9 @@
       "workIds": [
         "beethoven-12",
         "beethoven-7"
+      ],
+      "composerIds": [
+        "beethoven"
       ]
     },
     {
@@ -932,6 +1112,10 @@
       "workIds": [
         "mendelssohn-3",
         "mozart-5"
+      ],
+      "composerIds": [
+        "mendelssohn",
+        "mozart"
       ]
     },
     {
@@ -950,6 +1134,10 @@
       "workIds": [
         "mendelssohn-3",
         "mozart-5"
+      ],
+      "composerIds": [
+        "mendelssohn",
+        "mozart"
       ]
     },
     {
@@ -969,6 +1157,10 @@
       "workIds": [
         "berlioz-1",
         "ravel-5"
+      ],
+      "composerIds": [
+        "berlioz",
+        "ravel"
       ]
     },
     {
@@ -988,6 +1180,10 @@
       "workIds": [
         "berlioz-1",
         "ravel-5"
+      ],
+      "composerIds": [
+        "berlioz",
+        "ravel"
       ]
     }
   ]

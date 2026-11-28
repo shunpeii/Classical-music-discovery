@@ -23,6 +23,7 @@
       "東京文化会館オフィシャル・プラチナパートナー： 上野精養軒／長谷工グループ"
     ],
     "matchedConcertCount": 8,
+    "composerMatchedConcertCount": 8,
     "rows": [
       {
         "title": "第154回横浜マチネーシリーズ",
@@ -37,6 +38,9 @@
         "area": "神奈川",
         "workIds": [
           "mahler-4"
+        ],
+        "composerIds": [
+          "mahler"
         ]
       },
       {
@@ -52,6 +56,9 @@
         "area": "東京",
         "workIds": [
           "mahler-4"
+        ],
+        "composerIds": [
+          "mahler"
         ]
       },
       {
@@ -69,6 +76,10 @@
         "workIds": [
           "bartok-13",
           "schubert-6"
+        ],
+        "composerIds": [
+          "bartok",
+          "schubert"
         ]
       },
       {
@@ -96,6 +107,9 @@
         "area": "東京",
         "workIds": [
           "chopin-3"
+        ],
+        "composerIds": [
+          "chopin"
         ]
       },
       {
@@ -112,6 +126,10 @@
         "workIds": [
           "elgar-2",
           "holst-1"
+        ],
+        "composerIds": [
+          "elgar",
+          "holst"
         ]
       },
       {
@@ -128,6 +146,10 @@
         "workIds": [
           "elgar-2",
           "holst-1"
+        ],
+        "composerIds": [
+          "elgar",
+          "holst"
         ]
       },
       {
@@ -145,6 +167,10 @@
         "workIds": [
           "berlioz-1",
           "rachmaninoff-4"
+        ],
+        "composerIds": [
+          "berlioz",
+          "rachmaninoff"
         ]
       },
       {
@@ -162,6 +188,10 @@
         "workIds": [
           "berlioz-1",
           "rachmaninoff-4"
+        ],
+        "composerIds": [
+          "berlioz",
+          "rachmaninoff"
         ]
       }
     ]
@@ -186,7 +216,6 @@
       "ドヴォルザーク：スラヴ舞曲 第８番 op.46-8",
       "ドヴォルザーク：ロンド**",
       "ナポリ民謡による変奏曲***",
-      "ブルックナー：交響曲 第0番 ニ短調",
       "プッチーニ：「3つのメヌエット」より 第1番",
       "プッチーニ：交響的前奏曲",
       "マスカーニ：アヴェ・マリア ★",
@@ -203,7 +232,8 @@
       "武満徹：混声合唱のための「うた」から“翼”",
       "芥川也寸志：チェロとオーケストラのためのコンチェルト・オスティナート"
     ],
-    "matchedConcertCount": 14,
+    "matchedConcertCount": 16,
+    "composerMatchedConcertCount": 16,
     "rows": [
       {
         "title": "第747回 定期演奏会",
@@ -220,6 +250,10 @@
         "workIds": [
           "bruckner-10",
           "mozart-2"
+        ],
+        "composerIds": [
+          "bruckner",
+          "mozart"
         ]
       },
       {
@@ -237,6 +271,10 @@
         "area": "東京",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven",
+          "takemitsu"
         ]
       },
       {
@@ -254,6 +292,10 @@
         "area": "神奈川",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven",
+          "takemitsu"
         ]
       },
       {
@@ -275,6 +317,12 @@
         "workIds": [
           "elgar-7",
           "mendelssohn-4"
+        ],
+        "composerIds": [
+          "dvorak",
+          "elgar",
+          "mendelssohn",
+          "mozart"
         ]
       },
       {
@@ -289,7 +337,12 @@
           "ブルックナー：交響曲 第0番 ニ短調"
         ],
         "area": "東京",
-        "workIds": []
+        "workIds": [
+          "bruckner-11"
+        ],
+        "composerIds": [
+          "bruckner"
+        ]
       },
       {
         "title": "川崎定期演奏会 第108回",
@@ -303,7 +356,12 @@
           "ブルックナー：交響曲 第0番 ニ短調"
         ],
         "area": "神奈川",
-        "workIds": []
+        "workIds": [
+          "bruckner-11"
+        ],
+        "composerIds": [
+          "bruckner"
+        ]
       },
       {
         "title": "前橋汀子＆ユベール・スダーン　東京交響楽団",
@@ -319,6 +377,10 @@
         "workIds": [
           "beethoven-5",
           "brahms-3"
+        ],
+        "composerIds": [
+          "beethoven",
+          "brahms"
         ]
       },
       {
@@ -348,6 +410,12 @@
           "grieg-2",
           "mozart-11",
           "puccini-1"
+        ],
+        "composerIds": [
+          "dvorak",
+          "grieg",
+          "mozart",
+          "puccini"
         ]
       },
       {
@@ -362,6 +430,9 @@
         "area": "東京",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -376,6 +447,9 @@
         "area": "東京",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -399,6 +473,11 @@
         "workIds": [
           "jstrauss-3",
           "stravinsky-2"
+        ],
+        "composerIds": [
+          "jstrauss",
+          "ravel",
+          "stravinsky"
         ]
       },
       {
@@ -417,6 +496,11 @@
           "chopin-3",
           "rachmaninoff-1",
           "tchaikovsky-2"
+        ],
+        "composerIds": [
+          "chopin",
+          "rachmaninoff",
+          "tchaikovsky"
         ]
       },
       {
@@ -434,6 +518,10 @@
         "workIds": [
           "chopin-3",
           "dvorak-1"
+        ],
+        "composerIds": [
+          "chopin",
+          "dvorak"
         ]
       },
       {
@@ -451,6 +539,10 @@
         "workIds": [
           "chopin-3",
           "dvorak-1"
+        ],
+        "composerIds": [
+          "chopin",
+          "dvorak"
         ]
       },
       {
@@ -468,6 +560,10 @@
         "workIds": [
           "chopin-3",
           "dvorak-1"
+        ],
+        "composerIds": [
+          "chopin",
+          "dvorak"
         ]
       },
       {
@@ -487,6 +583,11 @@
           "jstrauss-4",
           "mozart-21",
           "rstrauss-11"
+        ],
+        "composerIds": [
+          "jstrauss",
+          "mozart",
+          "rstrauss"
         ]
       }
     ]
@@ -511,7 +612,6 @@
       "Koichi Sugiyama:Symphonic Suite \"DRAGON QUEST Ⅶ\" EDEN NO SENSHITACHI",
       "L.v.Beethoven: Symphony No.9 in D minor, Op.125 “Choral”",
       "R.Strauss：Capriccio, Prelude for String Sextet, TrV 279a",
-      "R.シュトラウス：歌劇「カプリッチョ」より前奏曲",
       "Schoenberg：Verklarte Nacht, Op. 4",
       "W.A.Mozart : Symphony No.41 in C Major, K. 551, \"Jupiter\"",
       "【冨田勲没後10年】",
@@ -521,7 +621,6 @@
       "エネスク：弦楽八重奏曲 ハ長調 作品7",
       "エルガー：エニグマ変奏曲よりニムロッド",
       "オペラ座の怪人より\"All I Ask Of You\"（安川）（加耒）",
-      "シェーンベルク：浄夜 作品4",
       "ハイドン：交響曲第82番 ハ長調 Hob.I:82「熊」",
       "ハーライン（編曲：和田薫）：星に願いを（安川）",
       "バルトーク：ハンガリーの風景 Sz.97",
@@ -534,7 +633,8 @@
       "冨田勲：源氏物語幻想交響絵巻（2014年改訂版）",
       "映画「タイタニック」メドレー　ほか"
     ],
-    "matchedConcertCount": 6,
+    "matchedConcertCount": 7,
+    "composerMatchedConcertCount": 7,
     "rows": [
       {
         "title": "第389回定期演奏会",
@@ -548,7 +648,8 @@
           "Isao Tomita：The Tale of Genji, Symphonic Fantasy"
         ],
         "area": "東京",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "第九特別演奏会2026",
@@ -563,6 +664,9 @@
         "area": "東京",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -592,6 +696,13 @@
           "bizet-2",
           "elgar-7",
           "jstrauss-1"
+        ],
+        "composerIds": [
+          "bizet",
+          "elgar",
+          "jstrauss",
+          "mozart",
+          "verdi"
         ]
       },
       {
@@ -611,6 +722,10 @@
         "area": "東京",
         "workIds": [
           "stravinsky-2"
+        ],
+        "composerIds": [
+          "bartok",
+          "stravinsky"
         ]
       },
       {
@@ -630,6 +745,11 @@
         "area": "東京",
         "workIds": [
           "mozart-4"
+        ],
+        "composerIds": [
+          "cpebach",
+          "haydn",
+          "mozart"
         ]
       },
       {
@@ -643,7 +763,8 @@
           "Koichi Sugiyama:Symphonic Suite \"DRAGON QUEST Ⅶ\" EDEN NO SENSHITACHI"
         ],
         "area": "東京",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "東京シティ・フィルの室内楽 Vol.11～弦楽六重奏～",
@@ -660,7 +781,14 @@
           "Schoenberg：Verklarte Nacht, Op. 4"
         ],
         "area": "東京",
-        "workIds": []
+        "workIds": [
+          "rstrauss-15",
+          "schoenberg-11"
+        ],
+        "composerIds": [
+          "rstrauss",
+          "schoenberg"
+        ]
       },
       {
         "title": "東京シティ・フィルの室内楽 Vol.12～弦楽八重奏～",
@@ -677,6 +805,9 @@
         "area": "東京",
         "workIds": [
           "bartok-12"
+        ],
+        "composerIds": [
+          "bartok"
         ]
       },
       {
@@ -692,6 +823,9 @@
         "area": "東京",
         "workIds": [
           "mahler-7"
+        ],
+        "composerIds": [
+          "mahler"
         ]
       }
     ]
@@ -706,6 +840,7 @@
       "リメンバーミー"
     ],
     "matchedConcertCount": 4,
+    "composerMatchedConcertCount": 4,
     "rows": [
       {
         "title": "みなとみらいシリーズ定期演奏会第418回【完売しました】",
@@ -723,6 +858,10 @@
           "berlioz-2",
           "ravel-1",
           "ravel-18"
+        ],
+        "composerIds": [
+          "berlioz",
+          "ravel"
         ]
       },
       {
@@ -739,6 +878,9 @@
         "area": "神奈川",
         "workIds": [
           "tchaikovsky-8"
+        ],
+        "composerIds": [
+          "tchaikovsky"
         ]
       },
       {
@@ -760,6 +902,11 @@
           "beethoven-27",
           "beethoven-6",
           "mozart-15"
+        ],
+        "composerIds": [
+          "beethoven",
+          "chopin",
+          "mozart"
         ]
       },
       {
@@ -774,6 +921,9 @@
         "area": "神奈川",
         "workIds": [
           "handel-1"
+        ],
+        "composerIds": [
+          "handel"
         ]
       }
     ]
@@ -793,6 +943,7 @@
       "ルノワール／聞かせてよ、愛の言葉を（福間編）♦"
     ],
     "matchedConcertCount": 2,
+    "composerMatchedConcertCount": 2,
     "rows": [
       {
         "title": "「VS」Vol.11 ルーカス＆アルトゥール・ユッセン",
@@ -811,6 +962,12 @@
         "workIds": [
           "ravel-14",
           "stravinsky-1"
+        ],
+        "composerIds": [
+          "mendelssohn",
+          "ravel",
+          "schubert",
+          "stravinsky"
         ]
       },
       {
@@ -834,6 +991,12 @@
           "mozart-9",
           "satie-6",
           "tchaikovsky-18"
+        ],
+        "composerIds": [
+          "bach",
+          "mozart",
+          "satie",
+          "tchaikovsky"
         ]
       },
       {
@@ -844,7 +1007,8 @@
         "sourceUrl": "https://www.geigeki.jp/performance/concert385/",
         "program": [],
         "area": "東京",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       }
     ]
   },
@@ -868,6 +1032,7 @@
       "第2部　宮澤エマを迎えて"
     ],
     "matchedConcertCount": 7,
+    "composerMatchedConcertCount": 7,
     "rows": [
       {
         "title": "日本オペラ協会公演藤原歌劇団公演 夕鶴（11/29）",
@@ -879,7 +1044,8 @@
           "團伊玖磨作曲／木下順二作：オペラ『夕鶴』"
         ],
         "area": "東京",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "すみだ五彩の芸術祭　トリフォニーホール特別企画　ミュージカル＆ポップス　新日本フィル with 宮澤エマ",
@@ -892,7 +1058,8 @@
           "第2部　宮澤エマを迎えて"
         ],
         "area": "東京",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "メディアドゥ ・ ダブルスタンダード Presents　「音のアトリエ」第6回",
@@ -914,6 +1081,10 @@
         "workIds": [
           "dvorak-4",
           "tchaikovsky-19"
+        ],
+        "composerIds": [
+          "dvorak",
+          "tchaikovsky"
         ]
       },
       {
@@ -931,6 +1102,10 @@
         "workIds": [
           "beethoven-28",
           "beethoven-4"
+        ],
+        "composerIds": [
+          "beethoven",
+          "rstrauss"
         ]
       },
       {
@@ -945,6 +1120,9 @@
         "area": "神奈川",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -959,6 +1137,9 @@
         "area": "東京",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -974,6 +1155,9 @@
         "area": "東京",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -992,6 +1176,10 @@
         "workIds": [
           "bach-27",
           "beethoven-1"
+        ],
+        "composerIds": [
+          "bach",
+          "beethoven"
         ]
       },
       {
@@ -1006,6 +1194,9 @@
         "area": "東京",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       }
     ]
@@ -1021,6 +1212,7 @@
       "芥川也寸志：弦楽のための三楽章（トリプティーク）"
     ],
     "matchedConcertCount": 7,
+    "composerMatchedConcertCount": 7,
     "rows": [
       {
         "title": "都響スペシャル（11/29）",
@@ -1034,6 +1226,9 @@
         "area": "東京",
         "workIds": [
           "mahler-3"
+        ],
+        "composerIds": [
+          "mahler"
         ]
       },
       {
@@ -1051,6 +1246,9 @@
         "workIds": [
           "tchaikovsky-2",
           "tchaikovsky-5"
+        ],
+        "composerIds": [
+          "tchaikovsky"
         ]
       },
       {
@@ -1066,6 +1264,10 @@
         "area": "東京",
         "workIds": [
           "haydn-12"
+        ],
+        "composerIds": [
+          "haydn",
+          "liszt"
         ]
       },
       {
@@ -1080,6 +1282,9 @@
         "area": "東京",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -1094,6 +1299,9 @@
         "area": "東京",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -1108,6 +1316,9 @@
         "area": "東京",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -1124,6 +1335,9 @@
         "area": "東京",
         "workIds": [
           "shostakovich-1"
+        ],
+        "composerIds": [
+          "shostakovich"
         ]
       }
     ]
@@ -1131,30 +1345,23 @@
   "triphony": {
     "normalizedCount": 10,
     "incompleteCount": 0,
-    "missingProgramCount": 1,
+    "missingProgramCount": 2,
     "unmatchedSongs": [
       "H.マンシーニ／ムーン・リバー　☆",
       "J.S.バッハ／いざ来ませ異邦人の救い主よ　BWV659",
       "J.S.バッハ／無伴奏チェロ組曲 第一番 ト長調 BWV1007より前奏曲　☆",
       "J.S.バッハ／無伴奏チェロ組曲　第一番　ト長調 BWV1007より前奏曲　☆",
       "J.スコット／クリスマス・ラプソディー",
-      "Program",
       "☆オルガン＆チェロ",
-      "『こうもり』のカドリーユ、「新ピチカート・ポルカ」",
       "いずみたく／見上げてごらん夜の星を*",
-      "オペレッタ『ジプシー男爵』序曲、『ヴェネツィアの一夜』序曲",
       "グスタフ・メルケル／アリオーソ Op.55　☆",
       "ブクステフーデ／暁の星のいとうつくしきかな　BuxWV223",
       "ブラームス／11のコラール前奏曲 Op.122 より第8番　一輪のバラが咲いて",
       "ブラームス／11のコラール前奏曲 Op.122より第8番　一輪のバラが咲いて",
       "ブラームス／メロディのように Op.105-1　☆",
-      "ブラームス／弦楽六重奏第2番　ト長調",
       "ホルスト／日本組曲 作品33",
-      "ポルカ・シュネル「観光列車」",
       "モーツァルト／ヴァイオリンとヴィオラのための協奏交響曲　変ホ長調（弦楽六重奏版）",
       "ヨハン・シュトラウス2世／シャンパン・ポルカ",
-      "ヨハン・シュトラウス2世：",
-      "ワルツ「美しく青きドナウ」、「ウィーン気質」",
       "伊福部昭／SF交響ファンタジー第1番",
       "再びトリフォニーホールで紡ぐ華麗なるT-SQUAREと新日本フィルの共演！",
       "第1部　T-SQUARE",
@@ -1162,7 +1369,8 @@
       "第一部：落語",
       "第二部：オーケストラ"
     ],
-    "matchedConcertCount": 4,
+    "matchedConcertCount": 7,
+    "composerMatchedConcertCount": 7,
     "rows": [
       {
         "title": "ディズニー・オン・クラシック ～まほうの夜の音楽会 2026",
@@ -1170,11 +1378,10 @@
         "time": "17:30",
         "venue": "すみだトリフォニーホール",
         "sourceUrl": "https://www.harmonyjapan.com/doc2026/",
-        "program": [
-          "Program"
-        ],
+        "program": [],
         "area": "東京",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "トリフォニーホール パイプオルガン・クリスマス・コンサート2026 〈0歳からのオルガン・コンサート〉",
@@ -1196,6 +1403,10 @@
         "workIds": [
           "bach-33",
           "bach-34"
+        ],
+        "composerIds": [
+          "bach",
+          "brahms"
         ]
       },
       {
@@ -1221,6 +1432,10 @@
         "workIds": [
           "bach-33",
           "bach-34"
+        ],
+        "composerIds": [
+          "bach",
+          "brahms"
         ]
       },
       {
@@ -1244,6 +1459,11 @@
           "dvorak-15",
           "jstrauss-2",
           "puccini-3"
+        ],
+        "composerIds": [
+          "dvorak",
+          "jstrauss",
+          "puccini"
         ]
       },
       {
@@ -1254,7 +1474,8 @@
         "sourceUrl": "https://sunrisetokyo.com/detail/35900/",
         "program": [],
         "area": "東京",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "ウィーン・ヨハン・シュトラウス管弦楽団　ニューイヤーコンサート2027",
@@ -1263,14 +1484,21 @@
         "venue": "すみだトリフォニーホール",
         "sourceUrl": "https://tempoprimo.co.jp/stage/y2026/wjso2027",
         "program": [
-          "ヨハン・シュトラウス2世：",
-          "ワルツ「美しく青きドナウ」、「ウィーン気質」",
-          "オペレッタ『ジプシー男爵』序曲、『ヴェネツィアの一夜』序曲",
-          "『こうもり』のカドリーユ、「新ピチカート・ポルカ」",
-          "ポルカ・シュネル「観光列車」"
+          "ヨハン・シュトラウス2世：ワルツ「美しく青きドナウ」、「ウィーン気質」",
+          "ヨハン・シュトラウス2世：オペレッタ『ジプシー男爵』序曲、『ヴェネツィアの一夜』序曲",
+          "ヨハン・シュトラウス2世：『こうもり』のカドリーユ、「新ピチカート・ポルカ」",
+          "ヨハン・シュトラウス2世：ポルカ・シュネル「観光列車」"
         ],
         "area": "東京",
-        "workIds": []
+        "workIds": [
+          "jstrauss-1",
+          "jstrauss-2",
+          "jstrauss-5",
+          "jstrauss-6"
+        ],
+        "composerIds": [
+          "jstrauss"
+        ]
       },
       {
         "title": "パイプオルガンを弾いてみよう！　J.S.バッハ／インヴェンション＆シンフォニア コース",
@@ -1283,7 +1511,13 @@
           "ブラームス／弦楽六重奏第2番　ト長調"
         ],
         "area": "東京",
-        "workIds": []
+        "workIds": [
+          "brahms-24"
+        ],
+        "composerIds": [
+          "brahms",
+          "mozart"
+        ]
       },
       {
         "title": "パイプオルガンを弾いてみよう！　J.S.バッハ／インヴェンション＆シンフォニア コース",
@@ -1296,7 +1530,13 @@
           "ブラームス／弦楽六重奏第2番　ト長調"
         ],
         "area": "東京",
-        "workIds": []
+        "workIds": [
+          "brahms-24"
+        ],
+        "composerIds": [
+          "brahms",
+          "mozart"
+        ]
       },
       {
         "title": "トリフォニーホール・ジュニア・オーケストラ　第41回演奏会",
@@ -1311,6 +1551,9 @@
         "area": "東京",
         "workIds": [
           "holst-1"
+        ],
+        "composerIds": [
+          "holst"
         ]
       },
       {
@@ -1325,7 +1568,8 @@
           "第2部　T-SQUARE meets 新日本フィル"
         ],
         "area": "東京",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       }
     ]
   },
@@ -1337,7 +1581,6 @@
       "A.ボロディン（清水 大輔 編曲）／歌劇「イーゴリ公」より、序曲、ダッタン人の踊り",
       "Bob Chilcott／Nidaros Jazz Mass",
       "D.ロヴレーリョ（磯崎 敦博 編曲）／ヴェルディの歌劇「椿姫」の主題による演奏会用幻想曲（E♭クラリネット独奏：小澤 里沙）",
-      "F.メンデルスゾーン／オラトリオ「Elias」全曲 ",
       "J.S.バッハ（グノー編曲）／アヴェ・マリア",
       "J.S.バッハ／アリオーソ (カンタータ第156番より「シンフォニア」) 　他",
       "J.S.バッハ／前奏曲 ハ長調 BWV531、小フーガ ト短調 BWV578、トッカータとフーガ ニ短調 BWV565",
@@ -1408,11 +1651,7 @@
       "メンデルスゾーン／無言歌 Op.109",
       "モリコーネ／ニュー・シネマ・パラダイス",
       "モーツァルト／『きらきら星変奏曲』- 『ああ、お母さん、あなたに申しましょう』による12の変奏曲 [オルガン独奏]",
-      "モーツァルト／ディヴェルティメント ニ長調 K.136",
-      "モーツァルト／ディヴェルティメント ニ長調 K136",
       "モーツァルト／フルートとハープのための協奏曲 ハ長調 K.299",
-      "モーツァルト／モテット K.165 「踊れ、喜べ、幸いなる魂よ」",
-      "モーツァルト／モテット K165 「踊れ、喜べ、幸いなる魂よ」",
       "モーツァルト／ヴァイオリン・ソナタ第18番 ト長調 K.301",
       "モーツァルト／自動オルガンのための幻想曲 [オルガン独奏]",
       "ヤン・ファン・デル・ロースト／カンタベリーコラール",
@@ -1453,7 +1692,8 @@
       "鈴木輝昭／同声(女声)合唱とピアノ(弦楽オーケストラ)のためのじゅうにつき",
       "鈴木静一／タイ舞曲「パゴダの舞姫」"
     ],
-    "matchedConcertCount": 48,
+    "matchedConcertCount": 51,
+    "composerMatchedConcertCount": 65,
     "rows": [
       {
         "title": "森麻季　ソプラノ・リサイタル",
@@ -1473,6 +1713,10 @@
           "handel-9",
           "puccini-1",
           "puccini-3"
+        ],
+        "composerIds": [
+          "handel",
+          "puccini"
         ]
       },
       {
@@ -1491,6 +1735,11 @@
         "area": "神奈川",
         "workIds": [
           "jstrauss-1"
+        ],
+        "composerIds": [
+          "brahms",
+          "jstrauss",
+          "smetana"
         ]
       },
       {
@@ -1511,6 +1760,10 @@
           "bach-1",
           "bach-2",
           "vivaldi-2"
+        ],
+        "composerIds": [
+          "bach",
+          "vivaldi"
         ]
       },
       {
@@ -1525,7 +1778,12 @@
         ],
         "sourceEventId": 4595,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [
+          "mendelssohn-13"
+        ],
+        "composerIds": [
+          "mendelssohn"
+        ]
       },
       {
         "title": "第119回 横浜バロック室内合奏団定期演奏会",
@@ -1545,6 +1803,10 @@
           "bach-1",
           "bach-2",
           "vivaldi-2"
+        ],
+        "composerIds": [
+          "bach",
+          "vivaldi"
         ]
       },
       {
@@ -1562,6 +1824,9 @@
         "area": "神奈川",
         "workIds": [
           "mahler-4"
+        ],
+        "composerIds": [
+          "mahler"
         ]
       },
       {
@@ -1582,6 +1847,10 @@
           "berlioz-2",
           "ravel-1",
           "ravel-18"
+        ],
+        "composerIds": [
+          "berlioz",
+          "ravel"
         ]
       },
       {
@@ -1600,6 +1869,9 @@
         "area": "神奈川",
         "workIds": [
           "mussorgsky-1"
+        ],
+        "composerIds": [
+          "mussorgsky"
         ]
       },
       {
@@ -1616,6 +1888,9 @@
         "area": "神奈川",
         "workIds": [
           "mahler-7"
+        ],
+        "composerIds": [
+          "mahler"
         ]
       },
       {
@@ -1630,7 +1905,8 @@
         ],
         "sourceEventId": 4710,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "ケヴィン・チェン（ピアノ）＆アレクサンダー・リー・プライヒ指揮　バレンシア管弦楽団",
@@ -1649,6 +1925,10 @@
         "workIds": [
           "chopin-2",
           "ravel-1"
+        ],
+        "composerIds": [
+          "chopin",
+          "ravel"
         ]
       },
       {
@@ -1665,7 +1945,14 @@
         ],
         "sourceEventId": 4810,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [
+          "mozart-23",
+          "mozart-24"
+        ],
+        "composerIds": [
+          "mozart",
+          "vivaldi"
+        ]
       },
       {
         "title": "第120回横浜バロック室内合奏団定期演奏会",
@@ -1681,7 +1968,14 @@
         ],
         "sourceEventId": 4811,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [
+          "mozart-23",
+          "mozart-24"
+        ],
+        "composerIds": [
+          "mozart",
+          "vivaldi"
+        ]
       },
       {
         "title": "日本フィルハーモニー交響楽団<br>コバケン・ワールドVol.45",
@@ -1698,6 +1992,10 @@
         "area": "神奈川",
         "workIds": [
           "beethoven-7"
+        ],
+        "composerIds": [
+          "beethoven",
+          "mozart"
         ]
       },
       {
@@ -1716,6 +2014,9 @@
         "area": "神奈川",
         "workIds": [
           "bach-13"
+        ],
+        "composerIds": [
+          "bach"
         ]
       },
       {
@@ -1734,6 +2035,10 @@
         "area": "神奈川",
         "workIds": [
           "mendelssohn-3"
+        ],
+        "composerIds": [
+          "berlioz",
+          "mendelssohn"
         ]
       },
       {
@@ -1751,6 +2056,9 @@
         "area": "神奈川",
         "workIds": [
           "mozart-9"
+        ],
+        "composerIds": [
+          "mozart"
         ]
       },
       {
@@ -1769,6 +2077,10 @@
         "area": "神奈川",
         "workIds": [
           "rachmaninoff-41"
+        ],
+        "composerIds": [
+          "liszt",
+          "rachmaninoff"
         ]
       },
       {
@@ -1784,7 +2096,8 @@
         ],
         "sourceEventId": 4850,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "高橋里奈ピアノリサイタル～作曲家たちの遺した愛の物語～",
@@ -1802,6 +2115,10 @@
         "area": "神奈川",
         "workIds": [
           "beethoven-9"
+        ],
+        "composerIds": [
+          "beethoven",
+          "chopin"
         ]
       },
       {
@@ -1821,6 +2138,10 @@
         "workIds": [
           "berlioz-1",
           "rachmaninoff-4"
+        ],
+        "composerIds": [
+          "berlioz",
+          "rachmaninoff"
         ]
       },
       {
@@ -1838,6 +2159,10 @@
         "area": "神奈川",
         "workIds": [
           "mozart-9"
+        ],
+        "composerIds": [
+          "mendelssohn",
+          "mozart"
         ]
       },
       {
@@ -1856,6 +2181,9 @@
         "area": "神奈川",
         "workIds": [
           "puccini-1"
+        ],
+        "composerIds": [
+          "puccini"
         ]
       },
       {
@@ -1874,6 +2202,9 @@
         "workIds": [
           "beethoven-1",
           "beethoven-2"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -1890,7 +2221,11 @@
         ],
         "sourceEventId": 4715,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "bach",
+          "vivaldi"
+        ]
       },
       {
         "title": "クリスマス/アヴェ・マリア　エリザベート弦楽アンサンブル",
@@ -1906,7 +2241,11 @@
         ],
         "sourceEventId": 4716,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "bach",
+          "vivaldi"
+        ]
       },
       {
         "title": "読売日本交響楽団 第155回横浜マチネーシリーズ",
@@ -1922,6 +2261,9 @@
         "area": "神奈川",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -1938,7 +2280,8 @@
         ],
         "sourceEventId": 4596,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "新日本フィルハーモニー交響楽団 SMBC Presents「第九」特別演奏会2026　",
@@ -1954,6 +2297,9 @@
         "area": "神奈川",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -1968,7 +2314,8 @@
         ],
         "sourceEventId": 4657,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "みなとみらいアフタヌーンコンサート2026後期≪名匠たちのデュオ≫郷古廉＆ホセ・ガヤルド　デュオ･リサイタル",
@@ -1984,7 +2331,12 @@
         ],
         "sourceEventId": 4787,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "beethoven",
+          "prokofiev",
+          "schubert"
+        ]
       },
       {
         "title": "Studio-B Piano Concert 華麗なる2台ピアノと連弾の世界",
@@ -2003,6 +2355,11 @@
         "workIds": [
           "gershwin-1",
           "ravel-14"
+        ],
+        "composerIds": [
+          "gershwin",
+          "rachmaninoff",
+          "ravel"
         ]
       },
       {
@@ -2021,6 +2378,9 @@
         "area": "神奈川",
         "workIds": [
           "chopin-18"
+        ],
+        "composerIds": [
+          "chopin"
         ]
       },
       {
@@ -2037,7 +2397,12 @@
         ],
         "sourceEventId": 4824,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "beethoven",
+          "mendelssohn",
+          "schubert"
+        ]
       },
       {
         "title": "ザ・チェンバーブラス －NHK交響楽団の金管奏者たち－",
@@ -2055,6 +2420,9 @@
         "area": "神奈川",
         "workIds": [
           "gershwin-2"
+        ],
+        "composerIds": [
+          "gershwin"
         ]
       },
       {
@@ -2070,7 +2438,10 @@
         ],
         "sourceEventId": 4781,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "dvorak"
+        ]
       },
       {
         "title": "第2回～大学OB合唱団による～男声合唱 新・化学反応",
@@ -2086,7 +2457,8 @@
         ],
         "sourceEventId": 4760,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "Joint Concert ~WA~",
@@ -2101,7 +2473,8 @@
         ],
         "sourceEventId": 4801,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "みずほフィルハーモニー　第48回定期演奏会",
@@ -2119,6 +2492,11 @@
         "area": "神奈川",
         "workIds": [
           "sibelius-4"
+        ],
+        "composerIds": [
+          "berlioz",
+          "saintsaens",
+          "sibelius"
         ]
       },
       {
@@ -2137,6 +2515,10 @@
         "area": "神奈川",
         "workIds": [
           "ravel-14"
+        ],
+        "composerIds": [
+          "debussy",
+          "ravel"
         ]
       },
       {
@@ -2155,6 +2537,10 @@
         "area": "神奈川",
         "workIds": [
           "beethoven-21"
+        ],
+        "composerIds": [
+          "beethoven",
+          "mozart"
         ]
       },
       {
@@ -2171,7 +2557,8 @@
         ],
         "sourceEventId": 4851,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "女声合唱団 Bella Voce 第9回定期演奏会",
@@ -2187,7 +2574,8 @@
         ],
         "sourceEventId": 4754,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "プラハ交響楽団　ニューイヤー名曲コンサート",
@@ -2206,6 +2594,10 @@
         "workIds": [
           "beethoven-24",
           "beethoven-6"
+        ],
+        "composerIds": [
+          "beethoven",
+          "dvorak"
         ]
       },
       {
@@ -2225,6 +2617,10 @@
         "workIds": [
           "brahms-12",
           "brahms-6"
+        ],
+        "composerIds": [
+          "brahms",
+          "gershwin"
         ]
       },
       {
@@ -2239,7 +2635,8 @@
         ],
         "sourceEventId": 4569,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "みなとみらいアフタヌーンコンサート2027前期<br>≪千住真理子：至高の名曲選≫千住真理子　ヴァイオリン・リサイタル",
@@ -2257,6 +2654,10 @@
         "area": "神奈川",
         "workIds": [
           "ravel-6"
+        ],
+        "composerIds": [
+          "franck",
+          "ravel"
         ]
       },
       {
@@ -2272,7 +2673,10 @@
         ],
         "sourceEventId": 4826,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "faure"
+        ]
       },
       {
         "title": "神奈川大学マンドリンアンサンブル 創部60周年 第50回記念定期演奏会",
@@ -2287,7 +2691,8 @@
         ],
         "sourceEventId": 4768,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "華麗なるヴァイオリンの祭典～世代を超えて響き合う音楽の喜び～",
@@ -2301,7 +2706,10 @@
         ],
         "sourceEventId": 4849,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "vivaldi"
+        ]
       },
       {
         "title": "エセンツ・フィルハーモニカー　第8回定期演奏会",
@@ -2319,6 +2727,10 @@
         "workIds": [
           "brahms-6",
           "sibelius-7"
+        ],
+        "composerIds": [
+          "brahms",
+          "sibelius"
         ]
       },
       {
@@ -2335,7 +2747,12 @@
         ],
         "sourceEventId": 4805,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "brahms",
+          "pachelbel",
+          "tchaikovsky"
+        ]
       },
       {
         "title": "第10回記念　サクソフォンアンサンブル演奏会",
@@ -2351,7 +2768,8 @@
         ],
         "sourceEventId": 4821,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "日本フィルハーモニー交響楽団　第425回横浜定期演奏会",
@@ -2367,7 +2785,10 @@
         ],
         "sourceEventId": 4798,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "mussorgsky"
+        ]
       },
       {
         "title": "イヴァン・フィッシャー（指揮）ブルース・リウ（ピアノ）　ブダペスト祝祭管弦楽団",
@@ -2387,6 +2808,11 @@
           "beethoven-5",
           "rachmaninoff-41",
           "tchaikovsky-2"
+        ],
+        "composerIds": [
+          "beethoven",
+          "rachmaninoff",
+          "tchaikovsky"
         ]
       },
       {
@@ -2403,7 +2829,10 @@
         ],
         "sourceEventId": 4815,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "schoenberg"
+        ]
       },
       {
         "title": "横浜フィルハーモニー管弦楽団 第94回定期演奏会",
@@ -2421,6 +2850,10 @@
         "area": "神奈川",
         "workIds": [
           "saintsaens-3"
+        ],
+        "composerIds": [
+          "liszt",
+          "saintsaens"
         ]
       },
       {
@@ -2437,7 +2870,10 @@
         ],
         "sourceEventId": 4671,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "elgar"
+        ]
       },
       {
         "title": "日本フィルハーモニー交響楽団　第423回横浜定期演奏会",
@@ -2454,6 +2890,10 @@
         "area": "神奈川",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "bach",
+          "beethoven"
         ]
       },
       {
@@ -2472,6 +2912,9 @@
         "area": "神奈川",
         "workIds": [
           "liszt-3"
+        ],
+        "composerIds": [
+          "liszt"
         ]
       },
       {
@@ -2490,6 +2933,10 @@
         "workIds": [
           "dvorak-1",
           "mendelssohn-1"
+        ],
+        "composerIds": [
+          "dvorak",
+          "mendelssohn"
         ]
       },
       {
@@ -2504,7 +2951,8 @@
         ],
         "sourceEventId": 4751,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "みなとみらいアフタヌーンコンサート2026後期≪アメイジング・マリンバatクリスマス≫塚越慎子　マリンバ・リサイタル",
@@ -2521,6 +2969,9 @@
         "area": "神奈川",
         "workIds": [
           "ravel-1"
+        ],
+        "composerIds": [
+          "ravel"
         ]
       },
       {
@@ -2541,6 +2992,9 @@
           "jstrauss-1",
           "jstrauss-5",
           "jstrauss-6"
+        ],
+        "composerIds": [
+          "jstrauss"
         ]
       },
       {
@@ -2557,6 +3011,9 @@
         "area": "神奈川",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -2572,7 +3029,8 @@
         ],
         "sourceEventId": 4831,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "小山実稚恵＆下野竜也指揮　東京交響楽団　ニューイヤーコンサート2027",
@@ -2591,6 +3049,10 @@
         "workIds": [
           "chopin-3",
           "dvorak-1"
+        ],
+        "composerIds": [
+          "chopin",
+          "dvorak"
         ]
       },
       {
@@ -2608,6 +3070,10 @@
         "area": "神奈川",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "bach",
+          "beethoven"
         ]
       },
       {
@@ -2624,7 +3090,10 @@
         ],
         "sourceEventId": 4756,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "bach"
+        ]
       },
       {
         "title": "日本フィルハーモニー交響楽団　第424回横浜定期演奏会",
@@ -2643,6 +3112,11 @@
         "workIds": [
           "jstrauss-1",
           "ravel-2"
+        ],
+        "composerIds": [
+          "haydn",
+          "jstrauss",
+          "ravel"
         ]
       },
       {
@@ -2662,6 +3136,9 @@
         "workIds": [
           "jstrauss-1",
           "jstrauss-4"
+        ],
+        "composerIds": [
+          "jstrauss"
         ]
       },
       {
@@ -2678,6 +3155,9 @@
         "area": "神奈川",
         "workIds": [
           "mendelssohn-13"
+        ],
+        "composerIds": [
+          "mendelssohn"
         ]
       },
       {
@@ -2694,6 +3174,9 @@
         "area": "神奈川",
         "workIds": [
           "beethoven-1"
+        ],
+        "composerIds": [
+          "beethoven"
         ]
       },
       {
@@ -2710,7 +3193,10 @@
         ],
         "sourceEventId": 4766,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "beethoven"
+        ]
       },
       {
         "title": "Kleine Harmonie Orchester 第10回定期演奏会",
@@ -2728,6 +3214,9 @@
         "area": "神奈川",
         "workIds": [
           "mozart-2"
+        ],
+        "composerIds": [
+          "mozart"
         ]
       },
       {
@@ -2744,7 +3233,8 @@
         ],
         "sourceEventId": 4636,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": []
       },
       {
         "title": "みなとみらいアフタヌーンコンサート2027前期<br>≪珠玉の共演≫宮田 大＆福間洸太朗　デュオ・リサイタル",
@@ -2760,7 +3250,11 @@
         ],
         "sourceEventId": 4835,
         "area": "神奈川",
-        "workIds": []
+        "workIds": [],
+        "composerIds": [
+          "mendelssohn",
+          "rstrauss"
+        ]
       },
       {
         "title": "N響オーチャード定期2026/2027  東横シリーズ in 横浜 ＜傑作ピアノ協奏曲＆三大バレエ音楽＞ 第139回 Supported by 株式会社 日立製作所",
@@ -2780,6 +3274,9 @@
           "tchaikovsky-18",
           "tchaikovsky-2",
           "tchaikovsky-3"
+        ],
+        "composerIds": [
+          "tchaikovsky"
         ]
       },
       {
@@ -2798,6 +3295,10 @@
         "workIds": [
           "prokofiev-3",
           "tchaikovsky-7"
+        ],
+        "composerIds": [
+          "prokofiev",
+          "tchaikovsky"
         ]
       }
     ]
