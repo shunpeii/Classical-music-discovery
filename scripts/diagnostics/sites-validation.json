@@ -1,4 +1,110 @@
 {
+  "kanaphil": {
+    "normalizedCount": 4,
+    "incompleteCount": 1,
+    "matchedConcertCount": 3,
+    "rows": [
+      {
+        "title": "みなとみらいシリーズ定期演奏会第418回【完売しました】",
+        "date": "2026-11-28",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "sourceUrl": "https://www.kanaphil.or.jp/concert/3966/",
+        "program": [
+          "ベルリオーズ／交響曲「イタリアのハロルド」Op.16♭",
+          "ラヴェル／高雅で感傷的なワルツ",
+          "ラヴェル／ボレロ"
+        ],
+        "area": "神奈川",
+        "workIds": [
+          "ravel-1"
+        ]
+      },
+      {
+        "title": "よこしんプレゼンツ クリスマスコンサートin横浜美術館",
+        "date": "2026-12-12",
+        "time": "14:00",
+        "venue": "横浜美術館",
+        "sourceUrl": "https://www.kanaphil.or.jp/concert/4679/",
+        "program": [
+          "チャイコフスキー／『くるみ割り人形』より",
+          "きみはともだち",
+          "リメンバーミー"
+        ],
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "アヤセ・プロムナード・コンサート～ピアノの名曲でおくるひとときwith神奈川フィル～",
+        "date": "2026-12-13",
+        "time": "14:00",
+        "venue": "綾瀬市オーエンス文化会館大ホール",
+        "sourceUrl": "https://www.kanaphil.or.jp/concert/4686/",
+        "program": [
+          "モーツァルト／ピアノ・ソナタ第11番 イ長調 K.331 第3楽章「トルコ行進曲」",
+          "ベートーヴェン／エリーゼのために",
+          "ショパン／ポロネーズ第6番 変イ長調 Op.53「英雄ポロネーズ」　ほか",
+          "ベートーヴェン／エグモント序曲Op.84",
+          "ベートーヴェン／ピアノ協奏曲第5番変ホ長調Op.75「皇帝」"
+        ],
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-6"
+        ]
+      },
+      {
+        "title": "第59回クリスマス音楽会 ヘンデル「メサイア」全曲",
+        "date": "2026-12-13",
+        "time": "14:30",
+        "venue": "神奈川県立音楽堂",
+        "sourceUrl": "https://www.kanaphil.or.jp/concert/4631/",
+        "program": [
+          "ヘンデル／メサイア"
+        ],
+        "area": "神奈川",
+        "workIds": [
+          "handel-1"
+        ]
+      }
+    ]
+  },
+  "geigeki": {
+    "normalizedCount": 3,
+    "incompleteCount": 0,
+    "matchedConcertCount": 0,
+    "rows": [
+      {
+        "title": "「VS」Vol.11 ルーカス＆アルトゥール・ユッセン",
+        "date": "2027-01-23",
+        "time": "18:00",
+        "venue": "東京芸術劇場 コンサートホール",
+        "sourceUrl": "https://www.geigeki.jp/performance/concert367-c367-2/",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "「VS」Vol.12 福間洸太朗×フロリアン・ノアック",
+        "date": "2027-02-19",
+        "time": "19:00",
+        "venue": "東京芸術劇場 コンサートホール",
+        "sourceUrl": "https://www.geigeki.jp/performance/concert367-c367-3/",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "第2回 ライジングスターズ・コンサート",
+        "date": "2027-03-10",
+        "time": "14:00",
+        "venue": "東京芸術劇場 コンサートホール",
+        "sourceUrl": "https://www.geigeki.jp/performance/concert385/",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      }
+    ]
+  },
   "njp": {
     "normalizedCount": 9,
     "incompleteCount": 0,
