@@ -1,9 +1,10 @@
 """Inspect candidate sources without publishing data."""
 import io
 import json
+import re
 from contextlib import redirect_stdout
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 from urllib.robotparser import RobotFileParser
 
 import requests
@@ -37,6 +38,25 @@ def probe(source):
     print("Body preview:", soup.get_text(" ", strip=True)[:1500])
     print("Script sources:", [s.get("src") for s in soup.select("script[src]")][:30])
     print("Inline script types:", [s.get("type") for s in soup.select("script:not([src])")][:20])
+    # Inspect only same-origin, robots-permitted public scripts.
+    for script in soup.select("script[src]"):
+        script_url = urljoin(url, script["src"])
+        if urlparse(script_url).netloc != urlparse(url).netloc:
+            continue
+        if "/lib/" in script_url or robots.status_code != 404 and not parser.can_fetch(AGENT, script_url):
+            continue
+        try:
+            js = requests.get(script_url, headers={"User-Agent": AGENT}, timeout=20, allow_redirects=False)
+            if js.status_code != 200:
+                continue
+            for match in list(re.finditer(r"fetch\s*\(|ajax\s*\(|getJSON\s*\(|\.json\b|/api/|\.php\b", js.text, re.I))[:35]:
+                print("JS candidate:", script_url, js.text[max(0, match.start()-100):match.end()+150])
+        except requests.RequestException as exc:
+            print("Script probe failed:", exc)
+    for script in soup.select("script:not([src]):not([type])"):
+        print("Inline JS:", script.get_text()[:2500])
+    for link in soup.select("main a[href], #main a[href]")[:60]:
+        print("Main link:", link.get_text(" ", strip=True)[:120], link.get("href"))
     for link in soup.select("a[href]")[:60]:
         print("Link:", link.get_text(" ", strip=True)[:100], link.get("href"))
     for node in soup.select("time, [datetime], [data-date]")[:20]:
