@@ -1,5 +1,7 @@
 """Inspect candidate sources without publishing data."""
+import io
 import json
+from contextlib import redirect_stdout
 from pathlib import Path
 from urllib.parse import urljoin
 from urllib.robotparser import RobotFileParser
@@ -47,12 +49,20 @@ def probe(source):
 
 def main():
     sources = json.loads(Path(__file__).with_name("candidates.json").read_text())
+    results = []
     for source in sources:
-        print("\nSource:", source["id"], source["url"])
-        try:
-            probe(source)
-        except (requests.RequestException, ValueError) as exc:
-            print("Probe failed:", exc)
+        buffer = io.StringIO()
+        with redirect_stdout(buffer):
+            try:
+                probe(source)
+            except (requests.RequestException, ValueError) as exc:
+                print("Probe failed:", exc)
+        output = buffer.getvalue()
+        print(source["id"], output)
+        results.append({"id": source["id"], "url": source["url"], "diagnostics": output})
+    destination = Path(__file__).with_name("diagnostics") / "latest.json"
+    destination.parent.mkdir(exist_ok=True)
+    destination.write_text(json.dumps(results, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 if __name__ == "__main__":
