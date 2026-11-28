@@ -10,5 +10,13 @@
   {
     "id": "tpo",
     "url": "https://www.tpo.or.jp/calendar/"
+  },
+  {
+    "id": "nhkso-subscription",
+    "url": "https://www.nhkso.or.jp/concert/subscription/index.html"
+  },
+  {
+    "id": "nhkso-special",
+    "url": "https://www.nhkso.or.jp/concert/special/index.html"
   }
 ]
