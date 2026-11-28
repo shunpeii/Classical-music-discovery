@@ -4856,5 +4856,103 @@
     "title": "峡谷から星たちへ",
     "compositionYear": 1974,
     "featured": false
+  },
+  {
+    "id": "beethoven-27",
+    "composerId": "beethoven",
+    "title": "エリーゼのために",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "beethoven-28",
+    "composerId": "beethoven",
+    "title": "バレエ音楽「プロメテウスの創造物」序曲",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "ravel-18",
+    "composerId": "ravel",
+    "title": "高雅で感傷的なワルツ",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "jstrauss-3",
+    "composerId": "jstrauss",
+    "title": "春の声",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "jstrauss-4",
+    "composerId": "jstrauss",
+    "title": "皇帝円舞曲",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "jstrauss-5",
+    "composerId": "jstrauss",
+    "title": "喜歌劇「ジプシー男爵」序曲",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "jstrauss-6",
+    "composerId": "jstrauss",
+    "title": "観光列車",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "rstrauss-14",
+    "composerId": "rstrauss",
+    "title": "ホルン協奏曲第1番",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "bartok-13",
+    "composerId": "bartok",
+    "title": "2台ピアノ、打楽器と管弦楽のための協奏曲",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "tchaikovsky-18",
+    "composerId": "tchaikovsky",
+    "title": "幻想序曲「ロメオとジュリエット」",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "tchaikovsky-19",
+    "composerId": "tchaikovsky",
+    "title": "弦楽四重奏曲第1番",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "bach-33",
+    "composerId": "bach",
+    "title": "主よ、人の望みの喜びよ",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "bach-34",
+    "composerId": "bach",
+    "title": "前奏曲とフーガ ハ長調 BWV547",
+    "featured": false,
+    "guide": ""
+  },
+  {
+    "id": "schubert-28",
+    "composerId": "schubert",
+    "title": "幻想曲 ヘ短調 D940",
+    "featured": false,
+    "guide": ""
   }
 ]
