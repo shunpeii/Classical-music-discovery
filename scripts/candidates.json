@@ -45,5 +45,65 @@
     "id": "nhkso-halls",
     "url": "https://www.nhkso.or.jp/concert/hall/json/hall_all.json",
     "format": "json"
+  },
+  {
+    "id": "tmso",
+    "url": "https://www.tmso.or.jp/j/concert/"
+  },
+  {
+    "id": "yomikyo",
+    "url": "https://yomikyo.or.jp/concert/"
+  },
+  {
+    "id": "tokyosymphony",
+    "url": "https://tokyosymphony.jp/"
+  },
+  {
+    "id": "njp",
+    "url": "https://www.njp.or.jp/concerts/"
+  },
+  {
+    "id": "japanphil",
+    "url": "https://japanphil.or.jp/concert"
+  },
+  {
+    "id": "cityphil",
+    "url": "https://www.cityphil.jp/"
+  },
+  {
+    "id": "kanaphil",
+    "url": "https://www.kanaphil.or.jp/"
+  },
+  {
+    "id": "pacific",
+    "url": "https://www.ppt.or.jp/"
+  },
+  {
+    "id": "pia",
+    "url": "https://t.pia.jp/classic/orchestra/"
+  },
+  {
+    "id": "orchestra-navi",
+    "url": "https://orchestra-navi.com/"
+  },
+  {
+    "id": "kurahen",
+    "url": "https://www.kurahen.com/"
+  },
+  {
+    "id": "opera-city",
+    "url": "https://www.operacity.jp/concert/"
+  },
+  {
+    "id": "geigeki",
+    "url": "https://www.geigeki.jp/"
+  },
+  {
+    "id": "triphony",
+    "url": "https://www.triphony.com/"
+  },
+  {
+    "id": "yokohama",
+    "url": "https://yokohama-minatomiraihall.jp/"
   }
 ]
