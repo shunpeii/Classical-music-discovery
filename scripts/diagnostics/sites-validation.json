@@ -1,4 +1,295 @@
 {
+  "tokyosymphony": {
+    "normalizedCount": 16,
+    "incompleteCount": 4,
+    "matchedConcertCount": 10,
+    "rows": [
+      {
+        "title": "第747回 定期演奏会",
+        "date": "2026-11-28",
+        "time": "18:00",
+        "venue": "サントリーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/57570/",
+        "program": [
+          "《ユベール・スダーン80歳記念》",
+          "ブルックナー：テ・デウム ハ長調 WAB45",
+          "モーツァルト：レクイエム ニ短調 K.626"
+        ],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "東京オペラシティシリーズ 第155回",
+        "date": "2026-12-04",
+        "time": "19:00",
+        "venue": "東京オペラシティコンサートホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/57622/",
+        "program": [
+          "武満徹：混声合唱のための「うた」から\"翼\"",
+          "武満徹（沼尻竜典編）：混声合唱のための「MI・YO・TA」",
+          "武満徹：混声合唱のための「うた」から\"小さな空\"",
+          "ベートーヴェン：交響曲 第9番 ニ短調 op.125「合唱付」"
+        ],
+        "area": "東京",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "名曲全集 第222回＜後期＞",
+        "date": "2026-12-05",
+        "time": "14:00",
+        "venue": "ミューザ川崎シンフォニーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/57660/",
+        "program": [
+          "武満徹：混声合唱のための「うた」から“翼”",
+          "武満徹（沼尻竜典編）：混声合唱のための「MI・YO・TA」",
+          "武満徹：混声合唱のための「うた」から“小さな空”",
+          "ベートーヴェン：交響曲 第9番 ニ短調 op.125「合唱付」"
+        ],
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "こども定期演奏会 第100回",
+        "date": "2026-12-06",
+        "time": "11:00",
+        "venue": "サントリーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/58207/",
+        "program": [
+          "「100回記念GALA ～未来を作る君たちへ」",
+          "メンデルスゾーン：劇付随音楽「真夏の夜の夢」から“結婚行進曲”",
+          "コダーイ：歌劇「ハーリ・ヤーノシュ」から第2曲、第6曲",
+          "モーツァルト：ヴァイオリンとヴィオラのための協奏交響曲から第3楽章*",
+          "ドヴォルザーク：ロンド**",
+          "ナポリ民謡による変奏曲***",
+          "エルガー：行進曲「威風堂々」第1番"
+        ],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "第748回 定期演奏会",
+        "date": "2026-12-12",
+        "time": "18:00",
+        "venue": "サントリーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/57577/",
+        "program": [
+          "三善晃：祝典序曲",
+          "芥川也寸志：チェロとオーケストラのためのコンチェルト・オスティナート",
+          "ブルックナー：交響曲 第0番 ニ短調"
+        ],
+        "area": "東京",
+        "workIds": []
+      },
+      {
+        "title": "川崎定期演奏会 第108回",
+        "date": "2026-12-13",
+        "time": "14:00",
+        "venue": "ミューザ川崎シンフォニーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/57598/",
+        "program": [
+          "三善晃：祝典序曲",
+          "芥川也寸志：チェロとオーケストラのためのコンチェルト・オスティナート",
+          "ブルックナー：交響曲 第0番 ニ短調"
+        ],
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "前橋汀子＆ユベール・スダーン　東京交響楽団",
+        "date": "2026-12-23",
+        "time": "14:00",
+        "venue": "ミューザ川崎シンフォニーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/62543/",
+        "program": [
+          "ベートーヴェン：交響曲第6番ヘ長調 Op.68「田園」",
+          "ブラームス：ヴァイオリン協奏曲 ニ長調 Op.77"
+        ],
+        "area": "神奈川",
+        "workIds": [
+          "beethoven-5"
+        ]
+      },
+      {
+        "title": "クリスマスコンサート2026",
+        "date": "2026-12-25",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/61221/",
+        "program": [
+          "モーツァルト：歌劇「フィガロの結婚」序曲",
+          "モーツァルト：楽しい思い出はどこへ ～歌劇「フィガロの結婚」より ★",
+          "ドヴォルザーク：スラヴ舞曲 第８番 op.46-8",
+          "ドヴォルザーク：月に寄せる歌 ～歌劇「ルサルカ」より ★",
+          "グリーグ：過ぎし春 ～「2つの悲しい旋律」より",
+          "グリーグ：ソルヴェイグの歌 ～組曲「ペール・ギュント」より ★",
+          "マスネ：タイスの瞑想曲にのせて “あなたは覚えているかしら？あの光輝く旅を”　～歌劇「タイス」より ★",
+          "プッチーニ：交響的前奏曲",
+          "マスカーニ：アヴェ・マリア ★",
+          "プッチーニ：「3つのメヌエット」より 第1番",
+          "プッチーニ：私が街を歩けば ～歌劇「ラ・ボエーム」より ★",
+          "レーガー：愛の夢",
+          "アダン：オー・ホーリー・ナイト ★"
+        ],
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "「第九」2026",
+        "date": "2026-12-28",
+        "time": "18:30",
+        "venue": "サントリーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/57882/",
+        "program": [
+          "ベートーヴェン：交響曲 第9番  二短調 op.125「合唱付」"
+        ],
+        "area": "東京",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "「第九」2026",
+        "date": "2026-12-29",
+        "time": "14:00",
+        "venue": "サントリーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/57891/",
+        "program": [
+          "ベートーヴェン：交響曲 第9番  二短調 op.125「合唱付」"
+        ],
+        "area": "東京",
+        "workIds": [
+          "beethoven-1"
+        ]
+      },
+      {
+        "title": "MUZAジルベスターコンサート2026",
+        "date": "2026-12-31",
+        "time": "15:00",
+        "venue": "ミューザ川崎シンフォニーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/62548/",
+        "program": [
+          "アンダーソン： 舞踏会の美女",
+          "ウェーバー：舞踏への勧誘 op.65",
+          "J.シュトラウスⅡ世：春の声 op.410",
+          "グノー：歌劇『ファウスト』から Ⅴ.トロイの娘たちの踊り",
+          "ストラヴィンスキー：バレエ組曲『火の鳥』（1919年版）からⅤ. 魔王カスチェイの踊り、Ⅵ. 子守歌、Ⅶ. 終曲",
+          "『オペラ座の怪人』から序曲、The Music Of The Night ★、All I Ask Of You★♥",
+          "ラヴェル：組曲『マ・メール・ロワ』から Ⅳ. 美女と野獣の対話",
+          "『美女と野獣』から美女と野獣 ♥、愛せぬならば ★、時は永遠に ♥",
+          "『レ・ミゼラブル』から夢やぶれて ♥、星よ ★"
+        ],
+        "area": "神奈川",
+        "workIds": []
+      },
+      {
+        "title": "3大ピアノ協奏曲",
+        "date": "2027-01-06",
+        "time": "14:00",
+        "venue": "サントリーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/62915/",
+        "program": [
+          "ショパン：ピアノ協奏曲第1番 ホ短調 Op. 11",
+          "ラフマニノフ：ピアノ協奏曲第2番 ハ短調 Op. 18",
+          "チャイコフスキー：ピアノ協奏曲第1番 変ロ短調 Op. 23"
+        ],
+        "area": "東京",
+        "workIds": [
+          "chopin-3",
+          "rachmaninoff-1",
+          "tchaikovsky-2"
+        ]
+      },
+      {
+        "title": "ニューイヤーコンサート 2027",
+        "date": "2027-01-09",
+        "time": "14:00",
+        "venue": "サントリーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/57890/",
+        "program": [
+          "スッペ：「ウィーンの朝・昼・晩」序曲",
+          "ショパン：ピアノ協奏曲 第1番 ホ短調 op.11",
+          "ドヴォルザーク：交響曲 第9番 ホ短調 op.95「新世界より」"
+        ],
+        "area": "東京",
+        "workIds": [
+          "chopin-3",
+          "dvorak-1"
+        ]
+      },
+      {
+        "title": "ニューイヤーコンサート2027",
+        "date": "2027-01-10",
+        "time": "14:00",
+        "venue": "横浜みなとみらいホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/61222/",
+        "program": [
+          "スッペ：「ウィーンの朝・昼・晩」序曲",
+          "ショパン：ピアノ協奏曲 第1番 ホ短調 op.11",
+          "ドヴォルザーク：交響曲 第9番 ホ短調 op.95「新世界より」"
+        ],
+        "area": "神奈川",
+        "workIds": [
+          "chopin-3",
+          "dvorak-1"
+        ]
+      },
+      {
+        "title": "所沢ミューズニューイヤーコンサート 2027",
+        "date": "2027-01-11",
+        "time": "14:00",
+        "venue": "所沢市民文化センター ミューズ アークホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/62923/",
+        "program": [
+          "スッペ：「ウィーンの朝・昼・晩」序曲",
+          "ショパン：ピアノ協奏曲 第1番 ホ短調 op.11",
+          "ドヴォルザーク：交響曲 第9番 ホ短調 op.95「新世界より」"
+        ],
+        "area": "埼玉",
+        "workIds": [
+          "chopin-3",
+          "dvorak-1"
+        ]
+      },
+      {
+        "title": "名曲全集 第223回＜後期＞",
+        "date": "2027-01-23",
+        "time": "14:00",
+        "venue": "ミューザ川崎シンフォニーホール",
+        "sourceUrl": "https://tokyosymphony.jp/concert/57662/",
+        "program": [
+          "モーツァルト：歌劇「魔笛」K.620から序曲",
+          "モーツァルト：交響曲 第39番 変ホ長調 K.543",
+          "J.シュトラウスⅡ：皇帝円舞曲 op.437",
+          "R.シュトラウス：「ばらの騎士」組曲"
+        ],
+        "area": "神奈川",
+        "workIds": [
+          "mozart-21"
+        ]
+      }
+    ]
+  },
+  "cityphil": {
+    "normalizedCount": 1,
+    "incompleteCount": 0,
+    "matchedConcertCount": 0,
+    "rows": [
+      {
+        "title": "第389回定期演奏会",
+        "date": "2026-12-03",
+        "time": "19:00",
+        "venue": "東京オペラシティ コンサートホール",
+        "sourceUrl": "https://www.cityphil.jp/concert/detail.php?id=745&",
+        "program": [],
+        "area": "東京",
+        "workIds": []
+      }
+    ]
+  },
   "kanaphil": {
     "normalizedCount": 4,
     "incompleteCount": 1,
@@ -247,9 +538,9 @@
     ]
   },
   "tmso": {
-    "normalizedCount": 6,
-    "incompleteCount": 4,
-    "matchedConcertCount": 6,
+    "normalizedCount": 7,
+    "incompleteCount": 3,
+    "matchedConcertCount": 7,
     "rows": [
       {
         "title": "都響スペシャル（11/29）",
@@ -337,6 +628,22 @@
         "area": "東京",
         "workIds": [
           "beethoven-1"
+        ]
+      },
+      {
+        "title": "名古屋フィルハーモニー交響楽団　東京特別公演",
+        "date": "2027-01-20",
+        "time": "19:00",
+        "venue": "東京オペラシティ コンサートホール",
+        "sourceUrl": "https://www.tmso.or.jp/j/concert/detail/detail.php?id=4252",
+        "program": [
+          "芥川也寸志：弦楽のための三楽章（トリプティーク）",
+          "カゼッラ：三重協奏曲 Op.56*",
+          "ショスタコーヴィチ：交響曲第5番ニ短調 Op.47"
+        ],
+        "area": "東京",
+        "workIds": [
+          "shostakovich-1"
         ]
       }
     ]
