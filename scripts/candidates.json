@@ -142,5 +142,13 @@
   {
     "id": "yomikyo-season",
     "url": "https://yomikyo.or.jp/info/membership.php"
+  },
+  {
+    "id": "yomikyo-detail",
+    "url": "https://yomikyo.or.jp/concert/2026/01/664-1.php"
+  },
+  {
+    "id": "yomikyo-search",
+    "url": "https://yomikyo.or.jp/concert/?concert=202701161400,202701171400"
   }
 ]
