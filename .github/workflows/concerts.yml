@@ -55,6 +55,7 @@ jobs:
           git add public/data/concerts
           if ! git diff --cached --quiet; then
             git commit -m 'data: refresh concert snapshot'
+            git restore -- scripts/diagnostics/nhk-validation.json scripts/diagnostics/sites-validation.json
             for attempt in 1 2 3; do
               git fetch origin main
               git rebase origin/main || { git rebase --abort; exit 1; }
